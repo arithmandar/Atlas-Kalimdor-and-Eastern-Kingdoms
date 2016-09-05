@@ -1,4 +1,4 @@
-﻿-- $Id: Atlas-enUS.lua 87 2016-08-29 15:35:17Z arith $
+﻿-- $Id$
 --[[
 
 	Atlas, a World of Warcraft instance map browser

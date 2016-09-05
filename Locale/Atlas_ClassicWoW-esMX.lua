@@ -1,4 +1,4 @@
-﻿-- $Id: Atlas-esMX.lua 31 2016-06-23 07:30:35Z arith $
+﻿-- $Id$
 --[[
 
 	Atlas, a World of Warcraft instance map browser

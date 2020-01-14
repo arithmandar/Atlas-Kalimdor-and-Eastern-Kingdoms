@@ -292,6 +292,9 @@ if L then
 	L["Verdan the Everliving"] = "Verdan the Everliving";
 	L["Kresh"] = "Kresh";
 	L["Mutanus the Devourer"] = "Mutanus the Devourer";
+	L["Mad Magglish"] = "Mad Magglish"
+	L["Trigore the Lasher"] = "Trigore the Lasher"
+	L["Boahn"] = "Boahn"
 
 	--Zul'Farrak
 	L["Antu'sul"] = "Antu'sul"

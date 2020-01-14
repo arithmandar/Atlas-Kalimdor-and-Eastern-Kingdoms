@@ -1052,8 +1052,9 @@ if (WoWClassic) then
 			NextMap = "WailingCaverns",
 			{ BLUE.." A) "..ALC["Entrance"], 10001 },
 			{ BLUE.." B) "..BZ["Wailing Caverns"], 10002 },
-			{ ORNG.." 1) "..Atlas:GetBossName("Trigore the Lasher")..ALC["L-Parenthesis"]..ALC["Rare"]..ALC["R-Parenthesis"], 10003 },
-	--		{ ORNG..INDENT..Atlas:GetBossName("Boahn")..ALC["L-Parenthesis"]..ALC["Rare"]..ALC["R-Parenthesis"] },
+			{ WHIT.." 1) "..Atlas:GetBossName("Mad Magglish")..ALC["L-Parenthesis"]..ALC["Varies"]..ALC["R-Parenthesis"], 10003 },
+			{ WHIT.." 2) "..Atlas:GetBossName("Trigore the Lasher")..ALC["L-Parenthesis"]..ALC["Rare"]..ALC["R-Parenthesis"], 10004 },
+			{ WHIT.." 3) "..Atlas:GetBossName("Boahn")..ALC["L-Parenthesis"]..ALC["Rare"]..ALC["R-Parenthesis"], 10005 },
 		},
 		CL_WailingCaverns = {
 			ZoneName = { BZ["Wailing Caverns"] },

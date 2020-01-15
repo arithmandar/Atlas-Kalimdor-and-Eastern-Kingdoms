@@ -615,6 +615,13 @@ if L then
 	L["Eric \"The Swift\""] = "Eric \"The Swift\""
 	L["Olaf"] = "Olaf"
 
+	L["Hammertoe Grez"] = "Hammertoe Grez"
+	L["Magregan Deepshadow"] = "Magregan Deepshadow"
+	L["Tablet of Ryun'Eh"] = "Tablet of Ryun'Eh"
+	L["Krom Stoutarm's Chest"] = "Krom Stoutarm's Chest"
+	L["Garrett Family Chest"] = "Garrett Family Chest"
+	L["Digmaster Shovelphlange"] = "Digmaster Shovelphlange"
+
 	-- Classic
 	L["Lothos Riftwaker"] = "Lothos Riftwaker"
 	L["Summoner's Tomb"] = "Summoner's Tomb"

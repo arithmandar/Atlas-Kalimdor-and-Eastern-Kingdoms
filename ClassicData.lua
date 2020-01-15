@@ -624,6 +624,12 @@ if (WoWClassic) then
 			NextMap = "Uldaman",
 			{ BLUE.." A) "..ALC["Entrance"], 10001 },
 			{ BLUE.." B) "..BZ["Uldaman"], 10002 },
+			{ WHIT.." 1) "..Atlas:GetBossName("Hammertoe Grez"), 2909 };
+			{ WHIT.." 2) "..Atlas:GetBossName("Magregan Deepshadow")..ALC["L-Parenthesis"]..ALC["Wanders"]..ALC["R-Parenthesis"], 2932 };
+			{ WHIT.." 3) "..L["Tablet of Ryun'Eh"], 4631 };
+			{ WHIT.." 4) "..L["Krom Stoutarm's Chest"], 124389 };
+			{ WHIT.." 5) "..L["Garrett Family Chest"], 124388 };
+			{ GREN.." 1') "..Atlas:GetBossName("Digmaster Shovelphlange")..ALC["L-Parenthesis"]..ALC["Rare"]..ALC["R-Parenthesis"], 7057 };
 		},
 		CL_Uldaman = {
 			ZoneName = { BZ["Uldaman"] },

@@ -11,10 +11,12 @@ Copyright 2011 ~ 2020 - Arith Hsu, Atlas Team <atlas.addon at gmail dot com>
 v1.46.00 (Jan. xx, 2020)
 ------------------------
 - Merge with wow classic's database and maps
-- Classic Map revamp: 
+- Classic Map revamp / addition: 
   - Wailing Caverns Entrance map revamp; added rare bosses: Mad Magglish, Trigore the Lasher, Boahn
   - Uldaman Entrance map; added elite bosses and item location
   - Uldaman map
+  - Zul'Gurub
+  - Naxxramas
 
 v1.45.01.11303.05 (Jan. 02, 2020)
 ------------------------

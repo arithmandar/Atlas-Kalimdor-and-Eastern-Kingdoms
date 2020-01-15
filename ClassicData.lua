@@ -624,12 +624,12 @@ if (WoWClassic) then
 			NextMap = "Uldaman",
 			{ BLUE.." A) "..ALC["Entrance"], 10001 },
 			{ BLUE.." B) "..BZ["Uldaman"], 10002 },
-			{ WHIT.." 1) "..Atlas:GetBossName("Hammertoe Grez"), 2909 };
-			{ WHIT.." 2) "..Atlas:GetBossName("Magregan Deepshadow")..ALC["L-Parenthesis"]..ALC["Wanders"]..ALC["R-Parenthesis"], 2932 };
-			{ WHIT.." 3) "..L["Tablet of Ryun'Eh"], 4631 };
-			{ WHIT.." 4) "..L["Krom Stoutarm's Chest"], 124389 };
-			{ WHIT.." 5) "..L["Garrett Family Chest"], 124388 };
-			{ GREN.." 1') "..Atlas:GetBossName("Digmaster Shovelphlange")..ALC["L-Parenthesis"]..ALC["Rare"]..ALC["R-Parenthesis"], 7057 };
+			{ WHIT.." 1) "..Atlas:GetBossName("Hammertoe Grez"), 2909 },
+			{ WHIT.." 2) "..Atlas:GetBossName("Magregan Deepshadow")..ALC["L-Parenthesis"]..ALC["Wanders"]..ALC["R-Parenthesis"], 2932 },
+			{ WHIT.." 3) "..L["Tablet of Ryun'Eh"], 4631 },
+			{ WHIT.." 4) "..L["Krom Stoutarm's Chest"], 124389 },
+			{ WHIT.." 5) "..L["Garrett Family Chest"], 124388 },
+			{ GREN.." 1') "..Atlas:GetBossName("Digmaster Shovelphlange")..ALC["L-Parenthesis"]..ALC["Rare"]..ALC["R-Parenthesis"], 7057 },
 		},
 		CL_Uldaman = {
 			ZoneName = { BZ["Uldaman"] },
@@ -691,7 +691,42 @@ if (WoWClassic) then
 			{ WHIT.." 9) "..Atlas:GetBossName("High Priestess Arlokk")..ALC["L-Parenthesis"]..L["Panther"]..ALC["R-Parenthesis"] },
 			{ WHIT.."10) "..Atlas:GetBossName("Jin'do the Hexxer")..ALC["L-Parenthesis"]..L["Undead"]..", "..ALC["Optional"]..ALC["R-Parenthesis"] },
 			{ WHIT.."11) "..Atlas:GetBossName("Hakkar") },
-			{ GREN.."1') "..Atlas:GetBossName("Muddy Churning Waters") },
+			{ GREN.." 1') "..Atlas:GetBossName("Muddy Churning Waters") },
+		},
+		CL_Naxxramas = {
+			ZoneName = { BZ["Naxxramas"], 3456 },
+			Location = { BZ["Eastern Plaguelands"], 139 },
+			LevelRange = "60+",
+			PlayerLimit = { 40} ,
+			Module = "Atlas_ClassicWoW",
+			{ BLUE.."A) "..ALC["Entrance"] },
+			{ BLUE..INDENT..Atlas:GetBossName("Archmage Tarsis Kir-Moldir"), 16381 },
+			{ BLUE..INDENT..Atlas:GetBossName("Mr. Bigglesworth")..ALC["L-Parenthesis"]..L["Wanders"]..ALC["R-Parenthesis"], 16998 },
+			{ WHIT..L["Abomination Wing"] },
+			{ WHIT..INDENT.."1) "..Atlas:GetBossName("Patchwerk"), 16028 },
+			{ WHIT..INDENT.."2) "..Atlas:GetBossName("Grobbulus"), 15931 },
+			{ WHIT..INDENT.."3) "..Atlas:GetBossName("Gluth"), 15932 },
+			{ WHIT..INDENT.."4) "..Atlas:GetBossName("Thaddius"), 15928 },
+			{ ORNG..L["Spider Wing"] },
+			{ ORNG..INDENT.."1) "..Atlas:GetBossName("Anub'Rekhan"), 15956 },
+			{ ORNG..INDENT.."2) "..Atlas:GetBossName("Grand Widow Faerlina"), 15953 },
+			{ ORNG..INDENT.."3) "..Atlas:GetBossName("Maexxna"), 15952 },
+			{ _RED..L["Deathknight Wing"] },
+			{ _RED..INDENT.."1) "..Atlas:GetBossName("Instructor Razuvious"), 16061 },
+			{ _RED..INDENT.."2) "..Atlas:GetBossName("Gothik the Harvester"), 16060 },
+			{ _RED..INDENT.."3) "..Atlas:GetBossName("The Four Horsemen") },
+			{ _RED..INDENT..INDENT..Atlas:GetBossName("Thane Korth'azz"), 16064 },
+			{ _RED..INDENT..INDENT..Atlas:GetBossName("Lady Blaumeux"), 16065 },
+			{ _RED..INDENT..INDENT..Atlas:GetBossName("Highlord Mograine <The Ashbringer>"), 16062 },
+			{ _RED..INDENT..INDENT..Atlas:GetBossName("Sir Zeliek"), 16063 },
+			{ _RED..INDENT..INDENT..L["Four Horsemen Chest"], 181366 },
+			{ PURP..L["Plague Wing"] },
+			{ PURP..INDENT.."1) "..Atlas:GetBossName("Noth the Plaguebringer"), 15954 },
+			{ PURP..INDENT.."2) "..Atlas:GetBossName("Heigan the Unclean"), 15936 },
+			{ PURP..INDENT.."3) "..Atlas:GetBossName("Loatheb"), 16011 },
+			{ GREN..L["Frostwyrm Lair"] },
+			{ GREN..INDENT.."1) "..Atlas:GetBossName("Sapphiron"), 15989 },
+			{ GREN..INDENT.."2) "..Atlas:GetBossName("Kel'Thuzad"), 15990 },
 		},
 	--************************************************
 	-- Kalimdor Instances (Classic)
@@ -1397,6 +1432,7 @@ if (WoWClassic) then
 				"CL_SMGraveyard",			-- Classic WoW
 				"CL_SMLibrary",			-- Classic WoW
 				"CL_ZulGurub",
+				"CL_Naxxramas",
 			},
 			[ATLAS_DDL_CONTINENT_KALIMDOR] = {
 				"CL_BlackfathomDeepsA",		-- Classic WoW
@@ -1465,6 +1501,7 @@ if (WoWClassic) then
 				"CL_WailingCavernsEnt",
 				"CL_ZulFarrak",
 				"CL_ZulGurub",
+				"CL_Naxxramas",
 			},
 		},
 		[ATLAS_DDL_LEVEL] = {
@@ -1517,6 +1554,7 @@ if (WoWClassic) then
 				"CL_TheTempleofAhnQiraj",
 				"CL_TheRuinsofAhnQiraj",
 				"CL_ZulGurub",
+				"CL_Naxxramas",
 			},
 		},
 		[ATLAS_DDL_PARTYSIZE] = {
@@ -1567,6 +1605,7 @@ if (WoWClassic) then
 				"CL_TheTempleofAhnQiraj",
 				"CL_TheRuinsofAhnQiraj",
 				"CL_ZulGurub",
+				"CL_Naxxramas",
 			},
 		},
 		[ATLAS_DDL_TYPE] = {
@@ -1604,6 +1643,7 @@ if (WoWClassic) then
 				"CL_ZulGurub",
 				"CL_TheTempleofAhnQiraj",
 				"CL_TheRuinsofAhnQiraj",
+				"CL_Naxxramas",
 			},
 			[ATLAS_DDL_TYPE_ENTRANCE] = {
 				"CL_BlackrockMountainEnt",		-- Classic WoW

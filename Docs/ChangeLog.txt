@@ -8,6 +8,13 @@ Copyright 2011 ~ 2020 - Arith Hsu, Atlas Team <atlas.addon at gmail dot com>
 = Change Log =
 ==============
 
+v1.47.00 (Jan. 20, 2020)
+------------------------
+- ToC update to support WoW 8.2.5
+- Classic: 
+  - Corrected Wailing Caverns and Razorfen Kraul's location to The Barrens
+  - Corrected Ahn'Qiraj's location to Silithus
+
 v1.46.00 (Jan. 15, 2020)
 ------------------------
 - Merge with wow classic's database and maps
@@ -58,6 +65,7 @@ v1.45.01.11303.01 (Dec. 30, 2019)
 v1.45.01 (Dec. 30, 2019)
 ------------------------
 - ToC update to support WoW 8.2.5
+
 v1.45.00.11302.05 (Sep. 17, 2019)
 ------------------------
 - Translation update

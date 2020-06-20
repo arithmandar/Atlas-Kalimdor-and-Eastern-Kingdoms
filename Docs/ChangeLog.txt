@@ -8,6 +8,10 @@ Copyright 2011 ~ 2020 - Arith Hsu, Atlas Team <atlas.addon at gmail dot com>
 = Change Log =
 ==============
 
+v1.47.02 (Jun. 20, 2020)
+------------------------
+- Update Atlas_GetBossName to load boss name from local lcoale files
+
 v1.47.01 (Jun. 20, 2020)
 ------------------------
 - Classic: 

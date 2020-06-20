@@ -75,6 +75,11 @@ if L then
 
 	--Gnomeregan (Entrance)
 	L["Torben Zapblast <Teleportation Specialist>"] = "Torben Zapblast <Teleportation Specialist>"
+	L["Transpolyporter"] = "Transpolyporter"
+	L["Sprok <Away Team>"] = "Sprok <Away Team>"
+	L["Matrix Punchograph 3005-A"] = "Matrix Punchograph 3005-A"
+	L["Namdo Bizzfizzle <Engineering Supplies>"] = "Namdo Bizzfizzle <Engineering Supplies>"
+	L["Techbot"] = "Techbot"
 
 	--Maraudon (Entrance)
 	L["The Nameless Prophet"] = "The Nameless Prophet"
@@ -526,13 +531,6 @@ if L then
 	L["Edwin VanCleef"] = "Edwin VanCleef"
 	L["Cookie"] = "Cookie"
 	L["Defias Gunpowder"] = "Defias Gunpowder"
-
-	--Gnomeregan Ent
-	L["Transpolyporter"] = "Transpolyporter"
-	L["Sprok <Away Team>"] = "Sprok <Away Team>"
-	L["Matrix Punchograph 3005-A"] = "Matrix Punchograph 3005-A"
-	L["Namdo Bizzfizzle <Engineering Supplies>"] = "Namdo Bizzfizzle <Engineering Supplies>"
-	L["Techbot"] = "Techbot"
 
 	--Gnomeregan
 	L["Grubbis"] = "Grubbis"

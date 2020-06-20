@@ -34,7 +34,7 @@ if L then
 -- Zone Names, Acronyms, and Common Strings
 --************************************************
 	--Classic Acronyms
-	L["AQ"] = "AQ" -- Ahn'Qiraj 安其拉
+	L["AQ"] = "安其拉" -- Ahn'Qiraj 安其拉
 	L["AQ10"] = "AQ10" -- Ruins of Ahn'Qiraj 安其拉廢墟
 	L["AQ20"] = "AQ20" -- Ruins of Ahn'Qiraj
 	L["AQ40"] = "AQ40" -- Temple of Ahn'Qiraj 安其拉神廟
@@ -56,7 +56,9 @@ if L then
 	L["Ulda"] = "Ulda" -- Uldaman 奧達曼
 	L["WC"] = "WC/哀嚎" -- Wailing Caverns 哀嚎洞穴
 	L["ZF"] = "ZF/祖法" -- Zul'Farrak 祖爾法拉克
-
+	L["SM"] = "血色修道院"
+	L["VC"] = "VC/死礦"
+	
 --************************************************
 -- Instance Entrance Maps
 --************************************************
@@ -65,6 +67,7 @@ if L then
 	L["Orb of Command"] = "命令寶珠"
 	L["Scarshield Quartermaster <Scarshield Legion>"] = "裂盾軍需官"
 	L["The Behemoth"] = "貝哈默斯"
+	L["Franclorn Forgewright"] = "弗蘭克羅恩·鑄鐵的雕像"
 		
 	--Dire Maul (Entrance)	
 	L["Dire Pool"] = "厄運之池"
@@ -73,12 +76,22 @@ if L then
 		
 	--Gnomeregan (Entrance)	
 	L["Torben Zapblast <Teleportation Specialist>"] = "托爾班·速轟 <傳送專家>"
+	L["Transpolyporter"] = "傳送器"
+	L["Sprok <Away Team>"] = "斯普洛克"
+	L["Matrix Punchograph 3005-A"] = "矩陣式打孔電腦 3005-A"
+	L["Namdo Bizzfizzle <Engineering Supplies>"] = "納姆杜"
+	L["Techbot"] = "尖端機器人"
 		
 	--Maraudon (Entrance)	
 	L["The Nameless Prophet"] = "無名預言者"
 	L["Cursed Centaur"] = "被詛咒的半人馬"
 	L["Kherrah"] = "凱拉"
 		
+	L["Kolk <The First Kahn>"] = "考爾克 <第一可汗>"
+	L["Gelk <The Second Kahn>"] = "吉爾克 <第二可汗>"
+	L["Magra <The Third Kahn>"] = "瑪格拉 <第三可汗>"
+	L["Cavindra"] = "凱雯德拉"
+	
 	--Sunken Temple (Entrance)	
 	L["Priestess Udum'bra"] = "女祭師烏丹姆布拉"
 	L["Gomora the Bloodletter"] = "『放血者』高摩拉"
@@ -140,8 +153,9 @@ if L then
 	L["Ironbark the Redeemed"] = "贖罪的鐵朴"
 	L["Chase Begins"] = "追逐開始"
 	L["Chase Ends"] = "追逐結束"
-		
-	--Dire Maul (North)	
+	L["Pimgib"] = "匹姆吉布"
+	L["Isalien"] = "依薩利恩"
+	 --Dire Maul (North)
 	L["Guard Mol'dar"] = "衛兵摩爾達"
 	L["Stomper Kreeg"] = "踐踏者克雷格"
 	L["Guard Fengus"] = "衛兵芬古斯"
@@ -182,10 +196,12 @@ if L then
 	L["Landslide"] = "蘭斯利德"
 	L["Tinkerer Gizlock"] = "技工吉茲洛克"
 	L["Rotgrip"] = "洛特格里普"
-	L["Princess Theradras"] = "瑟萊德絲公主"
-		
+	L["Princess Theradras"] = "瑟萊德絲公主"	
 	L["Elder Splitrock"] = "劈石長者"
 	L["Celebras the Redeemed"] = "贖罪的塞雷布拉斯"
+	L["Veng (The Fifth Khan)"] = "溫格 <第五可汗>"
+	L["Maraudos (The Fourth Khan)"] = "瑪拉多斯 <第四可汗>"
+	L["Meshlok the Harvester"] = "收割者麥什洛克"
 		
 	--OnyxiasLair	
 	L["Drakefire Amulet"] = "龍火護符"
@@ -212,6 +228,7 @@ if L then
 	L["Amnennar the Coldbringer"] = "『寒冰使者』亞門納爾"
 	L["Koristrasza"] = "柯莉史卓莎"
 	L["Amnennar's Phylactery"] = "亞門納爾的骨匣"
+	L["Henry Stern"] = "亨利·斯特恩"
 		
 	--Razorfen Kraul	
 	L["Roogug"] = "魯古格"
@@ -222,6 +239,8 @@ if L then
 	L["Charlga Razorflank"] = "卡爾加·刺肋"
 	L["Auld Stonespire"] = "奧爾德·石塔"
 	L["Spirit of Agamaggan <Ancient>"] = "阿迦瑪甘之靈 <先祖>"
+	L["Blind Hunter"] = "盲眼獵手"
+	L["Earthcaller Halmgar"] = "喚地者哈穆加"
 		
 	--Ruins of Ahn'Qiraj	
 	L["Kurinnaxx"] = "庫林納克斯"
@@ -239,6 +258,7 @@ if L then
 	L["Major Pakkon"] = "帕康少校"
 	L["Colonel Zerran"] = "澤朗上校"
 	L["Safe Room"] = "安全的空間"
+	L["Lieutenant General Andorov"] = "安多洛夫中將"
 		
 	--Shadowfang Keep	
 	L["Rethilgore"] = "雷希戈爾"
@@ -276,6 +296,12 @@ if L then
 	L["Arygos"] = "亞雷戈斯"
 	L["Caelestrasz"] = "凱雷斯特拉茲"
 	L["Merithra of the Dream"] = "夢境之龍麥琳瑟拉"
+	L["The Bug Family"] = "蟲族"
+	L["Lord Kri"] = "克里勳爵"
+	L["Princess Yauj"] = "亞爾基公主"
+--	L["The Twin Emperors"] = "The Twin Emperors"
+	L["Emperor Vek'lor"] = "維克洛爾大帝"
+	L["Emperor Vek'nilash"] = "維克尼拉斯"
 		
 	--Wailing Caverns	
 	L["Ebru <Disciple of Naralex>"] = "厄布魯 <納拉雷克斯的侍徒>"
@@ -296,6 +322,7 @@ if L then
 	L["Mad Magglish"] = "瘋狂的馬格利什"
 	L["Trigore the Lasher"] = "『鞭笞者』特里高雷"
 	L["Boahn"] = "博艾恩"
+	L["Disciple of Naralex"] = "納拉雷克斯的信徒"
 		
 	--Zul'Farrak	
 	L["Antu'sul"] = "安圖蘇爾"
@@ -316,6 +343,10 @@ if L then
 	L["Weegli Blastfuse"] = "維格利"
 	L["Raven"] = "拉文"
 	L["Elder Wildmane"] = "蠻鬃長者"
+	L["Murta Grimgut"] = "莫爾塔"
+	L["Oro Eyegouge"] = "奧羅"
+	L["Sandfury Executioner"] = "沙怒劊子手"
+	L["Gahz'rilla"] = "加茲瑞拉"
 		
 	--Naxxramas	
 	L["Archmage Tarsis Kir-Moldir"] = "大法師塔希斯·克摩地爾"
@@ -346,6 +377,7 @@ if L then
 	L["Sapphiron"] = "薩菲隆"
 	L["Kel'Thuzad"] = "科爾蘇加德"
 	
+
 --****************************
 -- Eastern Kingdoms Instances (Classic)
 --****************************
@@ -454,7 +486,8 @@ if L then
 	L["Sixth Mosh'aru Tablet"] = "第六塊摩沙魯石板"
 	L["Human Remains"] = "人類殘骸"
 	L["Unfired Plate Gauntlets"] = "未淬火的鎧甲護手"
-		
+	L["Spirestone Butcher"] = "尖石屠夫"
+	L["Spirestone Battle Lord"] = "尖石戰鬥統帥"
 		
 	--Blackrock Spire (Upper)	
 	L["Pyroguard Emberseer"] = "烈焰衛士艾博希爾"
@@ -467,6 +500,12 @@ if L then
 	L["Finkle Einhorn"] = "芬克·恩霍爾"
 	L["Doomrigger's Clasp"] = "末日扣環"
 	L["Drakkisath's Brand"] = "達基薩斯徽記"
+	L["Solakar Flamewreath"] = "索拉卡·火冠"
+	L["Darkstone Tablet"] = "黑暗石板"
+	L["Doomrigger's Coffer"] = "末日扣環之箱"
+	L["Jed Runewatcher"] = "傑德"
+	L["Goraluk Anvilcrack"] = "古拉魯克"
+	L["Lord Valthalak"] = "瓦薩拉克"
 		
 	--Blackwing Lair	
 	L["Razorgore the Untamed"] = "狂野的拉佐格爾"
@@ -481,6 +520,9 @@ if L then
 	L["Master Elemental Shaper Krixix"] = "大元素師克里希克"
 		
 	--Deadmines	
+	L["Marisa du'Paige"] = "瑪里莎·杜派格"
+	L["Brainwashed Noble"] = "被洗腦的貴族"
+	L["Foreman Thistlenettle"] = "工頭希斯耐特"
 	L["Rhahk'Zor"] = "拉克佐"
 	L["Miner Johnson"] = "礦工約翰森"
 	L["Sneed"] = "斯尼德"
@@ -491,7 +533,7 @@ if L then
 	L["Edwin VanCleef"] = "艾德溫·范克里夫"
 	L["Cookie"] = "廚師"
 	L["Defias Gunpowder"] = "迪菲亞火藥"
-		
+	
 	--Gnomeregan	
 	L["Grubbis"] = "格魯比斯"
 	L["Viscous Fallout"] = "粘性輻射塵"
@@ -535,6 +577,9 @@ if L then
 	L["Lord Alexei Barov"] = "阿萊克斯·巴羅夫領主"
 	L["Lady Illucia Barov"] = "伊露希亞·巴羅夫女士"
 	L["Darkmaster Gandling"] = "黑暗院長加丁"
+	L["Blood Steward of Kirtonos"] = "基爾圖諾斯的衛士"
+	L["Death Knight Darkreaver"] = "死亡騎士達克雷爾"
+	L["Kormok"] = "科爾莫克"
 		
 	--Stratholme - Crusader's Square	
 	L["Fras Siabi"] = "弗拉斯·希亞比"
@@ -565,6 +610,10 @@ if L then
 	L["Festival Lane Postbox"] = "節日小道郵箱"
 	L["Elder Farwhisper"] = "遙語長者"
 	L["Market Row Postbox"] = "市場郵箱"
+	L["Grand Crusader Dathrohan"] = "大十字軍戰士達索漢"
+	L["Sothos"] = "索索斯"
+	L["Jarien"] = "賈林"
+	L["Aurius"] = "奧里克斯"
 		
 	--Stratholme - The Gauntlet	
 	L["Elders' Square Postbox"] = "長者廣場郵箱"
@@ -651,7 +700,30 @@ if L then
 	L["Krom Stoutarm's Chest"] = "克羅姆·粗臂的箱子"
 	L["Garrett Family Chest"] = "加瑞特家族的寶箱"
 	L["Digmaster Shovelphlange"] = "挖掘專家舒爾弗拉格"
-		
+
+	L["Annora <Master Enchanter>"] = "安諾拉 <附魔師>"
+
+	 -- Zul'Gurub
+	L["High Priestess Jeklik"] = "高階祭司耶克里克"
+	L["High Priest Venoxis"] = "高階祭司溫諾希斯"
+	L["Zanza the Restless"] = "無眠者贊札"
+--	L["High Priestess Mar'li"] = "High Priestess Mar'li"
+	L["Bloodlord Mandokir"] = "血領主曼多基爾"
+	L["Ohgan"] = "奧根"
+	L["Edge of Madness"] = "瘋狂之緣"
+	L["Gri'lek"] = "格里雷克"
+	L["Hazza'rah"] = "哈札拉爾"
+	L["Renataki"] = "雷納塔基"
+	L["Wushoolay"] = "烏蘇雷"
+	L["Gahz'ranka"] = "加茲蘭卡"
+--	L["High Priest Thekal"] = "High Priest Thekal"
+	L["Zealot Zath"] = "狂熱者札斯"
+	L["Zealot Lor'Khan"] = "狂熱者洛卡恩"
+	L["High Priestess Arlokk"] = "哈卡萊先知"
+	L["Jin'do the Hexxer"] = "妖術師金度"
+	L["Hakkar"] = "哈卡"
+	L["Muddy Churning Waters"] = "混濁的水"
+	
 	-- Classic	
 	L["Lothos Riftwaker"] = "洛索斯·天痕"
 	L["Summoner's Tomb"] = "召喚師之墓"
@@ -669,7 +741,7 @@ if L then
 	L["The Deed to Brill"] = "布瑞爾地契"
 	L["The Deed to Caer Darrow"] = "凱爾達隆地契"
 	L["Torch Lever"] = "火炬開關"
---	L["Secret Chest"] = "Secret Chest"
+	L["Secret Chest"] = "舊寶藏箱"
 	L["Alchemy Lab"] = "煉金實驗室"
 	L["Jordan's Hammer"] = "喬丹的鐵錘"
 	L["Various Postbox Keys"] = "郵箱鑰匙"
@@ -685,8 +757,8 @@ if L then
 	L["Fathom Core"] = "深淵之核"
 	L["J'eevee's Jar"] = "耶維爾的瓶子"
 	L["Skeletal Remains of Kariel Winthalus"] = "卡里爾·溫薩魯斯的骸骨"
-	--L["Veng (The Fifth Khan)"] = "Veng (The Fifth Khan)"
-	--L["Maraudos (The Fourth Khan)"] = "Maraudos (The Fourth Khan)"
+	L["Veng (The Fifth Khan)"] = "溫格 <第五可汗>"
+	L["Maraudos (The Fourth Khan)"] = "瑪拉多斯 <第四可汗>"
 	L["Belnistrasz"] = "貝尼斯特拉茲"
 	L["Willix the Importer"] = "進口商威利克斯"
 	L["Heralath Fallowbrook"] = "赫爾拉斯·靜水"

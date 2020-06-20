@@ -34,234 +34,664 @@ if L then
 -- Zone Names, Acronyms, and Common Strings
 --************************************************
 	--Classic Acronyms
-	L["AQ"] = "AQ"; -- Ahn'Qiraj 安其拉
-	L["AQ10"] = "AQ10"; -- Ruins of Ahn'Qiraj 安其拉廢墟
-	L["AQ40"] = "AQ40"; -- Temple of Ahn'Qiraj 安其拉神廟
-	L["BFD"] = "BFD/黑淵"; -- Blackfathom Deeps 黑暗深淵
-	L["BRD"] = "BRD/黑石淵"; -- Blackrock Depths 黑石深淵
-	L["BRM"] = "BRM/黑石山"; -- Blackrock Mountain 黑石山
-	L["BWL"] = "BWL/黑翼"; -- Blackwing Lair 黑翼之巢
-	L["DM"] = "DM/厄運"; -- Dire Maul 厄運之槌
-	L["Gnome"] = "Gnome/諾姆"; -- Gnomeregan 諾姆瑞根
-	L["LBRS"] = "LBRS/黑下";  -- Lower Blackrock Spire 黑石塔下層
-	L["Mara"] = "Mara/瑪拉"; -- Maraudon 瑪拉頓
-	L["MC"] = "MC"; -- Molten Core 熔火之心
-	L["RFC"] = "RFC/怒焰"; -- Ragefire Chasm 怒焰裂谷
-	L["RFD"] = "RFD"; -- Razorfen Downs 剃刀高地
-	L["RFK"] = "RFK"; -- Razorfen Kraul 剃刀沼澤
-	L["ST"] = "ST/神廟"; -- Sunken Temple 沉沒的神廟
-	L["Strat"] = "Strat/斯坦"; -- Stratholme 斯坦索姆
-	L["Stocks"] = "監獄"; -- The Stockade 監獄
-	L["Ulda"] = "Ulda"; -- Uldaman 奧達曼
-	L["WC"] = "WC/哀嚎"; -- Wailing Caverns 哀嚎洞穴
-	L["ZF"] = "ZF/祖法"; -- Zul'Farrak 祖爾法拉克
+	L["AQ"] = "AQ" -- Ahn'Qiraj 安其拉
+	L["AQ10"] = "AQ10" -- Ruins of Ahn'Qiraj 安其拉廢墟
+	L["AQ20"] = "AQ20" -- Ruins of Ahn'Qiraj
+	L["AQ40"] = "AQ40" -- Temple of Ahn'Qiraj 安其拉神廟
+	L["BFD"] = "BFD/黑淵" -- Blackfathom Deeps 黑暗深淵
+	L["BRD"] = "BRD/黑石淵" -- Blackrock Depths 黑石深淵
+	L["BRM"] = "BRM/黑石山" -- Blackrock Mountain 黑石山
+	L["BWL"] = "BWL/黑翼" -- Blackwing Lair 黑翼之巢
+	L["DM"] = "DM/厄運" -- Dire Maul 厄運之槌
+	L["Gnome"] = "Gnome/諾姆" -- Gnomeregan 諾姆瑞根
+	L["LBRS"] = "LBRS/黑下"  -- Lower Blackrock Spire 黑石塔下層
+	L["Mara"] = "Mara/瑪拉" -- Maraudon 瑪拉頓
+	L["MC"] = "MC" -- Molten Core 熔火之心
+	L["RFC"] = "RFC/怒焰" -- Ragefire Chasm 怒焰裂谷
+	L["RFD"] = "RFD" -- Razorfen Downs 剃刀高地
+	L["RFK"] = "RFK" -- Razorfen Kraul 剃刀沼澤
+	L["ST"] = "ST/神廟" -- Sunken Temple 沉沒的神廟
+	L["Strat"] = "Strat/斯坦" -- Stratholme 斯坦索姆
+	L["Stocks"] = "監獄" -- The Stockade 監獄
+	L["Ulda"] = "Ulda" -- Uldaman 奧達曼
+	L["WC"] = "WC/哀嚎" -- Wailing Caverns 哀嚎洞穴
+	L["ZF"] = "ZF/祖法" -- Zul'Farrak 祖爾法拉克
 
 --************************************************
 -- Instance Entrance Maps
 --************************************************
-
-	--Dire Maul (Entrance)
-	L["Dire Pool"] = "厄運之池";
-	L["Dire Maul Arena"] = "厄運競技場";
-	L["Elder Mistwalker"] = "霧行長者";
-
-	--Gnomeregan (Entrance)
-	L["Torben Zapblast <Teleportation Specialist>"] = "托爾班·速轟 <傳送專家>";
-
-	--Maraudon (Entrance)
-	L["The Nameless Prophet"] = "無名預言者";
-	L["Cursed Centaur"] = "被詛咒的半人馬";
-	L["Kherrah"] = "凱拉";
-
-	--Sunken Temple (Entrance)
-	L["Priestess Udum'bra"] = "女祭師烏丹姆布拉";
-	L["Gomora the Bloodletter"] = "『放血者』高摩拉";
-	L["Captain Wyrmak"] = "維爾瑪克隊長";
+	-- Blackrock Mountain (Entrance)	
+	L["Bodley"] = "布德利"
+	L["Orb of Command"] = "命令寶珠"
+	L["Scarshield Quartermaster <Scarshield Legion>"] = "裂盾軍需官"
+	L["The Behemoth"] = "貝哈默斯"
+		
+	--Dire Maul (Entrance)	
+	L["Dire Pool"] = "厄運之池"
+	L["Dire Maul Arena"] = "厄運競技場"
+	L["Elder Mistwalker"] = "霧行長者"
+		
+	--Gnomeregan (Entrance)	
+	L["Torben Zapblast <Teleportation Specialist>"] = "托爾班·速轟 <傳送專家>"
+		
+	--Maraudon (Entrance)	
+	L["The Nameless Prophet"] = "無名預言者"
+	L["Cursed Centaur"] = "被詛咒的半人馬"
+	L["Kherrah"] = "凱拉"
+		
+	--Sunken Temple (Entrance)	
+	L["Priestess Udum'bra"] = "女祭師烏丹姆布拉"
+	L["Gomora the Bloodletter"] = "『放血者』高摩拉"
+	L["Captain Wyrmak"] = "維爾瑪克隊長"
 
 --************************************************
 -- Kalimdor Instances (Classic)
 --************************************************
 
-	--Blackfathom Deeps
-	L["Je'neu Sancrea <The Earthen Ring>"] = "耶努薩克雷 <陶土議會>";
-	L["Sentinel Aluwyn"] = "哨兵阿露溫";
-	L["Zeya"] = "仄亞";
-	L["Altar of Blood"] = "血祭談";
-	L["Fire of Aku'mai"] = "阿庫麥爾之火";
-	L["Spoils of Blackfathom"] = "黑澗之寶";
+	--Blackfathom Deeps	
+	L["Ghamoo-ra"] = "加摩拉"
+	L["Lady Sarevess"] = "薩利維絲女士"
+	L["Gelihast"] = "格里哈斯特"
+	L["Lorgus Jett"] = "洛古斯·傑特"
+	L["Baron Aquanis"] = "阿奎尼斯男爵"
+	L["Twilight Lord Kelris"] = "暮光領主克爾里斯"
+	L["Old Serra'kis"] = "瑟拉吉斯"
+	L["Aku'mai"] = "阿庫麥爾"
+		
+	L["Lord Roccor"] = "洛考爾領主"
+	L["Bael'Gar"] = "貝爾加"
+	L["Houndmaster Grebmar"] = "馴犬者格雷布瑪爾"
+	L["High Interrogator Gerstahn"] = "高階審問者格斯塔恩"
+	L["High Justice Grimstone"] = "裁決者格里斯通"
+	L["Pyromancer Loregrain"] = "控火師羅格雷恩"
+	L["General Angerforge"] = "安格弗將軍"
+	L["Golem Lord Argelmach"] = "魔像領主阿格曼奇"
+	L["Ribbly Screwspigot"] = "雷布里·斯庫比格特"
+	L["Hurley Blackbreath"] = "霍爾雷·黑鬚"
+	L["Plugger Spazzring"] = "普拉格"
+	L["Phalanx"] = "法拉克斯"
+	L["Lord Incendius"] = "伊森迪奧斯領主"
+	L["Fineous Darkvire"] = "弗諾斯·達克維爾"
+	L["Warder Stilgiss"] = "守衛斯迪爾基斯"
+	L["Verek"] = "維雷克"
+	L["Dark Coffer"] = "黑暗寶箱"
+	L["Ambassador Flamelash"] = "弗萊拉斯大使"
+	L["Chest of The Seven"] = "七賢之箱"
+	L["Magmus"] = "瑪格姆斯"
+	L["Princess Moira Bronzebeard"] = "茉艾拉·銅鬚公主"
+	L["Emperor Dagran Thaurissan"] = "達格蘭·索瑞森大帝"
 
-	--Dire Maul (East)
-	L["\"Ambassador\" Dagg'thol"] = "達格索大使";
-	L["Furgus Warpwood"] = "佛格斯·扭木";
-	L["Old Ironbark"] = "埃隆巴克";
-	L["Ironbark the Redeemed"] = "贖罪的鐵朴";
-	L["Chase Begins"] = "追逐開始";
-	L["Chase Ends"] = "追逐結束";
-
-	--Dire Maul (North)
-	L["Druid of the Talon"] = "猛禽德魯伊";
-	L["Stonemaul Ogre"] = "石槌巨魔";
-	L["Knot Thimblejack"] = "諾特·希姆加克";
-
-	--Dire Maul (West)
-	L["Ferra"] = "費拉";
-	L["Estulan <The Highborne>"] = "艾斯圖蘭";
-	L["Shen'dralar Watcher"] = "辛德拉看守者";
-	L["Pylons"] = "水晶塔";
-	L["Ancient Equine Spirit"] = "上古聖馬之魂";
-	L["Shen'dralar Ancient"] = "辛德拉古靈";
-	L["Falrin Treeshaper"] = "法琳·樹形者";
-	L["Lorekeeper Lydros"] = "博學者萊德羅斯";
-	L["Lorekeeper Javon"] = "博學者亞沃";
-	L["Lorekeeper Kildrath"] = "博學者基爾達斯";
-	L["Lorekeeper Mykos"] = "博學者麥庫斯";
-	L["Shen'dralar Provisioner"] = "辛德拉聖職者";
-
+	L["Je'neu Sancrea <The Earthen Ring>"] = "耶努薩克雷 <陶土議會>"
+	L["Sentinel Aluwyn"] = "哨兵阿露溫"
+	L["Zeya"] = "仄亞"
+	L["Altar of Blood"] = "血祭談"
+	L["Fire of Aku'mai"] = "阿庫麥爾之火"
+	L["Spoils of Blackfathom"] = "黑澗之寶"
+		
+	--Dire Maul (East)	
+	L["Pusillin"] = "普希林"
+	L["Lethtendris"] = "蕾瑟塔蒂絲"
+	L["Hydrospawn"] = "海多斯博恩"
+	L["Zevrim Thornhoof"] = "瑟雷姆·刺蹄"
+	L["Alzzin the Wildshaper"] = "『狂野變形者』奧茲恩"
+	L["\"Ambassador\" Dagg'thol"] = "達格索大使"
+	L["Furgus Warpwood"] = "佛格斯·扭木"
+	L["Old Ironbark"] = "埃隆巴克"
+	L["Ironbark the Redeemed"] = "贖罪的鐵朴"
+	L["Chase Begins"] = "追逐開始"
+	L["Chase Ends"] = "追逐結束"
+		
+	--Dire Maul (North)	
+	L["Guard Mol'dar"] = "衛兵摩爾達"
+	L["Stomper Kreeg"] = "踐踏者克雷格"
+	L["Guard Fengus"] = "衛兵芬古斯"
+	L["Guard Slip'kik"] = "衛兵斯里基克"
+	L["Captain Kromcrush"] = "克羅卡斯"
+	L["Cho'Rush the Observer"] = "『觀察者』克魯什"
+	L["King Gordok"] = "戈多克大王"
+	L["Druid of the Talon"] = "猛禽德魯伊"
+	L["Stonemaul Ogre"] = "石槌巨魔"
+	L["Knot Thimblejack"] = "諾特·希姆加克"
+		
+	--Dire Maul (West)	
+	L["Tendris Warpwood"] = "特迪斯·扭木"
+	L["Magister Kalendris"] = "卡雷迪斯鎮長"
+	L["Tsu'zee"] = "蘇斯"
+	L["Illyanna Ravenoak"] = "伊琳娜·鴉橡"
+	L["Immol'thar"] = "伊莫塔爾"
+	L["Prince Tortheldrin"] = "托塞德林王子"
+	L["Lord Hel'nurath"] = "赫爾努拉斯領主"
+	L["Ferra"] = "費拉"
+	L["Estulan <The Highborne>"] = "艾斯圖蘭"
+	L["Shen'dralar Watcher"] = "辛德拉看守者"
+	L["Pylons"] = "水晶塔"
+	L["Ancient Equine Spirit"] = "上古聖馬之魂"
+	L["Shen'dralar Ancient"] = "辛德拉古靈"
+	L["Falrin Treeshaper"] = "法琳·樹形者"
+	L["Lorekeeper Lydros"] = "博學者萊德羅斯"
+	L["Lorekeeper Javon"] = "博學者亞沃"
+	L["Lorekeeper Kildrath"] = "博學者基爾達斯"
+	L["Lorekeeper Mykos"] = "博學者麥庫斯"
+	L["Shen'dralar Provisioner"] = "辛德拉聖職者"
+		
 	--Maraudon	
-	L["Elder Splitrock"] = "劈石長者";
-	L["Celebras the Redeemed"] = "贖罪的塞雷布拉斯";
-
-	--Ragefire Chasm
-	L["Commander Bagran"] = "指揮官巴格仁";
-	L["Invoker Xorenth"] = "塑能師索倫斯";
-	L["Scout Cage"] = "斥侯牢籠";
-
-	--Razorfen Downs
-	L["Koristrasza"] = "柯莉史卓莎";
-	L["Amnennar's Phylactery"] = "亞門納爾的骨匣";
-
-	--Razorfen Kraul
-	L["Auld Stonespire"] = "奧爾德·石塔";
-	L["Spirit of Agamaggan <Ancient>"] = "阿迦瑪甘之靈 <先祖>";
-
-	--Ruins of Ahn'Qiraj
-	L["Four Kaldorei Elites"] = "四個卡多雷精英";
-	L["Captain Qeez"] = "奎茲上尉";
-	L["Captain Tuubid"] = "圖畢德上尉";
-	L["Captain Drenn"] = "德蘭上尉";
-	L["Captain Xurrem"] = "瑟瑞姆上尉";
-	L["Major Yeggeth"] = "葉吉斯少校";
-	L["Major Pakkon"] = "帕康少校";
-	L["Colonel Zerran"] = "澤朗上校";
-	L["Safe Room"] = "安全的空間";
-
-	--Temple of Ahn'Qiraj
-	L["Andorgos <Brood of Malygos>"] = "安多葛斯 <瑪里苟斯的後裔>";
-	L["Vethsera <Brood of Ysera>"] = "溫瑟拉 <伊瑟拉的後裔>";
-	L["Kandrostrasz <Brood of Alexstrasza>"] = "坎多斯塔茲 <雅立史卓莎的後裔>";
-	L["Arygos"] = "亞雷戈斯";
-	L["Caelestrasz"] = "凱雷斯特拉茲";
-	L["Merithra of the Dream"] = "夢境之龍麥琳瑟拉";
-
-	--Wailing Caverns
-	L["Ebru <Disciple of Naralex>"] = "厄布魯 <納拉雷克斯的侍徒>"; -- 5768
-	L["Nalpak <Disciple of Naralex>"] = "納爾派克 <納拉雷克斯的侍徒>"; -- 5767
-	L["Muyoh <Disciple of Naralex>"] = "繆幽 <納拉雷克斯的侍徒>";  -- 3678
-	L["Naralex"] = "納拉雷克斯"; -- 3679
-
-	--Zul'Farrak
-	L["Chief Engineer Bilgewhizzle <Gadgetzan Water Co.>"] = "首席工程師膨嘯 <加基森水業公司>";
-	L["Mazoga's Spirit"] = "瑪柔伽的靈魂";
-	L["Tran'rek"] = "特蘭雷克";
-	L["Weegli Blastfuse"] = "維格利";
-	L["Raven"] = "拉文";
-	L["Elder Wildmane"] = "蠻鬃長者";
-
+	L["Noxxion"] = "諾克賽恩"
+	L["Razorlash"] = "銳刺鞭笞者"
+	L["Lord Vyletongue"] = "維利塔恩領主"
+	L["Celebras the Cursed"] = "被詛咒的塞雷布拉斯"
+	L["Landslide"] = "蘭斯利德"
+	L["Tinkerer Gizlock"] = "技工吉茲洛克"
+	L["Rotgrip"] = "洛特格里普"
+	L["Princess Theradras"] = "瑟萊德絲公主"
+		
+	L["Elder Splitrock"] = "劈石長者"
+	L["Celebras the Redeemed"] = "贖罪的塞雷布拉斯"
+		
+	--OnyxiasLair	
+	L["Drakefire Amulet"] = "龍火護符"
+	L["Onyxian Warders"] = "奧妮克希亞守衛"
+	L["Whelp Eggs"] = "雛龍蛋"
+	L["Onyxia"] = "奧妮克希亞"
+		
+	--Ragefire Chasm	
+	L["Taragaman the Hungerer"] = "『飢餓者』塔拉加曼"
+	L["Oggleflint"] = "奧格弗林特"
+	L["Jergosh the Invoker"] = "『塑能師』耶戈什"
+	L["Bazzalan"] = "巴札蘭"
+		
+	L["Commander Bagran"] = "指揮官巴格仁"
+	L["Invoker Xorenth"] = "塑能師索倫斯"
+	L["Scout Cage"] = "斥侯牢籠"
+		
+	--Razorfen Downs	
+	L["Tuten'kash"] = "圖特卡什"
+	L["Plaguemaw the Rotting"] = "腐爛的普雷莫爾"
+	L["Mordresh Fire Eye"] = "火眼莫德雷斯"
+	L["Ragglesnout"] = "拉戈斯諾特"
+	L["Glutton"] = "暴食者"
+	L["Amnennar the Coldbringer"] = "『寒冰使者』亞門納爾"
+	L["Koristrasza"] = "柯莉史卓莎"
+	L["Amnennar's Phylactery"] = "亞門納爾的骨匣"
+		
+	--Razorfen Kraul	
+	L["Roogug"] = "魯古格"
+	L["Aggem Thorncurse"] = "阿葛金‧棘咒"
+	L["Death Speaker Jargba"] = "亡語者賈格巴"
+	L["Overlord Ramtusk"] = "拉姆塔斯主宰"
+	L["Agathelos the Raging"] = "暴怒的阿迦賽羅斯"
+	L["Charlga Razorflank"] = "卡爾加·刺肋"
+	L["Auld Stonespire"] = "奧爾德·石塔"
+	L["Spirit of Agamaggan <Ancient>"] = "阿迦瑪甘之靈 <先祖>"
+		
+	--Ruins of Ahn'Qiraj	
+	L["Kurinnaxx"] = "庫林納克斯"
+	L["General Rajaxx"] = "拉賈克斯將軍"
+	L["Moam"] = "莫阿姆"
+	L["Buru the Gorger"] = "『暴食者』布魯"
+	L["Ayamiss the Hunter"] = "『狩獵者』阿亞米斯"
+	L["Ossirian the Unscarred"] = "『無疤者』奧斯里安"
+	L["Four Kaldorei Elites"] = "四個卡多雷精英"
+	L["Captain Qeez"] = "奎茲上尉"
+	L["Captain Tuubid"] = "圖畢德上尉"
+	L["Captain Drenn"] = "德蘭上尉"
+	L["Captain Xurrem"] = "瑟瑞姆上尉"
+	L["Major Yeggeth"] = "葉吉斯少校"
+	L["Major Pakkon"] = "帕康少校"
+	L["Colonel Zerran"] = "澤朗上校"
+	L["Safe Room"] = "安全的空間"
+		
+	--Shadowfang Keep	
+	L["Rethilgore"] = "雷希戈爾"
+	L["Fel Steed"] = "地獄戰馬"
+	L["Shadow Charger"] = "暗影軍馬"
+	L["Razorclaw the Butcher"] = "屠夫拉佐克勞"
+	L["Baron Silverlaine"] = "席瓦萊恩男爵"
+	L["Commander Springvale"] = "指揮官斯普林瓦爾"
+	L["Odo the Blindwatcher"] = "『盲眼守衛』奧杜"
+	L["Deathsworn Captain"] = "死亡誓言者隊長"
+	L["Fenrus the Devourer"] = "『吞噬者』芬魯斯"
+	L["Wolf Master Nandos"] = "狼王南杜斯"
+	L["Archmage Arugal"] = "大法師阿魯高"
+	L["Deathstalker Adamant"] = "亡靈哨兵阿達曼特"
+	L["Sorcerer Ashcrombe"] = "巫士阿克魯比"
+	L["Odo the Blindwatcher"] = "『盲眼守衛』奧杜"
+	L["Fel Steed"] = "地獄戰馬"
+		
+	--Temple of Ahn'Qiraj	
+	L["The Prophet Skeram"] = "預言者斯克拉姆"
+	L["Battleguard Sartura"] = "沙爾圖拉"
+	L["Fankriss the Unyielding"] = "不屈的范克里斯"
+	L["Princess Huhuran"] = "哈霍蘭公主"
+	L["Vek'lor"] = "維克洛爾大帝"
+	L["Vek'nilash"] = "維克尼拉斯大帝"
+	L["C'Thun"] = "克蘇恩"
+	L["Yauj"] = "亞爾基公主"
+	L["Vem"] = "維姆"
+	L["Kri"] = "克里領主"
+	L["Viscidus"] = "維希度斯"
+	L["Ouro"] = "奧羅"
+	L["Andorgos <Brood of Malygos>"] = "安多葛斯 <瑪里苟斯的後裔>"
+	L["Vethsera <Brood of Ysera>"] = "溫瑟拉 <伊瑟拉的後裔>"
+	L["Kandrostrasz <Brood of Alexstrasza>"] = "坎多斯塔茲 <雅立史卓莎的後裔>"
+	L["Arygos"] = "亞雷戈斯"
+	L["Caelestrasz"] = "凱雷斯特拉茲"
+	L["Merithra of the Dream"] = "夢境之龍麥琳瑟拉"
+		
+	--Wailing Caverns	
+	L["Ebru <Disciple of Naralex>"] = "厄布魯 <納拉雷克斯的侍徒>"
+	L["Nalpak <Disciple of Naralex>"] = "納爾派克 <納拉雷克斯的侍徒>"
+	L["Muyoh <Disciple of Naralex>"] = "繆幽 <納拉雷克斯的侍徒>"
+	L["Naralex"] = "納拉雷克斯"
+		
+	L["Kresh"] = "克雷什"
+	L["Lady Anacondra"] = "安娜科德拉"
+	L["Lord Cobrahn"] = "考布萊恩領主"
+	L["Deviate Faerie Dragon"] = "變異精靈龍"
+	L["Lord Pythas"] = "皮薩斯領主"
+	L["Skum"] = "斯卡姆"
+	L["Lord Serpentis"] = "瑟芬迪斯領主"
+	L["Verdan the Everliving"] = "永生的沃爾丹"
+	L["Kresh"] = "克雷什"
+	L["Mutanus the Devourer"] = "『吞噬者』穆坦努斯"
+	L["Mad Magglish"] = "瘋狂的馬格利什"
+	L["Trigore the Lasher"] = "『鞭笞者』特里高雷"
+	L["Boahn"] = "博艾恩"
+		
+	--Zul'Farrak	
+	L["Antu'sul"] = "安圖蘇爾"
+	L["Theka the Martyr"] = "『殉教者』塞卡"
+	L["Witch Doctor Zum'rah"] = "巫醫·祖穆拉恩"
+	L["Nekrum Gutchewer"] = "耐克魯姆"
+	L["Shadowpriest Sezz'ziz"] = "暗影祭司塞瑟斯"
+	L["Sergeant Bly"] = "布萊中士"
+	L["Hydromancer Velratha"] = "水占師維蕾薩"
+	L["Dustwraith"] = "灰塵怨靈"
+	L["Chief Ukorz Sandscalp"] = "烏克茲·沙頂"
+	L["Ruuzlu"] = "盧茲魯"
+	L["Zerillis"] = "澤雷利斯"
+	L["Sandarr Dunereaver"] = "杉達爾·沙掠者"
+	L["Chief Engineer Bilgewhizzle <Gadgetzan Water Co.>"] = "首席工程師膨嘯 <加基森水業公司>"
+	L["Mazoga's Spirit"] = "瑪柔伽的靈魂"
+	L["Tran'rek"] = "特蘭雷克"
+	L["Weegli Blastfuse"] = "維格利"
+	L["Raven"] = "拉文"
+	L["Elder Wildmane"] = "蠻鬃長者"
+		
+	--Naxxramas	
+	L["Archmage Tarsis Kir-Moldir"] = "大法師塔希斯·克摩地爾"
+	L["Mr. Bigglesworth"] = "畢勾沃斯先生"
+	L["Abomination Wing"] = "構造區"
+	L["Patchwerk"] = "縫補者"
+	L["Grobbulus"] = "葛羅巴斯"
+	L["Gluth"] = "古魯斯"
+	L["Thaddius"] = "泰迪斯"
+	L["Spider Wing"] = "蜘蛛區"
+	L["Anub'Rekhan"] = "阿努比瑞克漢"
+	L["Grand Widow Faerlina"] = "大寡婦費琳娜"
+	L["Maexxna"] = "梅克絲娜"
+	L["Deathknight Wing"] = "軍事區"
+	L["Instructor Razuvious"] = "講師拉祖維斯"
+	L["Gothik the Harvester"] = "『收割者』高希"
+	L["The Four Horsemen"] = "四騎士"
+	L["Thane Korth'azz"] = "寇斯艾茲族長"
+	L["Lady Blaumeux"] = "布洛莫斯女士"
+	L["Highlord Mograine <The Ashbringer>"] = "大領主莫格萊尼 <灰燼使者>"
+	L["Sir Zeliek"] = "札里克爵士"
+	L["Four Horsemen Chest"] = "四騎士箱子"
+	L["Plague Wing"] = "瘟疫區"
+	L["Noth the Plaguebringer"] = "『瘟疫使者』諾斯"
+	L["Heigan the Unclean"] = "『骯髒者』海根"
+	L["Loatheb"] = "憎恨者"
+	L["Frostwyrm Lair"] = "冰霜巨龍的巢穴"
+	L["Sapphiron"] = "薩菲隆"
+	L["Kel'Thuzad"] = "科爾蘇加德"
+	
 --****************************
 -- Eastern Kingdoms Instances (Classic)
 --****************************
 
 	--Blackrock Depths
-	L["The Black Anvil"] = "黑鐵砧";
-	L["The Vault"] = "地窖";
-	L["Watchman Doomgrip"] = "衛兵杜格瑞普";
-	L["Elder Morndeep"] = "深晨長者";
-	L["Schematic: Field Repair Bot 74A"] = "結構圖:戰地修理機器人74A型";
-	L["Private Rocknot"] = "羅克諾特下士";
-	L["Mistress Nagmara"] = "娜瑪拉小姐";
-	L["Jalinda Sprig <Morgan's Militia>"] = "加琳達 <摩根的民兵>";
-	L["Oralius <Morgan's Militia>"] = "奧拉留斯 <摩根的民兵>";
-	L["Thal'trak Proudtusk <Kargath Expeditionary Force>"] = "薩特拉克·長齒 <卡加斯遠征軍>";
-	L["Galamav the Marksman <Kargath Expeditionary Force>"] = "『神射手』賈拉瑪弗 <卡加斯遠征軍>";
-	L["Maxwort Uberglint"] = "麥克斯沃特·尤柏格林";
-	L["Tinkee Steamboil"] = "丁奇·斯迪波爾";
-	L["Yuka Screwspigot <Engineering Supplies>"] = "尤卡·斯庫比格特 <工程學供應商>";
-	L["Abandonded Mole Machine"] = "棄置的鑽地機";
-	L["Kevin Dawson <Morgan's Militia>"] = "凱文·多森 <摩根的民兵>";
-	L["Lexlort <Kargath Expeditionary Force>"] = "雷克斯洛特 <卡加斯遠征軍>";
-	L["Prospector Seymour <Morgan's Militia>"] = "勘查員希摩爾 <摩根的民兵>";
-	L["Razal'blade <Kargath Expeditionary Force>"] = "拉札布雷德 <卡加斯遠征軍>";
-	L["The Shadowforge Lock"] = "暗爐之鎖";
-	L["Mayara Brightwing <Morgan's Militia>"] = "瑪亞拉·亮翼 <摩根的民兵>";
-	L["Hierophant Theodora Mulvadania <Kargath Expeditionary Force>"] = "祭師塞朵拉·穆瓦丹尼 <卡加斯遠征軍>";
-	L["Lokhtos Darkbargainer <The Thorium Brotherhood>"] = "羅克圖斯·暗契 <瑟銀兄弟會>";
-	L["Mountaineer Orfus <Morgan's Militia>"] = "巡山人歐弗斯 <摩根的民兵>";
-	L["Thunderheart <Kargath Expeditionary Force>"] = "桑德哈特 <卡加斯遠征軍>";
-	L["Marshal Maxwell <Morgan's Militia>"] = "麥斯威爾元帥 <摩根的民兵>";
-	L["Warlord Goretooth <Kargath Expeditionary Force>"] = "督軍高圖斯 <卡加斯遠征軍>";
-	L["The Black Forge"] = "黑熔爐";
-	L["Core Fragment"] = "熔核碎片";
-	L["Shadowforge Brazier"] = "暗爐火盆";
-
-	--Blackrock Spire (Lower)
-	L["Urok's Tribute Pile"] = "烏洛克的貢品堆";
-	L["Acride <Scarshield Legion>"] = "裂盾滲透者 <裂盾軍團>";
-	L["Elder Stonefort"] = "石壘長者";
-	L["Roughshod Pike"] = "尖銳長矛";
-
-	--Blackwing Lair
-	L["Orb of Domination"] = "統禦寶珠";
-	L["Master Elemental Shaper Krixix"] = "大元素師克里希克";
-
-	--Gnomeregan
-	L["Chomper"] = "咀嚼者";
-	L["Blastmaster Emi Shortfuse"] = "爆破專家艾米·短線";
-	L["Murd Doc <S.A.F.E.>"] = "哮·狼的護腿 <S.A.F.E.>";
-	L["Tink Sprocketwhistle <Engineering Supplies>"] = "丁克·鐵哨 <工程學供應商>";
-	L["The Sparklematic 5200"] = "超級清潔器5200型！";
-	L["Mail Box"] = "鎖甲箱";
-	L["B.E Barechus <S.A.F.E.>"] = "怪怪頭 <S.A.F.E.>";
-	L["Face <S.A.F.E.>"] = "小白臉 <S.A.F.E.>";
-	L["Hann Ibal <S.A.F.E.>"] = "漢·泥巴 <S.A.F.E.>";
-
-	--Molten Core
-
-	--Stratholme - Crusader's Square
-	L["Crusade Commander Eligor Dawnbringer <Brotherhood of the Light>"] = "指揮官艾利格·黎明使者 <聖光兄弟會>";
-	L["Master Craftsman Wilhelm <Brotherhood of the Light>"] = "工匠大師維爾海姆 <聖光兄弟會>";
-	L["Packmaster Stonebruiser <Brotherhood of the Light>"] = "軍需籌備官石漢 <聖光兄弟會>";
-	L["Stratholme Courier"] = "斯坦索姆信差";
-	L["Fras Siabi's Postbox"] = "弗拉斯·希亞比的郵箱";
-	L["King's Square Postbox"] = "國王廣場郵箱";
-	L["Festival Lane Postbox"] = "節日小道郵箱";
-	L["Elder Farwhisper"] = "遙語長者";
-	L["Market Row Postbox"] = "市場郵箱";
-
-	--Stratholme - The Gauntlet
-	L["Elders' Square Postbox"] = "長者廣場郵箱";
-	L["Archmage Angela Dosantos <Brotherhood of the Light>"] = "大法師安琪拉·多桑杜 <聖光兄弟會>";
-	L["Crusade Commander Korfax <Brotherhood of the Light>"] = "『聖光勇士』柯菲斯 <聖光兄弟會>";
-
-	--The Stockade
-	L["Rifle Commander Coe"] = "步槍指揮官寇伊";
-	L["Warden Thelwater"] = "典獄官塞爾沃特";
-	L["Nurse Lillian"] = "護士莉蓮";
-
-	--The Sunken Temple
-	L["Lord Itharius"] = "伊薩里奧斯領主";
-	L["Elder Starsong"] = "星歌長者";
-
-	--Uldaman
-	L["Baelog's Chest"] = "巴爾洛戈的箱子";
-	L["Kand Sandseeker <Explorer's League>"] = "坎德·覓沙 <探險者協會>";
-	L["Lead Prospector Durdin <Explorer's League>"] = "首席勘察員杜爾丁 <探險者協會>";
-	L["Olga Runesworn <Explorer's League>"] = "歐嘉·符誓 <探險者協會>";
-	L["Aoren Sunglow <The Reliquary>"] = "安歐連·日耀";
-	L["High Examiner Tae'thelan Bloodwatcher <The Reliquary>"] = "高階審查員泰瑟連·血腥看守者 <聖匣守護者>";
-	L["Lidia Sunglow <The Reliquary>"] = "莉蒂雅·日耀";
-	L["Ancient Treasure"] = "古代寶藏";
-	L["The Discs of Norgannon"] = "諾甘農圓盤";
-
+	L["The Black Anvil"] = "黑鐵砧"
+	L["The Vault"] = "地窖"
+	L["Watchman Doomgrip"] = "衛兵杜格瑞普"
+	L["Elder Morndeep"] = "深晨長者"
+	L["Schematic: Field Repair Bot 74A"] = "結構圖:戰地修理機器人74A型"
+	L["Private Rocknot"] = "羅克諾特下士"
+	L["Mistress Nagmara"] = "娜瑪拉小姐"
+	L["Jalinda Sprig <Morgan's Militia>"] = "加琳達 <摩根的民兵>"
+	L["Oralius <Morgan's Militia>"] = "奧拉留斯 <摩根的民兵>"
+	L["Thal'trak Proudtusk <Kargath Expeditionary Force>"] = "薩特拉克·長齒 <卡加斯遠征軍>"
+	L["Galamav the Marksman <Kargath Expeditionary Force>"] = "『神射手』賈拉瑪弗 <卡加斯遠征軍>"
+	L["Maxwort Uberglint"] = "麥克斯沃特·尤柏格林"
+	L["Tinkee Steamboil"] = "丁奇·斯迪波爾"
+	L["Yuka Screwspigot <Engineering Supplies>"] = "尤卡·斯庫比格特 <工程學供應商>"
+--	L["Abandonded Mole Machine"] = "Abandonded Mole Machine"
+	L["Kevin Dawson <Morgan's Militia>"] = "凱文·多森 <摩根的民兵>"
+	L["Lexlort <Kargath Expeditionary Force>"] = "雷克斯洛特 <卡加斯遠征軍>"
+	L["Prospector Seymour <Morgan's Militia>"] = "勘查員希摩爾 <摩根的民兵>"
+	L["Razal'blade <Kargath Expeditionary Force>"] = "拉札布雷德 <卡加斯遠征軍>"
+	L["The Shadowforge Lock"] = "暗爐之鎖"
+	L["Mayara Brightwing <Morgan's Militia>"] = "瑪亞拉·亮翼 <摩根的民兵>"
+	L["Hierophant Theodora Mulvadania <Kargath Expeditionary Force>"] = "祭師塞朵拉·穆瓦丹尼 <卡加斯遠征軍>"
+	L["Lokhtos Darkbargainer <The Thorium Brotherhood>"] = "羅克圖斯·暗契 <瑟銀兄弟會>"
+	L["Mountaineer Orfus <Morgan's Militia>"] = "巡山人歐弗斯 <摩根的民兵>"
+	L["Thunderheart <Kargath Expeditionary Force>"] = "桑德哈特 <卡加斯遠征軍>"
+	L["Marshal Maxwell <Morgan's Militia>"] = "麥斯威爾元帥 <摩根的民兵>"
+	L["Warlord Goretooth <Kargath Expeditionary Force>"] = "督軍高圖斯 <卡加斯遠征軍>"
+	L["The Black Forge"] = "黑熔爐"
+	L["Core Fragment"] = "熔核碎片"
+	L["Shadowforge Brazier"] = "暗爐火盆"
+	L["Grizzle"] = "格里茲爾"
+	L["Ring of Law"] = "秩序競技場"
+	L["Summoner's Tomb"] = "召喚師之墓"
+	L["Kharan Mighthammer"] = "卡蘭·巨錘"
+	L["Commander Gor'shak"] = "指揮官哥沙克"
+	L["Marshal Windsor"] = "溫德索爾元帥"
+	L["High Interrogator Gerstahn"] = "高階審問者格斯塔恩"
+	L["Anub'shiah"] = "阿努希爾"
+	L["Eviscerator"] = "剜眼者"
+	L["Gorosh the Dervish"] = "『修行者』高羅什"
+	L["Hedrum the Creeper"] = "『爬行者』赫杜姆"
+	L["Ok'thor the Breaker"] = "『破壞者』奧科索爾"
+	L["Theldren"] = "塞爾德林"
+	L["Lefty"] = "左撇"
+	L["Malgen Longspear"] = "瑪根·長矛"
+	L["Gnashjaw"] = "碎顎"
+	L["Rotfang"] = "腐牙"
+	L["Va'jashni"] = "瓦加什尼"
+	L["Houndmaster Grebmar"] = "馴犬者格雷布瑪爾"
+	L["High Justice Grimstone"] = "裁決者格里斯通"
+	L["Monument of Franclorn Forgewright"] = "弗蘭克羅恩·鑄鐵的雕像"
+	L["Pyromancer Loregrain"] = "控火師羅格雷恩"
+	L["Warder Stilgiss"] = "守衛斯迪爾基斯"
+	L["Verek"] = "維雷克"
+	L["Fineous Darkvire"] = "弗諾斯·達克維爾"
+	L["Lord Incendius"] = "伊森迪奧斯領主"
+	L["Bael'Gar"] = "貝爾加"
+	L["General Angerforge"] = "安格弗將軍"
+	L["Golem Lord Argelmach"] = "魔像領主阿格曼奇"
+	L["The Grim Guzzler"] = "黑鐵酒吧"
+	L["Hurley Blackbreath"] = "霍爾雷·黑鬚"
+	L["Lokhtos Darkbargainer"] = "羅克圖斯·暗契"
+	L["Mistress Nagmara"] = "娜瑪拉小姐"
+	L["Phalanx"] = "法拉克斯"
+	L["Plugger Spazzring"] = "普拉格"
+	L["Ribbly Screwspigot"] = "雷布里·斯庫比格特"
+	L["Ambassador Flamelash"] = "弗萊拉斯大使"
+	L["Panzor the Invincible"] = "無敵的潘佐爾"
+	L["The Lyceum"] = "講學廳"
+	L["Magmus"] = "瑪格姆斯"
+	L["Emperor Dagran Thaurissan"] = "達格蘭·索瑞森大帝"
+	L["Princess Moira Bronzebeard"] = "茉艾拉·銅鬚公主"
+	L["Overmaster Pyron"] = "征服者派隆"
+	--Blackrock Spire (Lower)	
+	L["Highlord Omokk"] = "歐莫克大王"
+	L["Shadow Hunter Vosh'gajin"] = "暗影獵手沃許加斯"
+	L["War Master Voone"] = "指揮官沃恩"
+	L["Mother Smolderweb"] = "煙網蛛后"
+	L["Urok Doomhowl"] = "烏洛克"
+	L["Quartermaster Zigris"] = "軍需官茲格雷斯"
+	L["Gizrul the Slavener"] = "『奴役者』基茲盧爾"
+	L["Halycon"] = "哈雷肯"
+	L["Overlord Wyrmthalak"] = "維姆薩拉克主宰"
+	L["Urok's Tribute Pile"] = "烏洛克的貢品堆"
+	L["Acride <Scarshield Legion>"] = "裂盾滲透者 <裂盾軍團>"
+	L["Elder Stonefort"] = "石壘長者"
+	L["Roughshod Pike"] = "尖銳長矛"
+	L["Vaelan"] = "維埃蘭"
+	L["Warosh"] = "瓦羅什"
+	L["Spirestone Lord Magus"] = "尖石首席魔導師"
+	L["Mor Grayhoof"] = "莫爾·灰蹄"
+	L["Bijou's Belongings"] = "比修的裝置"
+	L["Bannok Grimaxe"] = "班諾克·巨斧"
+	L["Crystal Fang"] = "水晶之牙"
+	L["Urok's Tribute Pile"] = "烏洛克的貢品堆"
+	L["Ghok Bashguud"] = "霍克·巴什古德"
+	L["Burning Felguard"] = "燃燒惡魔守衛"
+	L["Bijou"] = "比修"
+	L["Roughshod Pike"] = "尖銳長矛"
+	L["Fifth Mosh'aru Tablet"] = "第五塊摩沙魯石板"
+	L["Sixth Mosh'aru Tablet"] = "第六塊摩沙魯石板"
+	L["Human Remains"] = "人類殘骸"
+	L["Unfired Plate Gauntlets"] = "未淬火的鎧甲護手"
+		
+		
+	--Blackrock Spire (Upper)	
+	L["Pyroguard Emberseer"] = "烈焰衛士艾博希爾"
+	L["Warchief Rend Blackhand"] = "大酋長雷德·黑手"
+	L["Gyth"] = "蓋斯"
+	L["The Beast"] = "比斯巨獸"
+	L["General Drakkisath"] = "達基薩斯將軍"
+	L["Father Flame"] = "烈焰之父"
+	L["Awbee"] = "奧比"
+	L["Finkle Einhorn"] = "芬克·恩霍爾"
+	L["Doomrigger's Clasp"] = "末日扣環"
+	L["Drakkisath's Brand"] = "達基薩斯徽記"
+		
+	--Blackwing Lair	
+	L["Razorgore the Untamed"] = "狂野的拉佐格爾"
+	L["Vaelastrasz the Corrupt"] = "墮落的瓦拉斯塔茲"
+	L["Broodlord Lashlayer"] = "龍領主勒西雷爾"
+	L["Firemaw"] = "費爾默"
+	L["Ebonroc"] = "埃博諾克"
+	L["Flamegor"] = "弗萊格爾"
+	L["Chromaggus"] = "克洛瑪古斯"
+	L["Nefarian"] = "奈法利安"
+	L["Orb of Domination"] = "統禦寶珠"
+	L["Master Elemental Shaper Krixix"] = "大元素師克里希克"
+		
+	--Deadmines	
+	L["Rhahk'Zor"] = "拉克佐"
+	L["Miner Johnson"] = "礦工約翰森"
+	L["Sneed"] = "斯尼德"
+	L["Sneed's Shredder"] = "斯尼德的伐木機"
+	L["Gilnid"] = "基爾尼格"
+	L["Mr. Smite"] = "重拳先生"
+	L["Captain Greenskin"] = "綠皮隊長"
+	L["Edwin VanCleef"] = "艾德溫·范克里夫"
+	L["Cookie"] = "廚師"
+	L["Defias Gunpowder"] = "迪菲亞火藥"
+		
+	--Gnomeregan	
+	L["Grubbis"] = "格魯比斯"
+	L["Viscous Fallout"] = "粘性輻射塵"
+	L["Electrocutioner 6000"] = "電刑器6000型"
+	L["Crowd Pummeler 9-60"] = "群體打擊者9-60"
+	L["Dark Iron Ambassador"] = "黑鐵大使"
+	L["Mekgineer Thermaplugg"] = "麥克尼爾·瑟瑪普拉格"
+	L["Chomper"] = "咀嚼者"
+	L["Blastmaster Emi Shortfuse"] = "爆破專家艾米·短線"
+	L["Murd Doc <S.A.F.E.>"] = "哮·狼的護腿 <S.A.F.E.>"
+	L["Tink Sprocketwhistle <Engineering Supplies>"] = "丁克·鐵哨 <工程學供應商>"
+	L["The Sparklematic 5200"] = "超級清潔器5200型！"
+	L["Mail Box"] = "鎖甲箱"
+	L["B.E Barechus <S.A.F.E.>"] = "怪怪頭 <S.A.F.E.>"
+	L["Face <S.A.F.E.>"] = "小白臉 <S.A.F.E.>"
+	L["Hann Ibal <S.A.F.E.>"] = "漢·泥巴 <S.A.F.E.>"
+		
+	--Molten Core	
+	L["Lucifron"] = "魯西弗隆"
+	L["Magmadar"] = "瑪格曼達"
+	L["Gehennas"] = "基赫納斯"
+	L["Garr"] = "加爾"
+	L["Shazzrah"] = "沙斯拉爾"
+	L["Baron Geddon"] = "迦頓男爵"
+	L["Golemagg the Incinerator"] = "『焚化者』古雷曼格"
+	L["Sulfuron Harbinger"] = "薩弗隆先驅者"
+	L["Majordomo Executus"] = "管理者埃克索圖斯"
+	L["Ragnaros"] = "拉格納羅斯"
+		
+	--Scholomance	
+	L["Kirtonos the Herald"] = "傳令官基爾圖諾斯"
+	L["Jandice Barov"] = "詹迪斯·巴羅夫"
+	L["Rattlegore"] = "血骨傀儡"
+	L["Marduk Blackpool"] = "馬杜克·布萊克波爾"
+	L["Vectus"] = "維克圖斯"
+	L["Ras Frostwhisper"] = "萊斯·霜語"
+	L["Instructor Malicia"] = "講師瑪麗希亞"
+	L["Doctor Theolen Krastinov"] = "瑟爾林·卡斯迪諾夫教授"
+	L["Lorekeeper Polkelt"] = "博學者普克爾特"
+	L["The Ravenian"] = "拉文尼亞"
+	L["Lord Alexei Barov"] = "阿萊克斯·巴羅夫領主"
+	L["Lady Illucia Barov"] = "伊露希亞·巴羅夫女士"
+	L["Darkmaster Gandling"] = "黑暗院長加丁"
+		
+	--Stratholme - Crusader's Square	
+	L["Fras Siabi"] = "弗拉斯·希亞比"
+	L["Skul"] = "斯庫爾"
+	L["Hearthsinger Forresten"] = "弗雷斯特恩"
+	L["The Unforgiven"] = "不可寬恕者"
+	L["Postmaster Malown"] = "郵差瑪羅恩"
+	L["Timmy the Cruel"] = "悲慘的提米"
+	L["Malor the Zealous"] = "狂熱的瑪洛爾"
+	L["Cannon Master Willey"] = "砲手威利"
+	L["Crimson Hammersmith"] = "紅衣鑄錘師"
+	L["Archivist Galford"] = "檔案管理員加爾福特"
+	L["Balnazzar"] = "巴納札爾"
+	L["Magistrate Barthilas"] = "巴瑟拉斯鎮長"
+	L["Stonespine"] = "石脊"
+	L["Nerub'enkan"] = "奈幽布恩坎"
+	L["Black Guard Swordsmith"] = "黑衣守衛鑄劍師"
+	L["Maleki the Pallid"] = "蒼白的瑪勒基"
+	L["Baroness Anastari"] = "安娜絲塔麗男爵夫人"
+	L["Ramstein the Gorger"] = "『暴食者』拉姆斯登"
+	L["Baron Rivendare"] = "瑞文戴爾男爵"
+	L["Crusade Commander Eligor Dawnbringer <Brotherhood of the Light>"] = "指揮官艾利格·黎明使者 <聖光兄弟會>"
+	L["Master Craftsman Wilhelm <Brotherhood of the Light>"] = "工匠大師維爾海姆 <聖光兄弟會>"
+	L["Packmaster Stonebruiser <Brotherhood of the Light>"] = "軍需籌備官石漢 <聖光兄弟會>"
+	L["Stratholme Courier"] = "斯坦索姆信差"
+	L["Fras Siabi's Postbox"] = "弗拉斯·希亞比的郵箱"
+	L["King's Square Postbox"] = "國王廣場郵箱"
+	L["Festival Lane Postbox"] = "節日小道郵箱"
+	L["Elder Farwhisper"] = "遙語長者"
+	L["Market Row Postbox"] = "市場郵箱"
+		
+	--Stratholme - The Gauntlet	
+	L["Elders' Square Postbox"] = "長者廣場郵箱"
+	L["Archmage Angela Dosantos <Brotherhood of the Light>"] = "大法師安琪拉·多桑杜 <聖光兄弟會>"
+	L["Crusade Commander Korfax <Brotherhood of the Light>"] = "『聖光勇士』柯菲斯 <聖光兄弟會>"
+		
+	--The Stockade	
+	L["Targorr the Dread"] = "可怕的塔高爾"
+	L["Kam Deepfury"] = "卡姆·深怒"
+	L["Hamhock"] = "哈姆霍克"
+	L["Dextren Ward"] = "迪克斯特·瓦德"
+	L["Bazil Thredd"] = "巴基爾·斯瑞德"
+	L["Bruegal Ironknuckle"] = "布魯戈·艾爾克納寇"
+	L["Rifle Commander Coe"] = "步槍指揮官寇伊"
+	L["Warden Thelwater"] = "典獄官塞爾沃特"
+	L["Nurse Lillian"] = "護士莉蓮"
+		
+	--The Sunken Temple	
+	L["Atal'ai Defenders"] = "阿塔萊捍衛者"
+	L["Atal'alarion"] = "阿塔拉利恩"
+	L["Dreamscythe"] = "德姆塞卡爾"
+	L["Weaver"] = "德拉維沃爾"
+	L["Jammal'an the Prophet"] = "『預言者』迦瑪蘭"
+	L["Ogom the Wretched"] = "可悲的奧戈姆"
+	L["Morphaz"] = "摩弗拉斯"
+	L["Hazzas"] = "哈札斯"
+	L["Avatar of Hakkar"] = "哈卡的化身"
+	L["Shade of Eranikus"] = "伊蘭尼庫斯的陰影"
+	L["Lord Itharius"] = "伊薩里奧斯領主"
+	L["Elder Starsong"] = "星歌長者"
+	L["Jade"] = "玉龍"
+	L["Kazkaz the Unholy"] = "邪惡的卡薩卡茲"
+	L["Zekkis"] = "澤基斯"
+	L["Altar of Hakkar"] = "哈卡祭壇"
+	L["Spawn of Hakkar"] = "哈卡的後代"
+		
+	-- Scarlet Monastery	
+	L["Interrogator Vishas"] = "審訊員韋沙斯"
+	L["Bloodmage Thalnos"] = "血法師薩爾諾斯"
+	L["Azshir the Sleepless"] = "不眠的艾希爾"
+	L["Fallen Champion"] = "死靈勇士"
+	L["Ironspine"] = "鐵脊死靈"
+	L["Houndmaster Loksey"] = "馴犬者洛克希"
+	L["Arcanist Doan"] = "秘法師杜安"
+	L["Armory"] = "軍械室"
+	L["Herod"] = "赫洛德"
+	L["Scarlet Commander Mograine"] = "血色十字軍指揮官莫格萊尼"
+	L["High Inquisitor Whitemane"] = "高等審判官懷特邁恩"
+	L["High Inquisitor Fairbanks"] = "高等審判官法爾班克斯"
+		
+	L["Cathedral"] = "大教堂"
+	L["Armory"] = "軍械室"
+	L["Library"] = "圖書館"
+		
+	--Uldaman	
+	L["Revelosh"] = "魯維羅什"
+	L["Baelog"] = "巴爾洛戈"
+	L["Ironaya"] = "艾隆納亞"
+	L["Obsidian Sentinel"] = "黑曜石哨兵"
+	L["Ancient Stone Keeper"] = "古代的石頭看守者"
+	L["Galgann Firehammer"] = "加加恩·火錘"
+	L["Grimlok"] = "格瑞姆洛克"
+	L["Archaedas"] = "阿札達斯"
+		
+	L["Baelog's Chest"] = "巴爾洛戈的箱子"
+	L["Kand Sandseeker <Explorer's League>"] = "坎德·覓沙 <探險者協會>"
+	L["Lead Prospector Durdin <Explorer's League>"] = "首席勘察員杜爾丁 <探險者協會>"
+	L["Olga Runesworn <Explorer's League>"] = "歐嘉·符誓 <探險者協會>"
+	L["Aoren Sunglow <The Reliquary>"] = "安歐連·日耀"
+	L["High Examiner Tae'thelan Bloodwatcher <The Reliquary>"] = "高階審查員泰瑟連·血腥看守者 <聖匣守護者>"
+	L["Lidia Sunglow <The Reliquary>"] = "莉蒂雅·日耀"
+	L["Ancient Treasure"] = "古代寶藏"
+	L["The Discs of Norgannon"] = "諾甘農圓盤"
+	L["Conspicuous Urn"] = "顯眼的石罐"
+	L["Remains of a Paladin"] = "聖騎士的遺體"
+	L["Tablet of Will"] = "意志石板"
+	L["Shadowforge Cache"] = "暗影熔爐地窖"
+	L["Eric \"The Swift\""] = "『迅捷』艾利克"
+	L["Olaf"] = "奧拉夫"
+		
+	L["Hammertoe Grez"] = "鐵趾格雷茲"
+	L["Magregan Deepshadow"] = "馬格雷甘·深影"
+	L["Tablet of Ryun'Eh"] = "雷烏納石板"
+	L["Krom Stoutarm's Chest"] = "克羅姆·粗臂的箱子"
+	L["Garrett Family Chest"] = "加瑞特家族的寶箱"
+	L["Digmaster Shovelphlange"] = "挖掘專家舒爾弗拉格"
+		
+	-- Classic	
+	L["Lothos Riftwaker"] = "洛索斯·天痕"
+	L["Summoner's Tomb"] = "召喚師之墓"
+	L["Gnome"] = "Gnome/諾姆"
+	L["Kernobee"] = "克努比"
+	L["Alarm-a-bomb 2600"] = "警報炸彈2600型"
+	L["Matrix Punchograph 3005-B"] = "矩陣式打孔電腦 3005-B"
+	L["Matrix Punchograph 3005-C"] = "矩陣式打孔電腦 3005-C"
+	L["Matrix Punchograph 3005-D"] = "矩陣式打孔電腦 3005-D"
+	L["Vorrel Sengutz"] = "沃瑞爾·森古斯"
+	L["Blood of Innocents"] = "鑰匙: 無辜者之血"
+	L["Divination Scryer"] = "鑰匙: 預言水晶球"
+	L["The Deed to Southshore"] = "南海鎮地契"
+	L["The Deed to Tarren Mill"] = "塔倫米爾地契"
+	L["The Deed to Brill"] = "布瑞爾地契"
+	L["The Deed to Caer Darrow"] = "凱爾達隆地契"
+	L["Torch Lever"] = "火炬開關"
+--	L["Secret Chest"] = "Secret Chest"
+	L["Alchemy Lab"] = "煉金實驗室"
+	L["Jordan's Hammer"] = "喬丹的鐵錘"
+	L["Various Postbox Keys"] = "郵箱鑰匙"
+	L["Medallion of Faith"] = "瑪洛爾的保險箱"
+	L["Ysida Harmon"] = "亞希達·哈莫"
+	L["Crusaders' Square Postbox"] = "十字軍廣場郵箱"
+	L["3rd Box Opened: Postmaster Malown"] = "第三個郵箱被開啟: 郵差瑪羅恩"
+	L["Troll Minibosses"] = "巨魔小Boss"
+	L["Essence Font"] = "精華之泉"
+	L["Statue Activation Order"] = "雕像激活順序"
+	L["Lorgalis Manuscript"] = "洛迦里斯手稿"
+	L["Argent Guard Thaelrid"] = "銀色黎明守衛塞爾瑞德"
+	L["Fathom Core"] = "深淵之核"
+	L["J'eevee's Jar"] = "耶維爾的瓶子"
+	L["Skeletal Remains of Kariel Winthalus"] = "卡里爾·溫薩魯斯的骸骨"
+	--L["Veng (The Fifth Khan)"] = "Veng (The Fifth Khan)"
+	--L["Maraudos (The Fourth Khan)"] = "Maraudos (The Fourth Khan)"
+	L["Belnistrasz"] = "貝尼斯特拉茲"
+	L["Willix the Importer"] = "進口商威利克斯"
+	L["Heralath Fallowbrook"] = "赫爾拉斯·靜水"
+	L["Zul'Farrak Dead Hero"] = "祖爾法拉克陣亡英雄"
+	L["Walkway"] = "人行道"
 --@end-do-not-package@
 
 end

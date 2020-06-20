@@ -56,6 +56,7 @@ if L then
 	L["WC"] = "WC" -- Wailing Caverns
 	L["ZF"] = "ZF" -- Zul'Farrak
 	L["SM"] = "SM"
+	L["VC"] = "VC" -- Deadmines
 
 --************************************************
 -- Instance Entrance Maps
@@ -65,6 +66,7 @@ if L then
 	L["Orb of Command"] = "Orb of Command" 
 	L["Scarshield Quartermaster <Scarshield Legion>"] = "Scarshield Quartermaster <Scarshield Legion>"
 	L["The Behemoth"] = "The Behemoth"
+	L["Franclorn Forgewright"] = "Franclorn Forgewright"
 	
 	--Dire Maul (Entrance)
 	L["Dire Pool"] = "Dire Pool"
@@ -78,6 +80,11 @@ if L then
 	L["The Nameless Prophet"] = "The Nameless Prophet"
 	L["Cursed Centaur"] = "Cursed Centaur"
 	L["Kherrah"] = "Kherrah"
+
+	L["Kolk <The First Kahn>"] = "Kolk <The First Kahn>"
+	L["Gelk <The Second Kahn>"] = "Gelk <The Second Kahn>"
+	L["Magra <The Third Kahn>"] = "Magra <The Third Kahn>"
+	L["Cavindra"] = "Cavindra"
 
 	--Sunken Temple (Entrance)
 	L["Priestess Udum'bra"] = "Priestess Udum'bra"
@@ -139,7 +146,8 @@ if L then
 	L["Ironbark the Redeemed"] = "Ironbark the Redeemed"
 	L["Chase Begins"] = "Chase Begins"
 	L["Chase Ends"] = "Chase Ends"
-
+	L["Pimgib"] = "Pimgib"
+	L["Isalien"] = "Isalien"
 	--Dire Maul (North)
 	L["Guard Mol'dar"] = "Guard Mol'dar"
 	L["Stomper Kreeg"] = "Stomper Kreeg"
@@ -182,9 +190,11 @@ if L then
 	L["Tinkerer Gizlock"] = "Tinkerer Gizlock"
 	L["Rotgrip"] = "Rotgrip"
 	L["Princess Theradras"] = "Princess Theradras"
-
 	L["Elder Splitrock"] = "Elder Splitrock"
 	L["Celebras the Redeemed"] = "Celebras the Redeemed"
+	L["Veng (The Fifth Khan)"] = "Veng (The Fifth Khan)"
+	L["Maraudos (The Fourth Khan)"] = "Maraudos (The Fourth Khan)"
+	L["Meshlok the Harvester"] = "Meshlok the Harvester"
 
 	--OnyxiasLair
 	L["Drakefire Amulet"] = "Drakefire Amulet"
@@ -211,6 +221,7 @@ if L then
 	L["Amnennar the Coldbringer"] = "Amnennar the Coldbringer"
 	L["Koristrasza"] = "Koristrasza"
 	L["Amnennar's Phylactery"] = "Amnennar's Phylactery"
+	L["Henry Stern"] = "Henry Stern"
 
 	--Razorfen Kraul
 	L["Roogug"] = "Roogug"
@@ -221,6 +232,8 @@ if L then
 	L["Charlga Razorflank"] = "Charlga Razorflank"
 	L["Auld Stonespire"] = "Auld Stonespire"
 	L["Spirit of Agamaggan <Ancient>"] = "Spirit of Agamaggan <Ancient>"
+	L["Blind Hunter"] = "Blind Hunter"
+	L["Earthcaller Halmgar"] = "Earthcaller Halmgar"
 
 	--Ruins of Ahn'Qiraj
 	L["Kurinnaxx"] = "Kurinnaxx"
@@ -238,6 +251,7 @@ if L then
 	L["Major Pakkon"] = "Major Pakkon"
 	L["Colonel Zerran"] = "Colonel Zerran"
 	L["Safe Room"] = "Safe Room"
+	L["Lieutenant General Andorov"] = "Lieutenant General Andorov"
 	
 	--Shadowfang Keep
 	L["Rethilgore"] = "Rethilgore"
@@ -275,6 +289,12 @@ if L then
 	L["Arygos"] = "Arygos"
 	L["Caelestrasz"] = "Caelestrasz"
 	L["Merithra of the Dream"] = "Merithra of the Dream"
+	L["The Bug Family"] = "The Bug Family"
+	L["Lord Kri"] = "Lord Kri"
+	L["Princess Yauj"] = "Princess Yauj"
+	L["The Twin Emperors"] = "The Twin Emperors"
+	L["Emperor Vek'lor"] = "Emperor Vek'lor"
+	L["Emperor Vek'nilash"] = "Emperor Vek'nilash"
 
 	--Wailing Caverns
 	L["Ebru <Disciple of Naralex>"] = "Ebru <Disciple of Naralex>" -- 5768
@@ -295,6 +315,7 @@ if L then
 	L["Mad Magglish"] = "Mad Magglish"
 	L["Trigore the Lasher"] = "Trigore the Lasher"
 	L["Boahn"] = "Boahn"
+	L["Disciple of Naralex"] = "Disciple of Naralex"
 
 	--Zul'Farrak
 	L["Antu'sul"] = "Antu'sul"
@@ -315,7 +336,11 @@ if L then
 	L["Weegli Blastfuse"] = "Weegli Blastfuse"
 	L["Raven"] = "Raven"
 	L["Elder Wildmane"] = "Elder Wildmane"
-	
+	L["Murta Grimgut"] = "Murta Grimgut"
+	L["Oro Eyegouge"] = "Oro Eyegouge"
+	L["Sandfury Executioner"] = "Sandfury Executioner"
+	L["Gahz'rilla"] = "Gahz'rilla"
+
 	--Naxxramas
 	L["Archmage Tarsis Kir-Moldir"] = "Archmage Tarsis Kir-Moldir"
 	L["Mr. Bigglesworth"] = "Mr. Bigglesworth"
@@ -454,7 +479,8 @@ if L then
 	L["Sixth Mosh'aru Tablet"] = "Sixth Mosh'aru Tablet"
 	L["Human Remains"] = "Human Remains"
 	L["Unfired Plate Gauntlets"] = "Unfired Plate Gauntlets"
-
+	L["Spirestone Butcher"] = "Spirestone Butcher"
+	L["Spirestone Battle Lord"] = "Spirestone Battle Lord"
 
 	--Blackrock Spire (Upper)
 	L["Pyroguard Emberseer"] = "Pyroguard Emberseer"
@@ -467,6 +493,12 @@ if L then
 	L["Finkle Einhorn"] = "Finkle Einhorn"
 	L["Doomrigger's Clasp"] = "Doomrigger's Clasp"
 	L["Drakkisath's Brand"] = "Drakkisath's Brand"
+	L["Solakar Flamewreath"] = "Solakar Flamewreath"
+	L["Darkstone Tablet"] = "Darkstone Tablet"
+	L["Doomrigger's Coffer"] = "Doomrigger's Coffer"
+	L["Jed Runewatcher"] = "Jed Runewatcher"
+	L["Goraluk Anvilcrack"] = "Goraluk Anvilcrack"
+	L["Lord Valthalak"] = "Lord Valthalak"
 
 	--Blackwing Lair
 	L["Razorgore the Untamed"] = "Razorgore the Untamed"
@@ -481,6 +513,9 @@ if L then
 	L["Master Elemental Shaper Krixix"] = "Master Elemental Shaper Krixix"
 
 	--Deadmines
+	L["Marisa du'Paige"] = "Marisa du'Paige"
+	L["Brainwashed Noble"] = "Brainwashed Noble"
+	L["Foreman Thistlenettle"] = "Foreman Thistlenettle"
 	L["Rhahk'Zor"] = "Rhahk'Zor"
 	L["Miner Johnson"] = "Miner Johnson"
 	L["Sneed"] = "Sneed"
@@ -491,6 +526,13 @@ if L then
 	L["Edwin VanCleef"] = "Edwin VanCleef"
 	L["Cookie"] = "Cookie"
 	L["Defias Gunpowder"] = "Defias Gunpowder"
+
+	--Gnomeregan Ent
+	L["Transpolyporter"] = "Transpolyporter"
+	L["Sprok <Away Team>"] = "Sprok <Away Team>"
+	L["Matrix Punchograph 3005-A"] = "Matrix Punchograph 3005-A"
+	L["Namdo Bizzfizzle <Engineering Supplies>"] = "Namdo Bizzfizzle <Engineering Supplies>"
+	L["Techbot"] = "Techbot"
 
 	--Gnomeregan
 	L["Grubbis"] = "Grubbis"
@@ -535,6 +577,9 @@ if L then
 	L["Lord Alexei Barov"] = "Lord Alexei Barov"
 	L["Lady Illucia Barov"] = "Lady Illucia Barov"
 	L["Darkmaster Gandling"] = "Darkmaster Gandling"
+	L["Blood Steward of Kirtonos"] = "Blood Steward of Kirtonos"
+	L["Death Knight Darkreaver"] = "Death Knight Darkreaver"
+	L["Kormok"] = "Kormok"
 
 	--Stratholme - Crusader's Square
 	L["Fras Siabi"] = "Fras Siabi"
@@ -565,6 +610,10 @@ if L then
 	L["Festival Lane Postbox"] = "Festival Lane Postbox"
 	L["Elder Farwhisper"] = "Elder Farwhisper"
 	L["Market Row Postbox"] = "Market Row Postbox"
+	L["Grand Crusader Dathrohan"] = "Grand Crusader Dathrohan"
+	L["Sothos"] = "Sothos"
+	L["Jarien"] = "Jarien"
+	L["Aurius"] = "Aurius"
 
 	--Stratholme - The Gauntlet
 	L["Elders' Square Postbox"] = "Elders' Square Postbox"
@@ -651,6 +700,29 @@ if L then
 	L["Krom Stoutarm's Chest"] = "Krom Stoutarm's Chest"
 	L["Garrett Family Chest"] = "Garrett Family Chest"
 	L["Digmaster Shovelphlange"] = "Digmaster Shovelphlange"
+	
+	L["Annora <Master Enchanter>"] = "Annora <Master Enchanter>"
+	
+	-- Zul'Gurub
+	L["High Priestess Jeklik"] = "High Priestess Jeklik"
+	L["High Priest Venoxis"] = "High Priest Venoxis"
+	L["Zanza the Restless"] = "Zanza the Restless"
+	L["High Priestess Mar'li"] = "High Priestess Mar'li"
+	L["Bloodlord Mandokir"] = "Bloodlord Mandokir"
+	L["Ohgan"] = "Ohgan"
+	L["Edge of Madness"] = "Edge of Madness"
+	L["Gri'lek"] = "Gri'lek"
+	L["Hazza'rah"] = "Hazza'rah"
+	L["Renataki"] = "Renataki"
+	L["Wushoolay"] = "Wushoolay"
+	L["Gahz'ranka"] = "Gahz'ranka"
+	L["High Priest Thekal"] = "High Priest Thekal"
+	L["Zealot Zath"] = "Zealot Zath"
+	L["Zealot Lor'Khan"] = "Zealot Lor'Khan"
+	L["High Priestess Arlokk"] = "High Priestess Arlokk"
+	L["Jin'do the Hexxer"] = "Jin'do the Hexxer"
+	L["Hakkar"] = "Hakkar"
+	L["Muddy Churning Waters"] = "Muddy Churning Waters"
 
 	-- Classic
 	L["Lothos Riftwaker"] = "Lothos Riftwaker"

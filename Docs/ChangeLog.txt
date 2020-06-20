@@ -10,7 +10,8 @@ Copyright 2011 ~ 2020 - Arith Hsu, Atlas Team <atlas.addon at gmail dot com>
 
 v1.47.02 (Jun. 20, 2020)
 ------------------------
-- Update Atlas_GetBossName to load boss name from local lcoale files
+- Update Atlas_GetBossName to load boss name from local locale files
+- Translation update
 
 v1.47.01 (Jun. 20, 2020)
 ------------------------

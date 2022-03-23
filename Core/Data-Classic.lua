@@ -1423,7 +1423,10 @@ if (WoWClassicEra or WoWClassicTBC) then
 			ATLAS_DDL_CONTINENT_KALIMDOR,
 		},
 		[ATLAS_DDL_LEVEL] = {
-			ATLAS_DDL_LEVEL_UNDER30,
+			ATLAS_DDL_LEVEL_10TO20,
+			ATLAS_DDL_LEVEL_20TO40,
+			ATLAS_DDL_LEVEL_40TO60,
+			ATLAS_DDL_LEVEL_60TO70,
 		},
 		[ATLAS_DDL_EXPANSION] = {
 			ATLAS_DDL_EXPANSION_OLD,
@@ -1433,52 +1436,52 @@ if (WoWClassicEra or WoWClassicTBC) then
 	db.DropDownLayouts = {
 		[ATLAS_DDL_CONTINENT] = {
 			[ATLAS_DDL_CONTINENT_EASTERN] = {
-				"CL_BlackrockMountainEnt",		-- Classic WoW, Catalysm, Draenor
-				"CL_BlackrockDepths",		-- Classic WoW
-				"CL_BlackwingLair",		-- Classic WoW
-				"CL_TheDeadmines",			-- Classic WoW, Catalysm
-				"CL_TheDeadminesEnt",		-- Classic WoW, Catalysm
-				"CL_Gnomeregan",			-- Classic WoW
-				"CL_GnomereganEnt",		-- Classic WoW
-				"CL_BlackrockSpireLower",		-- Classic WoW
-				"CL_BlackrockSpireUpper",		-- Classic WoW
-				"CL_MoltenCore",			-- Classic WoW
-				"CL_ShadowfangKeep",		-- Classic WoW, Catalysm
-				"CL_Stratholme",			-- Classic WoW
-				"CL_TheStockade",			-- Classic WoW
-				"CL_TheSunkenTemple",		-- Classic WoW
-				"CL_TheSunkenTempleEnt",		-- Classic WoW
-				"CL_Uldaman",			-- Classic WoW
-				"CL_UldamanEnt",			-- Classic WoW
-				"CL_Scholomance",			-- Classic WoW
-				"CL_ScarletMonasteryEnt",		-- Classic WoW
-				"CL_SMArmory",			-- Classic WoW
-				"CL_SMCathedral",			-- Classic WoW
-				"CL_SMGraveyard",			-- Classic WoW
-				"CL_SMLibrary",			-- Classic WoW
+				"CL_BlackrockMountainEnt",
+				"CL_BlackrockDepths",
+				"CL_BlackwingLair",
+				"CL_TheDeadmines",
+				"CL_TheDeadminesEnt",
+				"CL_Gnomeregan",	
+				"CL_GnomereganEnt",
+				"CL_BlackrockSpireLower",
+				"CL_BlackrockSpireUpper",
+				"CL_MoltenCore",	
+				"CL_ShadowfangKeep",
+				"CL_Stratholme",	
+				"CL_TheStockade",	
+				"CL_TheSunkenTemple",
+				"CL_TheSunkenTempleEnt",
+				"CL_Uldaman",	
+				"CL_UldamanEnt",	
+				"CL_Scholomance",	
+				"CL_ScarletMonasteryEnt",
+				"CL_SMArmory",	
+				"CL_SMCathedral",	
+				"CL_SMGraveyard",	
+				"CL_SMLibrary",	
 				"CL_ZulGurub",
 				"CL_Naxxramas",
 			},
 			[ATLAS_DDL_CONTINENT_KALIMDOR] = {
-				"CL_BlackfathomDeepsA",		-- Classic WoW
-				"CL_BlackfathomDeepsB",		-- Classic WoW
-				"CL_BlackfathomDeepsC",		-- Classic WoW
-				"CL_BlackfathomDeepsEnt",		-- Classic WoW
-				"CL_DireMaulEast",			-- Classic WoW
-				"CL_DireMaulEnt",			-- Classic WoW
-				"CL_DireMaulNorth",		-- Classic WoW
-				"CL_DireMaulWest",			-- Classic WoW
-				"CL_Maraudon",			-- Classic WoW
-				"CL_MaraudonEnt",			-- Classic WoW
+				"CL_BlackfathomDeepsA",
+				"CL_BlackfathomDeepsB",
+				"CL_BlackfathomDeepsC",
+				"CL_BlackfathomDeepsEnt",
+				"CL_DireMaulEast",	
+				"CL_DireMaulEnt",	
+				"CL_DireMaulNorth",
+				"CL_DireMaulWest",	
+				"CL_Maraudon",	
+				"CL_MaraudonEnt",	
 				"CL_OnyxiasLair",
-				"CL_RagefireChasm",		-- Classic WoW
-				"CL_RazorfenDowns",		-- Classic WoW
-				"CL_RazorfenKraul",		-- Classic WoW
+				"CL_RagefireChasm",
+				"CL_RazorfenDowns",
+				"CL_RazorfenKraul",
 				"CL_TheTempleofAhnQiraj",
 				"CL_TheRuinsofAhnQiraj",
-				"CL_WailingCaverns",		-- Classic WoW
-				"CL_WailingCavernsEnt",		-- Classic WoW
-				"CL_ZulFarrak",			-- Classic WoW
+				"CL_WailingCaverns",
+				"CL_WailingCavernsEnt",
+				"CL_ZulFarrak",	
 			},
 		},
 		[ATLAS_DDL_EXPANSION] = {
@@ -1496,13 +1499,13 @@ if (WoWClassicEra or WoWClassicTBC) then
 				"CL_DireMaulWest",
 				"CL_Gnomeregan",
 				"CL_GnomereganEnt",
-				"CL_BlackrockSpireLower",		-- Classic WoW
-				"CL_BlackrockSpireUpper",		-- Classic WoW
+				"CL_BlackrockSpireLower",
+				"CL_BlackrockSpireUpper",
 				"CL_Maraudon",
 				"CL_MaraudonEnt",
 				"CL_MoltenCore",
 				"CL_OnyxiasLair",
-				"CL_TheDeadmines",			-- Classic WoW, Catalysm
+				"CL_TheDeadmines",
 				"CL_TheDeadminesEnt",
 				"CL_RagefireChasm",
 				"CL_RazorfenDowns",
@@ -1510,11 +1513,11 @@ if (WoWClassicEra or WoWClassicTBC) then
 				"CL_Scholomance",
 				"CL_ShadowfangKeep",
 				"CL_ScarletMonasteryEnt",
-				"CL_SMArmory",			-- Classic WoW
-				"CL_SMCathedral",			-- Classic WoW
-				"CL_SMGraveyard",			-- Classic WoW
-				"CL_SMLibrary",			-- Classic WoW
-				"CL_Stratholme",			-- Classic WoW
+				"CL_SMArmory",	
+				"CL_SMCathedral",	
+				"CL_SMGraveyard",	
+				"CL_SMLibrary",	
+				"CL_Stratholme",	
 				"CL_TheStockade",
 				"CL_TheSunkenTemple",
 				"CL_TheSunkenTempleEnt",
@@ -1530,98 +1533,115 @@ if (WoWClassicEra or WoWClassicTBC) then
 			},
 		},
 		[ATLAS_DDL_LEVEL] = {
-			[ATLAS_DDL_LEVEL_UNDER30] = {
-				"CL_BlackfathomDeepsA",		-- Classic WoW
-				"CL_BlackfathomDeepsB",		-- Classic WoW
-				"CL_BlackfathomDeepsC",		-- Classic WoW
-				"CL_BlackfathomDeepsEnt",		-- Classic WoW
-				"CL_Gnomeregan",			-- Classic WoW
-				"CL_GnomereganEnt",		-- Classic WoW
-				"CL_RagefireChasm",		-- Classic WoW
-				"CL_RazorfenDowns",		-- Classic WoW
-				"CL_RazorfenKraul",		-- Classic WoW
-				"CL_ShadowfangKeep",		-- Classic WoW
-				"CL_ScarletMonasteryEnt",		-- Classic WoW
-				"CL_SMArmory",			-- Classic WoW
-				"CL_SMCathedral",			-- Classic WoW
-				"CL_SMGraveyard",			-- Classic WoW
-				"CL_SMLibrary",			-- Classic WoW
-				"CL_TheDeadmines",			-- Classic WoW, Catalysm
-				"CL_TheDeadminesEnt",		-- Classic WoW
-				"CL_TheStockade",			-- Classic WoW
-				"CL_Uldaman",			-- Classic WoW
-				"CL_UldamanEnt",			-- Classic WoW
-				"CL_WailingCaverns",		-- Classic WoW
-				"CL_WailingCavernsEnt",		-- Classic WoW
-				"CL_BlackrockMountainEnt",		-- Classic WoW
-				"CL_BlackrockDepths",		-- Classic WoW
-				"CL_DireMaulEast",			-- Classic WoW
-				"CL_DireMaulEnt",			-- Classic WoW
-				"CL_DireMaulNorth",		-- Classic WoW
-				"CL_DireMaulWest",			-- Classic WoW
-				"CL_BlackrockSpireLower",		-- Classic WoW
-				"CL_BlackrockSpireUpper",		-- Classic WoW
-				"CL_Maraudon",			-- Classic WoW
-				"CL_MaraudonEnt",			-- Classic WoW
-				"CL_Scholomance",			-- Classic WoW
-				"CL_Stratholme",			-- Classic WoW
-				"CL_TheSunkenTemple",		-- Classic WoW
-				"CL_TheSunkenTempleEnt",		-- Classic WoW
-				"CL_ZulFarrak",			-- Classic WoW
-				"CL_BlackrockMountainEnt",		-- Classic WoW
-				"CL_BlackwingLair",		-- Classic WoW
-				"CL_MoltenCore",			-- Classic WoW
+			[ATLAS_DDL_LEVEL_10TO20] = {
+				"CL_RagefireChasm",
+				"CL_TheDeadmines",
+				"CL_TheDeadminesEnt",
+				"CL_WailingCaverns",
+				"CL_WailingCavernsEnt",
+			},
+			[ATLAS_DDL_LEVEL_20TO40] = {
+				"CL_BlackfathomDeepsA",
+				"CL_BlackfathomDeepsB",
+				"CL_BlackfathomDeepsC",
+				"CL_BlackfathomDeepsEnt",
+				"CL_Gnomeregan",	
+				"CL_GnomereganEnt",
+				"CL_RagefireChasm",
+				"CL_ShadowfangKeep",
+				"CL_TheDeadmines",
+				"CL_TheDeadminesEnt",
+				"CL_TheStockade",	
+				"CL_WailingCaverns",
+				"CL_WailingCavernsEnt",
+				"CL_RazorfenDowns",
+				"CL_RazorfenKraul",
+				"CL_ScarletMonasteryEnt",
+				"CL_SMArmory",	
+				"CL_SMCathedral",	
+				"CL_SMGraveyard",	
+				"CL_SMLibrary",	
+			},
+			[ATLAS_DDL_LEVEL_40TO60] = {
+				"CL_RazorfenDowns",
+				"CL_RazorfenKraul",
+				"CL_ScarletMonasteryEnt",
+				"CL_SMArmory",	
+				"CL_SMCathedral",	
+				"CL_SMGraveyard",	
+				"CL_SMLibrary",	
+				"CL_BlackrockMountainEnt",
+				"CL_BlackrockDepths",
+				"CL_BlackrockSpireLower",
+				"CL_BlackrockSpireUpper",
+				"CL_DireMaulEast",	
+				"CL_DireMaulEnt",	
+				"CL_DireMaulNorth",
+				"CL_DireMaulWest",	
+				"CL_Maraudon",	
+				"CL_MaraudonEnt",	
+				"CL_Scholomance",	
+				"CL_Stratholme",	
+				"CL_TheSunkenTemple",
+				"CL_TheSunkenTempleEnt",
+				"CL_Uldaman",	
+				"CL_UldamanEnt",	
+				"CL_ZulFarrak",	
+			},
+			[ATLAS_DDL_LEVEL_60TO70] = {
+				"CL_BlackwingLair",
+				"CL_MoltenCore",	
 				"CL_OnyxiasLair",
-				"CL_TheTempleofAhnQiraj",
 				"CL_TheRuinsofAhnQiraj",
+				"CL_TheTempleofAhnQiraj",
 				"CL_ZulGurub",
 				"CL_Naxxramas",
 			},
 		},
 		[ATLAS_DDL_PARTYSIZE] = {
 			[ATLAS_DDL_PARTYSIZE_5] = {
-				"CL_BlackrockMountainEnt",		-- Classic WoW
-				"CL_BlackfathomDeepsA",		-- Classic WoW
-				"CL_BlackfathomDeepsB",		-- Classic WoW
-				"CL_BlackfathomDeepsC",		-- Classic WoW
-				"CL_BlackfathomDeepsEnt",		-- Classic WoW
-				"CL_BlackrockDepths",		-- Classic WoW
-				"CL_BlackrockSpireLower",		-- Classic WoW
-				"CL_BlackrockSpireUpper",		-- Classic WoW
-				"CL_TheDeadmines",			-- Classic WoW
-				"CL_TheDeadminesEnt",		-- Classic WoW
-				"CL_DireMaulEast",			-- Classic WoW
-				"CL_DireMaulEnt",			-- Classic WoW
-				"CL_DireMaulNorth",		-- Classic WoW
-				"CL_DireMaulWest",			-- Classic WoW
-				"CL_Gnomeregan",			-- Classic WoW
-				"CL_GnomereganEnt",		-- Classic WoW
-				"CL_Maraudon",			-- Classic WoW
-				"CL_MaraudonEnt",			-- Classic WoW
-				"CL_RagefireChasm",		-- Classic WoW
-				"CL_RazorfenDowns",		-- Classic WoW
-				"CL_RazorfenKraul",		-- Classic WoW
-				"CL_SMArmory",			-- Classic WoW
-				"CL_SMCathedral",			-- Classic WoW
-				"CL_SMGraveyard",			-- Classic WoW
-				"CL_SMLibrary",			-- Classic WoW
-				"CL_ScarletMonasteryEnt",		-- Classic WoW
-				"CL_Scholomance",			-- Classic WoW
-				"CL_ShadowfangKeep",		-- Classic WoW
-				"CL_TheStockade",			-- Classic WoW
-				"CL_Stratholme",			-- Classic WoW
-				"CL_TheSunkenTemple",		-- Classic WoW
-				"CL_TheSunkenTempleEnt",		-- Classic WoW
-				"CL_Uldaman",			-- Classic WoW
-				"CL_UldamanEnt",			-- Classic WoW
-				"CL_WailingCaverns",		-- Classic WoW
-				"CL_WailingCavernsEnt",		-- Classic WoW
-				"CL_ZulFarrak",			-- Classic WoW
+				"CL_BlackrockMountainEnt",
+				"CL_BlackfathomDeepsA",
+				"CL_BlackfathomDeepsB",
+				"CL_BlackfathomDeepsC",
+				"CL_BlackfathomDeepsEnt",
+				"CL_BlackrockDepths",
+				"CL_BlackrockSpireLower",
+				"CL_BlackrockSpireUpper",
+				"CL_TheDeadmines",	
+				"CL_TheDeadminesEnt",
+				"CL_DireMaulEast",	
+				"CL_DireMaulEnt",	
+				"CL_DireMaulNorth",
+				"CL_DireMaulWest",	
+				"CL_Gnomeregan",	
+				"CL_GnomereganEnt",
+				"CL_Maraudon",	
+				"CL_MaraudonEnt",	
+				"CL_RagefireChasm",
+				"CL_RazorfenDowns",
+				"CL_RazorfenKraul",
+				"CL_SMArmory",	
+				"CL_SMCathedral",	
+				"CL_SMGraveyard",	
+				"CL_SMLibrary",	
+				"CL_ScarletMonasteryEnt",
+				"CL_Scholomance",	
+				"CL_ShadowfangKeep",
+				"CL_TheStockade",	
+				"CL_Stratholme",	
+				"CL_TheSunkenTemple",
+				"CL_TheSunkenTempleEnt",
+				"CL_Uldaman",	
+				"CL_UldamanEnt",	
+				"CL_WailingCaverns",
+				"CL_WailingCavernsEnt",
+				"CL_ZulFarrak",	
 			},
 			[ATLAS_DDL_PARTYSIZE_20TO40] = {
-				"CL_BlackrockMountainEnt",		-- Classic WoW
-				"CL_BlackwingLair",		-- Classic WoW
-				"CL_MoltenCore",			-- Classic WoW
+				"CL_BlackrockMountainEnt",
+				"CL_BlackwingLair",
+				"CL_MoltenCore",	
 				"CL_OnyxiasLair",
 				"CL_TheTempleofAhnQiraj",
 				"CL_TheRuinsofAhnQiraj",
@@ -1631,52 +1651,52 @@ if (WoWClassicEra or WoWClassicTBC) then
 		},
 		[ATLAS_DDL_TYPE] = {
 			[ATLAS_DDL_TYPE_INSTANCE] = {
-				"CL_BlackfathomDeepsA",		-- Classic WoW
-				"CL_BlackfathomDeepsB",		-- Classic WoW
-				"CL_BlackfathomDeepsC",		-- Classic WoW
-				"CL_BlackrockDepths",		-- Classic WoW
-				"CL_BlackwingLair",		-- Classic WoW
-				"CL_BlackrockSpireLower",		-- Classic WoW
-				"CL_BlackrockSpireUpper",		-- Classic WoW
-				"CL_TheDeadmines",			-- Classic WoW
-				"CL_DireMaulEast",			-- Classic WoW
-				"CL_DireMaulNorth",		-- Classic WoW
-				"CL_DireMaulWest",			-- Classic WoW
-				"CL_Gnomeregan",			-- Classic WoW
-				"CL_Maraudon",			-- Classic WoW
+				"CL_BlackfathomDeepsA",
+				"CL_BlackfathomDeepsB",
+				"CL_BlackfathomDeepsC",
+				"CL_BlackrockDepths",
+				"CL_BlackwingLair",
+				"CL_BlackrockSpireLower",
+				"CL_BlackrockSpireUpper",
+				"CL_TheDeadmines",	
+				"CL_DireMaulEast",	
+				"CL_DireMaulNorth",
+				"CL_DireMaulWest",	
+				"CL_Gnomeregan",	
+				"CL_Maraudon",	
 				"CL_OnyxiasLair",
-				"CL_MoltenCore",			-- Classic WoW
-				"CL_RagefireChasm",		-- Classic WoW
-				"CL_RazorfenDowns",		-- Classic WoW
-				"CL_RazorfenKraul",		-- Classic WoW
-				"CL_SMArmory",			-- Classic WoW
-				"CL_SMCathedral",			-- Classic WoW
-				"CL_SMGraveyard",			-- Classic WoW
-				"CL_SMLibrary",			-- Classic WoW
-				"CL_Scholomance",			-- Classic WoW
-				"CL_ShadowfangKeep",		-- Classic WoW
-				"CL_Stratholme",			-- Classic WoW
-				"CL_TheStockade",			-- Classic WoW
-				"CL_TheSunkenTemple",		-- Classic WoW
-				"CL_Uldaman",			-- Classic WoW
-				"CL_WailingCaverns",		-- Classic WoW
-				"CL_ZulFarrak",			-- Classic WoW
+				"CL_MoltenCore",	
+				"CL_RagefireChasm",
+				"CL_RazorfenDowns",
+				"CL_RazorfenKraul",
+				"CL_SMArmory",	
+				"CL_SMCathedral",	
+				"CL_SMGraveyard",	
+				"CL_SMLibrary",	
+				"CL_Scholomance",	
+				"CL_ShadowfangKeep",
+				"CL_Stratholme",	
+				"CL_TheStockade",	
+				"CL_TheSunkenTemple",
+				"CL_Uldaman",	
+				"CL_WailingCaverns",
+				"CL_ZulFarrak",	
 				"CL_ZulGurub",
 				"CL_TheTempleofAhnQiraj",
 				"CL_TheRuinsofAhnQiraj",
 				"CL_Naxxramas",
 			},
 			[ATLAS_DDL_TYPE_ENTRANCE] = {
-				"CL_BlackrockMountainEnt",		-- Classic WoW
-				"CL_TheDeadminesEnt",		-- Classic WoW
-				"CL_ScarletMonasteryEnt",		-- Classic WoW
-				"CL_BlackfathomDeepsEnt",		-- Classic WoW
-				"CL_DireMaulEnt",			-- Classic WoW
-				"CL_GnomereganEnt",		-- Classic WoW
-				"CL_MaraudonEnt",			-- Classic WoW
-				"CL_TheSunkenTempleEnt",		-- Classic WoW
-				"CL_UldamanEnt",			-- Classic WoW
-				"CL_WailingCavernsEnt",		-- Classic WoW
+				"CL_BlackrockMountainEnt",
+				"CL_TheDeadminesEnt",
+				"CL_ScarletMonasteryEnt",
+				"CL_BlackfathomDeepsEnt",
+				"CL_DireMaulEnt",	
+				"CL_GnomereganEnt",
+				"CL_MaraudonEnt",	
+				"CL_TheSunkenTempleEnt",
+				"CL_UldamanEnt",	
+				"CL_WailingCavernsEnt",
 			},
 		},
 	}

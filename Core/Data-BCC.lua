@@ -706,41 +706,7 @@ db.AtlasMaps = {
 		{ WHIT.."11) "..Atlas_GetBossName("Hakkar") },
 		{ GREN.." 1') "..Atlas_GetBossName("Muddy Churning Waters") },
 	},
-	CL_Naxxramas = {
-		ZoneName = { BZ["Naxxramas"], 3456 },
-		Location = { BZ["Eastern Plaguelands"], 139 },
-		LevelRange = "60+",
-		PlayerLimit = { 40} ,
-		Module = "Atlas_ClassicWoW",
-		{ BLUE.."A) "..ALC["Entrance"] },
-		{ BLUE..INDENT..Atlas_GetBossName("Archmage Tarsis Kir-Moldir"), 16381 },
-		{ BLUE..INDENT..Atlas_GetBossName("Mr. Bigglesworth")..ALC["L-Parenthesis"]..ALC["Wanders"]..ALC["R-Parenthesis"], 16998 },
-		{ WHIT..L["Abomination Wing"] },
-		{ WHIT..INDENT.."1) "..Atlas_GetBossName("Patchwerk"), 16028 },
-		{ WHIT..INDENT.."2) "..Atlas_GetBossName("Grobbulus"), 15931 },
-		{ WHIT..INDENT.."3) "..Atlas_GetBossName("Gluth"), 15932 },
-		{ WHIT..INDENT.."4) "..Atlas_GetBossName("Thaddius"), 15928 },
-		{ ORNG..L["Spider Wing"] },
-		{ ORNG..INDENT.."1) "..Atlas_GetBossName("Anub'Rekhan"), 15956 },
-		{ ORNG..INDENT.."2) "..Atlas_GetBossName("Grand Widow Faerlina"), 15953 },
-		{ ORNG..INDENT.."3) "..Atlas_GetBossName("Maexxna"), 15952 },
-		{ _RED..L["Deathknight Wing"] },
-		{ _RED..INDENT.."1) "..Atlas_GetBossName("Instructor Razuvious"), 16061 },
-		{ _RED..INDENT.."2) "..Atlas_GetBossName("Gothik the Harvester"), 16060 },
-		{ _RED..INDENT.."3) "..Atlas_GetBossName("The Four Horsemen") },
-		{ _RED..INDENT..INDENT..Atlas_GetBossName("Thane Korth'azz"), 16064 },
-		{ _RED..INDENT..INDENT..Atlas_GetBossName("Lady Blaumeux"), 16065 },
-		{ _RED..INDENT..INDENT..Atlas_GetBossName("Highlord Mograine <The Ashbringer>"), 16062 },
-		{ _RED..INDENT..INDENT..Atlas_GetBossName("Sir Zeliek"), 16063 },
-		{ _RED..INDENT..INDENT..L["Four Horsemen Chest"], 181366 },
-		{ PURP..L["Plague Wing"] },
-		{ PURP..INDENT.."1) "..Atlas_GetBossName("Noth the Plaguebringer"), 15954 },
-		{ PURP..INDENT.."2) "..Atlas_GetBossName("Heigan the Unclean"), 15936 },
-		{ PURP..INDENT.."3) "..Atlas_GetBossName("Loatheb"), 16011 },
-		{ GREN..L["Frostwyrm Lair"] },
-		{ GREN..INDENT.."1) "..Atlas_GetBossName("Sapphiron"), 15989 },
-		{ GREN..INDENT.."2) "..Atlas_GetBossName("Kel'Thuzad"), 15990 },
-	},
+
 --************************************************
 -- Kalimdor Instances (Classic)
 --************************************************
@@ -1450,7 +1416,6 @@ db.DropDownLayouts = {
 			"CL_SMGraveyard",	
 			"CL_SMLibrary",	
 			"CL_ZulGurub",
-			"CL_Naxxramas",
 		},
 		[ATLAS_DDL_CONTINENT_KALIMDOR] = {
 			"CL_BlackfathomDeepsA",
@@ -1519,7 +1484,6 @@ db.DropDownLayouts = {
 			"CL_WailingCavernsEnt",
 			"CL_ZulFarrak",
 			"CL_ZulGurub",
-			"CL_Naxxramas",
 		},
 	},
 	[ATLAS_DDL_LEVEL] = {
@@ -1585,7 +1549,6 @@ db.DropDownLayouts = {
 			"CL_TheRuinsofAhnQiraj",
 			"CL_TheTempleofAhnQiraj",
 			"CL_ZulGurub",
-			"CL_Naxxramas",
 		},
 	},
 	[ATLAS_DDL_PARTYSIZE] = {
@@ -1636,7 +1599,6 @@ db.DropDownLayouts = {
 			"CL_TheTempleofAhnQiraj",
 			"CL_TheRuinsofAhnQiraj",
 			"CL_ZulGurub",
-			"CL_Naxxramas",
 		},
 	},
 	[ATLAS_DDL_TYPE] = {
@@ -1674,7 +1636,6 @@ db.DropDownLayouts = {
 			"CL_ZulGurub",
 			"CL_TheTempleofAhnQiraj",
 			"CL_TheRuinsofAhnQiraj",
-			"CL_Naxxramas",
 		},
 		[ATLAS_DDL_TYPE_ENTRANCE] = {
 			"CL_BlackrockMountainEnt",

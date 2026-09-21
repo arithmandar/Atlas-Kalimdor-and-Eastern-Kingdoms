@@ -4,7 +4,7 @@
 	Atlas, a World of Warcraft instance map browser
 	Copyright 2005 ~ 2010 - Dan Gilbert <dan.b.gilbert@gmail.com>
 	Copyright 2010 - Lothaer <lothayer@gmail.com>, Atlas Team
-	Copyright 2011 ~ 2023 - Arith Hsu, Atlas Team <atlas.addon at gmail dot com>
+	Copyright 2011 ~ 2026 - Arith Hsu, Atlas Team <atlas.addon at gmail dot com>
 
 	This file is part of Atlas.
 
@@ -31,8 +31,6 @@ local AceLocale = LibStub:GetLibrary("AceLocale-3.0");
 local L = AceLocale:NewLocale("Atlas_ClassicWoW", "zhCN", false);
 
 if L then
---@localization(locale="zhCN", format="lua_additive_table")@
---@do-not-package@
 --************************************************
 -- Zone Names, Acronyms, and Common Strings
 --************************************************
@@ -272,5 +270,4 @@ if L then
 	L["Ancient Treasure"] = "古代宝藏";
 	L["The Discs of Norgannon"] = "诺甘农圆盘";
 
---@end-do-not-package@
 end

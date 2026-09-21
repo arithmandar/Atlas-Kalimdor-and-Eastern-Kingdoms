@@ -2,7 +2,7 @@
 --[[
 
 	Atlas, a World of Warcraft instance map browser
-	Copyright 2011 ~ 2023 - Arith Hsu, Atlas Team <atlas.addon at gmail dot com>
+	Copyright 2011 ~ 2026 - Arith Hsu, Atlas Team <atlas.addon at gmail dot com>
 
 	This file is part of Atlas.
 
@@ -28,12 +28,24 @@
 local _G = getfenv(0)
 local pairs = _G.pairs
 -- Libraries
-
+local GetBuildInfo = _G.GetBuildInfo
 -- ----------------------------------------------------------------------------
 -- AddOn namespace.
 -- ----------------------------------------------------------------------------
 local FOLDER_NAME, private = ...
 local LibStub = _G.LibStub
+
+local wowversion = select(4, GetBuildInfo())
+local isClassicForever = (wowversion >= 10000 and wowversion < 20000)
+local isClassicEra = (WOW_PROJECT_ID == WOW_PROJECT_CLASSIC)
+
+-- TBD - 2026/09/21 Arith: 
+-- I don't knwo if the Forever version can simply use the Classic Era's data or not, let's assume so for now
+local isClassic = isClassicEra or isClassicForever
+if not isClassic then
+	return
+end
+
 local BZ = Atlas_GetLocaleLibBabble("LibBabble-SubZone-3.0")
 local BF = Atlas_GetLocaleLibBabble("LibBabble-Faction-3.0")
 local L = LibStub("AceLocale-3.0"):GetLocale(private.addon_name)

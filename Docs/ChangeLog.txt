@@ -8,6 +8,21 @@ Copyright 2011 ~ 2026 - Arith Hsu, Atlas Team <atlas.addon at gmail dot com>
 = Change Log =
 ==============
 
+v1.53.01 (Oct. 02, 2026)
+------------------------
+- Mainline update:
+  - Update Stratholme - Crusaders' Square:
+    - Postmaster Malown is now an encounter
+    - Change "Stratholme Courier" to "Undead Postman"
+    - Added "Undead Postman" and "Risen Hammersmith" with section info function call to get their localized name
+    - Update the locaion of "Timmy the Cruel"
+  - Update JournalInstanceID for Stratholme - The Gauntlet to 1292
+    - Update the location of "Magistrate Barthilas"
+
+v1.53.00 (Sep. 21, 2026)
+------------------------
+- Toc update to support WoW 12.1.00 / 1.15.9 / 2.5.6 / 5.5.4
+
 v1.52.04 (Jul. 29, 2023)
 ------------------------
 - Toc update to support WoW 10.1.5 / 3.4.2

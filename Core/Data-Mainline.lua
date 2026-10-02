@@ -26,13 +26,12 @@
 -----------------------------------------------------------------------
 -- Functions
 local _G = getfenv(0)
-local pairs = _G.pairs
 -- Libraries
 local GetBuildInfo = _G.GetBuildInfo
 -- ----------------------------------------------------------------------------
 -- AddOn namespace.
 -- ----------------------------------------------------------------------------
-local FOLDER_NAME, private = ...
+local _, private = ...
 local LibStub = _G.LibStub
 
 local wowversion = select(4, GetBuildInfo())
@@ -443,17 +442,18 @@ db.AtlasMaps = {
 		{ WHIT.." 4) "..Atlas_GetBossName("Willey Hopebreaker", 446), 446 },
 		{ WHIT.." 5) "..Atlas_GetBossName("Instructor Galford", 448), 448 },
 		{ WHIT.." 6) "..Atlas_GetBossName("Balnazzar", 449), 449 },
-		{ ORNG.." 1) "..L["Stratholme Courier"], 10002 },
+		{ WHIT.." 7) "..Atlas_GetBossName("Postmaster Malown", 2633), 2633 },
+		{ ORNG.." 1) "..Atlas_GetEJSectionTitle("Undead Postman", 29848), 10002 }, 
+
 		{ ORNG..INDENT..Atlas_GetBossName("Skul")..ALC["L-Parenthesis"]..ALC["Rare"]..ALC["R-Parenthesis"] },
 		{ GREN..INDENT..L["Fras Siabi's Postbox"] },
-		{ ORNG.." 2) "..Atlas_GetBossName("Hearthsinger Forresten", 443)..ALC["L-Parenthesis"]..ALC["Varies"]..ALC["R-Parenthesis"], 10003 , 443 },
-		{ ORNG.." 3) "..Atlas_GetBossName("Risen Hammersmith")..ALC["L-Parenthesis"]..ALC["Summon"]..ALC["R-Parenthesis"], 10004 },
+		{ ORNG.." 2) "..Atlas_GetBossName("Hearthsinger Forresten", 443)..ALC["L-Parenthesis"]..ALC["Varies"]..ALC["R-Parenthesis"], 10003 },
+		{ ORNG.." 3) "..Atlas_GetEJSectionTitle("Risen Hammersmith", 4806)..ALC["L-Parenthesis"]..ALC["Summon"]..ALC["R-Parenthesis"], 10004 },
 		{ GREN..INDENT..ALC["Blacksmithing Plans"] },
 		{ GREN.." 1') "..L["King's Square Postbox"], 10005 },
 		{ GREN.." 2') "..L["Festival Lane Postbox"], 10006 },
 		{ GREN.." 3') "..L["Elder Farwhisper"]..ALC["L-Parenthesis"]..ALC["Lunar Festival"]..ALC["R-Parenthesis"], 10007 },
 		{ GREN.." 4') "..L["Market Row Postbox"], 10008 },
-		{ GREN..INDENT..Atlas_GetBossName("Postmaster Malown")..ALC["L-Parenthesis"]..ALC["Varies"]..ALC["R-Parenthesis"] },
 	},
 	StratholmeGauntlet = {
 		ZoneName = { BZ["Stratholme"]..ALC["Hyphen"]..BZ["The Gauntlet"] },
@@ -462,7 +462,7 @@ db.AtlasMaps = {
 		Acronym = L["Strat"],
 		WorldMapID = 318,
 		DungeonLevel = 2,
-		JournalInstanceID = 236,
+		JournalInstanceID = 1292,
 		Module = "Atlas_ClassicWoW",
 		PrevMap = "StratholmeCrusader",
 		{ BLUE.." A) "..ALC["Entrance"]..ALC["L-Parenthesis"]..ALC["Front"]..ALC["R-Parenthesis"], 10001 },
@@ -1259,11 +1259,12 @@ db.AtlasMaps_NPC_DB = {
 	},
 	StratholmeCrusader = {
 		{ 1, 450, 387, 151 }, -- The Unforgiven
-		{ 2, 445, 180, 173 }, -- Timmy the Cruel
+		{ 2, 445, 260, 148 }, -- Timmy the Cruel
 		{ 3, 749, 151, 228 }, -- Commander Malor
 		{ 4, 446, 11, 268 }, -- Willey Hopebreaker
 		{ 5, 448, 137, 352 }, -- Instructor Galford
 		{ 6, 449, 99, 378 }, -- Balnazzar
+		{ 7, 2633, 270, 355 }, -- Postmaster Malown
 		{ "A", 10001, 353, 405 },
 		{ "1", 10002, 289, 335 },
 		{ "2", 10003, 317, 202 },
@@ -1278,7 +1279,7 @@ db.AtlasMaps_NPC_DB = {
 		{ 1, 451, 400, 248 }, -- Baroness Anastari
 		{ 2, 452, 241, 247 }, -- Nerub'enkan
 		{ 3, 453, 340, 96 }, -- Maleki the Pallid
-		{ 4, 454, 316, 414 }, -- Magistrate Barthilas
+		{ 4, 454, 250, 70 }, -- Magistrate Barthilas
 		{ 5, 455, 144, 96 }, -- Ramstein the Gorger
 		{ 6, 456, 91, 96 }, -- Lord Aurius Rivendare
 		{ "A", 10001, 321, 485 },

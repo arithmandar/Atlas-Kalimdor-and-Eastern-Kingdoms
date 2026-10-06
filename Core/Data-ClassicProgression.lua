@@ -1,8 +1,7 @@
--- $Id$
 --[[
 
 	Atlas, a World of Warcraft instance map browser
-	Copyright 2011 ~ 2026 - Arith Hsu, Atlas Team <atlas.addon at gmail dot com>
+	Copyright 2011 ~ 2026 - Arith Hsu, Atlas Team 
 
 	This file is part of Atlas.
 
@@ -26,13 +25,12 @@
 -----------------------------------------------------------------------
 -- Functions
 local _G = getfenv(0)
-local pairs = _G.pairs
 -- Libraries
 
 -- ----------------------------------------------------------------------------
 -- AddOn namespace.
 -- ----------------------------------------------------------------------------
-local FOLDER_NAME, private = ...
+local _, private = ...
 local LibStub = _G.LibStub
 
 local isProgressionClassic = (WOW_PROJECT_ID ~= WOW_PROJECT_MAINLINE and WOW_PROJECT_ID ~= WOW_PROJECT_CLASSIC and WOW_PROJECT_ID ~= WOW_PROJECT_BURNING_CRUSADE_CLASSIC)

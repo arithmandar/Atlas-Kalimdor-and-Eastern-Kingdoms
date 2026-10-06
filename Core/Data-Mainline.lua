@@ -26,15 +26,13 @@
 -- Functions
 local _G = getfenv(0)
 -- Libraries
-local GetBuildInfo = _G.GetBuildInfo
 -- ----------------------------------------------------------------------------
 -- AddOn namespace.
 -- ----------------------------------------------------------------------------
 local _, private = ...
 local LibStub = _G.LibStub
 
-local wowversion = select(4, GetBuildInfo())
-local isRetail = (WOW_PROJECT_ID == WOW_PROJECT_MAINLINE and wowversion >= 120000)
+local isRetail = (WOW_PROJECT_ID == WOW_PROJECT_MAINLINE)
 if not isRetail then return end
 
 local BZ = Atlas_GetLocaleLibBabble("LibBabble-SubZone-3.0")

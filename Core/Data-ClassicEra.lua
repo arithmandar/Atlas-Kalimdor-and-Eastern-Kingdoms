@@ -26,23 +26,14 @@
 -- Functions
 local _G = getfenv(0)
 -- Libraries
-local GetBuildInfo = _G.GetBuildInfo
 -- ----------------------------------------------------------------------------
 -- AddOn namespace.
 -- ----------------------------------------------------------------------------
 local _, private = ...
 local LibStub = _G.LibStub
 
-local wowversion = select(4, GetBuildInfo())
-local isClassicForever = (wowversion >= 10000 and wowversion < 20000)
 local isClassicEra = (WOW_PROJECT_ID == WOW_PROJECT_CLASSIC)
-
--- TBD - 2026/09/21 Arith: 
--- I don't knwo if the Forever version can simply use the Classic Era's data or not, let's assume so for now
-local isClassic = isClassicEra or isClassicForever
-if not isClassic then
-	return
-end
+if not isClassicEra then return end
 
 local BZ = Atlas_GetLocaleLibBabble("LibBabble-SubZone-3.0")
 local BF = Atlas_GetLocaleLibBabble("LibBabble-Faction-3.0")
@@ -53,17 +44,7 @@ local Atlas = LibStub("AceAddon-3.0"):GetAddon("Atlas")
 local addon = Atlas:GetModule(private.module_name)
 
 local function Atlas_GetBossName(bossname, encounterID, creatureIndex)
-	local BB = Atlas_GetLocaleLibBabble("LibBabble-Boss-3.0")
-
-	if (bossname and L[bossname]) then
-		bossname = L[bossname]
-	elseif (bossname and BB[bossname]) then
-		bossname = BB[bossname]
-	else
-		--bossname = bossname
-	end
-
-	return bossname
+	return Atlas:GetBossName(bossname, encounterID, creatureIndex, private.module_name)
 end
 
 local db = {}

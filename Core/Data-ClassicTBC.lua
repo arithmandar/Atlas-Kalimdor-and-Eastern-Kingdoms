@@ -46,17 +46,7 @@ local Atlas = LibStub("AceAddon-3.0"):GetAddon("Atlas")
 local addon = Atlas:GetModule(private.module_name)
 
 local function Atlas_GetBossName(bossname, encounterID, creatureIndex)
-	local BB = Atlas_GetLocaleLibBabble("LibBabble-Boss-3.0")
-
-	if (bossname and L[bossname]) then
-		bossname = L[bossname]
-	elseif (bossname and BB[bossname]) then
-		bossname = BB[bossname]
-	else
-		--bossname = bossname
-	end
-
-	return bossname
+	return Atlas:GetBossName(bossname, encounterID, creatureIndex, private.module_name)
 end
 
 local db = {}

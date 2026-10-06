@@ -3,4 +3,5 @@
 	<Script file="Data-ClassicEra.lua"/>
 	<Script file="Data-ClassicTBC.lua"/>
 	<Script file="Data-ClassicProgression.lua"/>
+	<Script file="Data-ClassicForever.lua"/>
 </Ui>

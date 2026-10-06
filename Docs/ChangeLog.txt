@@ -7,6 +7,13 @@ Copyright 2011 ~ 2026 - Arith Hsu, Atlas Team
 = Change Log =
 ==============
 
+v1.53.02 (Oct. 06, 2026)
+------------------------
+- Forever client now has its own WOW_PROJECT_ID which is WOW_PROJECT_CAMELOT
+- Classic Forever update:
+  - Added support for Forever client, though maps were copied from classic Era, needs to check if any needs to be adjusted
+  - Ragefire Chasm map revamp
+
 v1.53.01 (Oct. 02, 2026)
 ------------------------
 - Mainline update:

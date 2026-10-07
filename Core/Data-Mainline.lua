@@ -244,7 +244,7 @@ db.AtlasMaps = {
 		Location = { BZ["Searing Gorge"]..ALC["Slash"]..BZ["Burning Steppes"] },
 		DungeonID = 32,
 		Acronym = L["LBRS"],
-		WorldMapID = 906,
+		WorldMapID = 252,
 		JournalInstanceID = 229,
 		Module = "Atlas_ClassicWoW",
 		{ BLUE.." A) "..ALC["Entrance"], 10001 },
@@ -726,13 +726,13 @@ db.AtlasMaps = {
 		{ GREN..INDENT..L["Elder Mistwalker"]..ALC["L-Parenthesis"]..ALC["Lunar Festival"]..ALC["R-Parenthesis"] },
 	},
 	DireMaulEast = {
-		ZoneName = { BZ["Dire Maul"]..ALC["L-Parenthesis"]..ALC["East"]..ALC["R-Parenthesis"] },
+		ZoneName = { BZ["Dire Maul - Warpwood Quarter"] },
 		Location = { BZ["Feralas"] },
 		DungeonID = 34,
 		Acronym = L["DM"],
 		WorldMapID = 239,
-		DungeonLevel = 6,
-		JournalInstanceID = 230,
+		DungeonLevel = 5,
+		JournalInstanceID = 1276,
 		Module = "Atlas_ClassicWoW",
 		PrevMap = "DireMaulEnt",
 		NextMap = "DireMaulNorth",
@@ -753,13 +753,13 @@ db.AtlasMaps = {
 		{ GREN.." 3') "..L["Old Ironbark"]..ALC["Slash"]..L["Ironbark the Redeemed"], 10008 },
 	},
 	DireMaulNorth = {
-		ZoneName = { BZ["Dire Maul"]..ALC["L-Parenthesis"]..ALC["North"]..ALC["R-Parenthesis"] },
+		ZoneName = { BZ["Dire Maul - Gordok Commons"] },
 		Location = { BZ["Feralas"] },
 		DungeonID = 36,
 		Acronym = L["DM"],
-		WorldMapID = 234,
+		WorldMapID = 235,
 		DungeonLevel = 1,
-		JournalInstanceID = 230,
+		JournalInstanceID = 1277,
 		Module = "Atlas_ClassicWoW",
 		PrevMap = "DireMaulEast",
 		NextMap = "DireMaulWest",
@@ -772,16 +772,16 @@ db.AtlasMaps = {
 		{ WHIT.." 4) "..Atlas_GetBossName("Guard Slip'kik", 414), 414 },
 		{ GREN..INDENT..L["Knot Thimblejack"] },
 		{ WHIT.." 5) "..Atlas_GetBossName("Captain Kromcrush", 415), 415 },
-		{ WHIT.." 6) "..Atlas_GetBossName("King Gordok", 417), 417 },
-		{ WHIT..INDENT..Atlas_GetBossName("Cho'Rush the Observer", 416), 416 },
+		{ WHIT.." 6) "..Atlas_GetBossName("Cho'Rush the Observer", 416), 416 },
+		{ WHIT.." 7) "..Atlas_GetBossName("King Gordok", 417), 417 },
 	},
 	DireMaulWest = {
-		ZoneName = { BZ["Dire Maul"]..ALC["L-Parenthesis"]..ALC["West"]..ALC["R-Parenthesis"] },
+		ZoneName = { BZ["Dire Maul - Capital Gardens"] },
 		Location = { BZ["Feralas"] },
 		DungeonID = 38,
 		Acronym = L["DM"],
-		WorldMapID = 237,
-		DungeonLevel = 4,
+		WorldMapID = 236,
+		DungeonLevel = 1,
 		JournalInstanceID = 230,
 		Module = "Atlas_ClassicWoW",
 		PrevMap = "DireMaulNorth",
@@ -1408,7 +1408,8 @@ db.AtlasMaps_NPC_DB = {
 		{ 3, 413, 240, 383 }, -- Guard Fengus
 		{ 4, 414, 50, 253 }, -- Guard Slip'kik
 		{ 5, 415, 88, 225 }, -- Captain Kromcrush
-		{ 6, 417, 88, 91 }, -- King Gordok
+		{ 6, 416, 88, 111 }, -- Cho'Rush the Observer
+		{ 7, 417, 88, 71 }, -- King Gordok
 		{ "A", 10001, 418, 471 },
 	},
 	DireMaulWest = {
@@ -1566,13 +1567,13 @@ db.AtlasMaps_NPC_DB = {
 	The table value is map's key-name.
 ]]
 db.AssocDefaults = {
-	[BZ["Blackrock Mountain"]] =		"BlackrockMountainEnt",
+	[BZ["Blackrock Mountain"]] =	"BlackrockMountainEnt",
 	[BZ["Blackrock Spire"]] =		"LowerBlackrockSpire",
 	[BZ["Hall of Blackhand"]] =		"LowerBlackrockSpire",
-	[BZ["Dire Maul"]] =			"DireMaulNorth",
+	[BZ["Dire Maul"]] =				"DireMaulNorth",
 	[BZ["Stratholme"]] =			"StratholmeGauntlet",
 	[BZ["The Deadmines"]] = 		"TheDeadminesA",
-	[BZ["The Wailing Caverns"]] = 		"WailingCavernsEnt",
+	[BZ["The Wailing Caverns"]] = 	"WailingCavernsEnt",
 	[BZ["Sunken Temple"]] = 		"TheSunkenTemple",
 }
 
@@ -1704,46 +1705,46 @@ db.OutdoorZoneToAtlas = {
 	[BZ["Burning Steppes"]] = 		"BlackrockMountainEnt",	-- Classic WoW, Catalysm, Draenor
 	[BZ["Searing Gorge"]] = 		"BlackrockMountainEnt",	-- Classic WoW, Catalysm, Draenor
 	[BZ["Ashenvale"]] = 			"BlackfathomDeepsEnt",
-	[BZ["Feralas"]] = 			"DireMaulEnt",
+	[BZ["Feralas"]] = 				"DireMaulEnt",
 	[BZ["Dun Morogh"]] = 			"GnomereganEnt",
-	[BZ["Desolace"]] = 			"MaraudonEnt",
+	[BZ["Desolace"]] = 				"MaraudonEnt",
 	[BZ["Orgrimmar"]] = 			"RagefireChasm",
 	[BZ["Thousand Needles"]] = 		"RazorfenDowns",
 	[BZ["Southern Barrens"]] = 		"RazorfenKraul",
-	[BZ["Silverpine Forest"]] = 		"ShadowfangKeep",	-- also in Catalysm
+	[BZ["Silverpine Forest"]] = 	"ShadowfangKeep",	-- also in Catalysm
 	[BZ["Tirisfal Glades"]] = 		"ScarletMonasteryEnt",	-- also in MoP
-	[BZ["Western Plaguelands"]] = 		"Scholomance",		-- also in MoP
-	[BZ["Eastern Plaguelands"]] = 		"StratholmeGauntlet",
-	[BZ["Westfall"]] = 			"TheDeadminesEnt",
+	[BZ["Western Plaguelands"]] = 	"Scholomance",		-- also in MoP
+	[BZ["Eastern Plaguelands"]] = 	"StratholmeGauntlet",
+	[BZ["Westfall"]] = 				"TheDeadminesEnt",
 	[BZ["Stormwind City"]] = 		"TheStockade",
 	[BZ["Swamp of Sorrows"]] = 		"TheSunkenTempleEnt",
 	[BZ["Ahn'Qiraj: The Fallen Kingdom"]] = "TheTempleofAhnQiraj",
 	[BZ["Silithus"]] = 			"TheTempleofAhnQiraj",
 	[BZ["Badlands"]] = 			"UldamanEnt",
-	[BZ["Northern Barrens"]] = 		"WailingCavernsEnt",
+	[BZ["Northern Barrens"]] = 	"WailingCavernsEnt",
 	[BZ["Tanaris"]] = 			"ZulFarrak",
 }
 
 -- Yes, the following two tables are redundant, but they're both here in case there's ever more than one entrance map for an instance
 -- Entrance maps to instance maps
 db.EntToInstMatches = {
-	["BlackfathomDeepsEnt"] =		{"BlackfathomDeeps"},
-	["BlackrockMountainEnt"] =		{"BlackrockDepths","BlackwingLair","LowerBlackrockSpire","MoltenCore"},
+	["BlackfathomDeepsEnt"] =	{"BlackfathomDeeps"},
+	["BlackrockMountainEnt"] =	{"BlackrockDepths","BlackwingLair","LowerBlackrockSpire","MoltenCore"},
 	["DireMaulEnt"] =			{"DireMaulEast","DireMaulNorth","DireMaulWest"},
 	["GnomereganEnt"] =			{"Gnomeregan"},
 	["MaraudonEnt"] =			{"Maraudon"},
-	["TheDeadminesEnt"] =			{"TheDeadminesA", "TheDeadminesB"},
-	["TheSunkenTempleEnt"] =		{"TheSunkenTemple"},
+	["TheDeadminesEnt"] =		{"TheDeadminesA", "TheDeadminesB"},
+	["TheSunkenTempleEnt"] =	{"TheSunkenTemple"},
 	["UldamanEnt"] =			{"Uldaman"},
-	["WailingCavernsEnt"] =			{"WailingCaverns"},
+	["WailingCavernsEnt"] =		{"WailingCaverns"},
 }
 
 -- Instance maps to entrance maps
 db.InstToEntMatches = {
-	["BlackfathomDeeps"] =			{"BlackfathomDeepsEnt"},
-	["BlackrockDepths"] =			{"BlackrockMountainEnt"},
+	["BlackfathomDeeps"] =		{"BlackfathomDeepsEnt"},
+	["BlackrockDepths"] =		{"BlackrockMountainEnt"},
 	["BlackwingLair"] =			{"BlackrockMountainEnt"},
-	["LowerBlackrockSpire"] =		{"BlackrockMountainEnt"},
+	["LowerBlackrockSpire"] =	{"BlackrockMountainEnt"},
 	["MoltenCore"] =			{"BlackrockMountainEnt"},
 	["DireMaulEast"] =			{"DireMaulEnt"},
 	["DireMaulNorth"] =			{"DireMaulEnt"},
@@ -1751,9 +1752,9 @@ db.InstToEntMatches = {
 	["Gnomeregan"] =			{"GnomereganEnt"},
 	["TheDeadminesA"] =			{"TheDeadminesEnt"},
 	["TheDeadminesB"] =			{"TheDeadminesEnt"},
-	["TheSunkenTemple"] =			{"TheSunkenTempleEnt"},
+	["TheSunkenTemple"] =		{"TheSunkenTempleEnt"},
 	["Uldaman"] =				{"UldamanEnt"},
-	["WailingCaverns"] =			{"WailingCavernsEnt"},
+	["WailingCaverns"] =		{"WailingCavernsEnt"},
 }
 
 -- Links maps together that are part of the same instance
@@ -1762,10 +1763,10 @@ db.SubZoneAssoc = {
 	["DireMaulEast"] =			BZ["Dire Maul"],
 	["DireMaulWest"] =			BZ["Dire Maul"],
 	["DireMaulEnt"] =			BZ["Dire Maul"],
-	["StratholmeCrusader"] =		BZ["Stratholme"],
-	["StratholmeGauntlet"] =		BZ["Stratholme"],
-	["TheDeadminesA"] = 			BZ["The Deadmines"],
-	["TheDeadminesB"] = 			BZ["The Deadmines"],
+	["StratholmeCrusader"] =	BZ["Stratholme"],
+	["StratholmeGauntlet"] =	BZ["Stratholme"],
+	["TheDeadminesA"] = 		BZ["The Deadmines"],
+	["TheDeadminesB"] = 		BZ["The Deadmines"],
 }
 
 db.DropDownLayouts_Order = {

@@ -7,6 +7,23 @@ Copyright 2011 ~ 2026 - Arith Hsu, Atlas Team
 = Change Log =
 ==============
 
+v1.53.03 (Oct. 07, 2026)
+------------------------
+- Mainline:
+  - Fixed WorldMapID for Lower Blackrock Spire
+  - Updated WorldMapID and JournalInstanceID for Dire Maul East and Dire Maul West
+  - Updated Dire Maul West to reflect the new Capital Gardens naming convention
+  - Updated Dire Maul East to reflect the new Warpwood Quarter naming convention
+  - Updated Dire Maul North to reflect the new Gordok Commons naming convention
+  - Updated map of Dire Maul - Gordok Commons to add both the locations of Cho'Rush the Observer and King Gordok
+- Forever and Classic Era update:
+  - Maps removed: 
+    - The Temple of Ahn'Qiraj
+    - The Ruins of Ahn'Qiraj
+    - Naxxramas
+  - Review level ranges and update mapID
+- Fixed Next / Previous button not working in classic clients
+
 v1.53.02 (Oct. 06, 2026)
 ------------------------
 - Forever client now has its own WOW_PROJECT_ID which is WOW_PROJECT_CAMELOT

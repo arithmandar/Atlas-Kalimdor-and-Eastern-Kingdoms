@@ -31,9 +31,8 @@ local _G = getfenv(0)
 -- ----------------------------------------------------------------------------
 local _, private = ...
 
-private.addon_name = "Atlas_ClassicWoW"
-private.module_name = "ClassicWoW"
-
 local LibStub = _G.LibStub
+---@type AtlasAddon
 local Atlas = LibStub("AceAddon-3.0"):GetAddon("Atlas")
+---@type AtlasDataModule
 local addon = Atlas:NewModule(private.module_name)

@@ -7,6 +7,11 @@ Copyright 2011 ~ 2026 - Arith Hsu, Atlas Team
 = Change Log =
 ==============
 
+v1.53.04 (Oct. 09, 2026)
+------------------------
+- Forever:
+  - Added map: Hall of Thanes
+
 v1.53.03 (Oct. 07, 2026)
 ------------------------
 - Mainline:

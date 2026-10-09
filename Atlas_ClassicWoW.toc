@@ -44,5 +44,6 @@
 ## X-WoWI-ID: 20513
 
 Locale\Locales.xml
+Core\Constants.lua
 Core\Core.lua
-Core\Data.xml
+Data\Data.xml

@@ -7,6 +7,10 @@ Copyright 2011 ~ 2026 - Arith Hsu, Atlas Team
 = Change Log =
 ==============
 
+v1.53.05 (Oct. 09, 2026)
+------------------------
+- A temporary fix when GetItemByID didn't retrieve item name
+
 v1.53.04 (Oct. 09, 2026)
 ------------------------
 - Forever:

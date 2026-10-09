@@ -104,8 +104,8 @@ local function getItemTitlebyID(id, title)
 		return title
 	end
 
-	local itemName = data.lines[1].leftText or ""
-	return itemName or title
+	local itemName = data and data.lines and data.lines[1] and data.lines[1].leftText or title
+	return itemName
 end
 
 -- local constants for easier access

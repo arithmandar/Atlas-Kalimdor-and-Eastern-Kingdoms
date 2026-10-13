@@ -65,6 +65,9 @@ if L then
 	L["Scarshield Quartermaster <Scarshield Legion>"] = "Scarshield Quartermaster <Scarshield Legion>"
 	L["The Behemoth"] = "The Behemoth"
 	L["Franclorn Forgewright"] = "Franclorn Forgewright"
+
+	-- Blackrock Depths
+	L["Abandoned Mole Machine"] = "Abandoned Mole Machine"
 	
 	--Dire Maul (Entrance)
 	L["Dire Pool"] = "Dire Pool"

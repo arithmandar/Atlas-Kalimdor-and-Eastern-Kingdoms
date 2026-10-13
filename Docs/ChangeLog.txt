@@ -7,6 +7,32 @@ Copyright 2011 ~ 2026 - Arith Hsu, Atlas Team
 = Change Log =
 ==============
 
+v1.53.06 (Oct. 13, 2026)
+------------------------
+- GetItemByID is now in Atlas:GetItemByID
+- GetQuestTitlebyID is now in Atlas:GetQuestTitlebyID
+- Move color constants to Atlas
+- Forever:
+  - Hall of Thanes:
+    - Changed name of Infurnus to Magmatus
+  - Translate boss names via Atlas:GetCreatureName()
+  - Added Map:
+    - Ruins of Lordaeron
+- Classic Era
+  - Wailing Caverns map revamp
+  - Blackrock Depths map revamp
+- Classic MoP
+  - Added achievement info to Classic MoP maps
+  - Fixed DungeonID for Classic MoP, so now the color of difficulty is displayed correctly
+  - Wailing Caverns map revamp
+  - Removed old Scarlet maps and used the one from mainline
+- TBC Anniverssary
+  - Fixed DungeonID for TBC Anniverssary, so now the color of difficulty is displayed correctly
+  - Wailing Caverns map revamp
+- Added map coordinates
+- Mainline:
+  - Slightly lighter the maps of Lower Blackrock Spire, Blackfathom Deeps, and Blackrock Depths
+
 v1.53.05 (Oct. 09, 2026)
 ------------------------
 - A temporary fix when GetItemByID didn't retrieve item name

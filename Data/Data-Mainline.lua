@@ -45,6 +45,7 @@ local BF = Atlas_GetLocaleLibBabble("LibBabble-Faction-3.0")
 local L = LibStub("AceLocale-3.0"):GetLocale(private.addon_name)
 local ALC = LibStub("AceLocale-3.0"):GetLocale("Atlas")
 
+---@type AtlasDataModule
 local addon = Atlas:GetModule(private.module_name)
 
 local db = {}
@@ -453,10 +454,10 @@ db.AtlasMaps = {
 		{ BLUE.." B-C) "..CONNECTION, 10002 },
 		{ WHIT.." 1) "..getBossName("Baron Ashbury", 96), 96 },
 		{ WHIT.." 2) "..getBossName("Baron Silverlaine", 97), 97 },
-		{ WHIT..INDENT..getBossName("Odo the Blindwatcher")..L_PAREN..RANDOM..COMMA..ALC["Summon"]..R_PAREN },
-		{ WHIT..INDENT..getBossName("Razorclaw the Butcher")..L_PAREN..RANDOM..COMMA..ALC["Summon"]..R_PAREN },
-		{ WHIT..INDENT..getBossName("Rethilgore")..L_PAREN..RANDOM..COMMA..ALC["Summon"]..R_PAREN },
-		{ WHIT..INDENT..getBossName("Wolf Master Nandos")..L_PAREN..RANDOM..COMMA..ALC["Summon"]..R_PAREN },
+		{ WHIT..INDENT..Atlas_GetEJSectionTitle("Odo the Blindwatcher", 2121)..L_PAREN..RANDOM..COMMA..ALC["Summon"]..R_PAREN },
+		{ WHIT..INDENT..Atlas_GetEJSectionTitle("Razorclaw the Butcher", 2125)..L_PAREN..RANDOM..COMMA..ALC["Summon"]..R_PAREN },
+		{ WHIT..INDENT..Atlas_GetEJSectionTitle("Rethilgore", 2128)..L_PAREN..RANDOM..COMMA..ALC["Summon"]..R_PAREN },
+		{ WHIT..INDENT..Atlas_GetEJSectionTitle("Wolf Master Nandos", 2130)..L_PAREN..RANDOM..COMMA..ALC["Summon"]..R_PAREN },
 		{ WHIT.." 3) "..getBossName("Commander Springvale", 98), 98 },
 		{ WHIT.." 4) "..getBossName("Lord Walden", 99), 99 },
 		{ WHIT.." 5) "..getBossName("Lord Godfrey", 100), 100 },

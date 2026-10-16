@@ -825,7 +825,7 @@ db.AtlasMaps = {
 		Module = "Atlas_ClassicWoW",
 		{ BLUE.."A) "..ENTRANCE },
 		{ BLUE..INDENT..getBossName("Archmage Tarsis Kir-Moldir"), 16381 },
-		{ BLUE..INDENT..getBossName("Mr. Bigglesworth")..L_PAREN..ALC["Wanders"]..R_PAREN, 16998 },
+		{ BLUE..INDENT..getBossName("Mr. Bigglesworth")..L_PAREN..WANDERS..R_PAREN, 16998 },
 		{ WHIT..L["Abomination Wing"] },
 		{ WHIT..INDENT.."1) "..getBossName("Patchwerk"), 16028 },
 		{ WHIT..INDENT.."2) "..getBossName("Grobbulus"), 15931 },

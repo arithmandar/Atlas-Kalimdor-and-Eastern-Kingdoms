@@ -7,6 +7,13 @@ Copyright 2011 ~ 2026 - Arith Hsu, Atlas Team
 = Change Log =
 ==============
 
+v1.54.01 (Oct. 16, 2026)
+------------------------
+- Added Season of Discovery maps for Classic Era
+  (map data by nanderson11, map image re-drawn by Arith)
+- Added activity ID and update player limit for Classic Era dungeon maps
+  (sync with nanderson11's revision)
+
 v1.54.00 (Oct. 15, 2026)
 ------------------------
 - ToC Update to support WoW 12.1.5

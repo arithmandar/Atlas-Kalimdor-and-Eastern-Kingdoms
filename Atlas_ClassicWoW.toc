@@ -22,7 +22,7 @@
 ## Title-zhTW: Atlas 卡林多與東部王國
 ## Notes-zhTW: 適用於 Atlas 的卡林多與東部王國副本地圖
 ## Version: @project-version@
-## Author: arith
+## Author: arith, nanderson11
 ## IconTexture: Interface\WorldMap\WorldMap-Icon
 ## RequiredDeps: Atlas
 ## Category: Map

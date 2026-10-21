@@ -63,6 +63,8 @@ local PINK = labelcolors.PINK
 local PURP = labelcolors.PURP
 local WHIT = labelcolors.WHIT
 local YLOW = labelcolors.YLOW
+local HRDE = labelcolors.HRDE
+local ALAN = labelcolors.ALAN
 local INDENT = labelcolors.INDENT
 
 -- local helper functions
@@ -749,15 +751,15 @@ db.AtlasMaps = {
 		WorldMapID = 221,
 		JournalInstanceID = 227,
 		Module = "Atlas_ClassicWoW",
-		NextMap = "BlackfathomDeeps",
+		NextMap = "BlackfathomDeepsA",
 		{ BLUE.." A) "..ENTRANCE, 10001 },
 		{ BLUE.." B) "..BZ["Blackfathom Deeps"], 10002 },
 		{ "" },
 		{ LBLU..ACHIEVEMENTS..COLON },
 		{ "Blackfathom Deeps", "ac=632"}
 	},
-	BlackfathomDeeps = {
-		ZoneName = { BZ["Blackfathom Deeps"] },
+	BlackfathomDeepsA = {
+		ZoneName = { BZ["Blackfathom Deeps"]..ALC["MapA"] },
 		Location = { BZ["Ashenvale"] },
 		DungeonID = 10,
 		Acronym = L["BFD"],
@@ -765,25 +767,58 @@ db.AtlasMaps = {
 		JournalInstanceID = 227,
 		Module = "Atlas_ClassicWoW",
 		PrevMap = "BlackfathomDeepsEnt",
-		{ BLUE.." A) "..ENTRANCE, 10001 },
-		{ GREN..INDENT..L["Je'neu Sancrea <The Earthen Ring>"] },
-		{ GREN..INDENT..L["Sentinel Aluwyn"]..L_PAREN..FACTION_ALLIANCE..R_PAREN },
-		{ GREN..INDENT..L["Zeya"]..L_PAREN..FACTION_HORDE..R_PAREN },
+		NextMap = "BlackfathomDeepsB",
 		{ BLUE.." B) "..CONNECTION, 10002 },
+		{ GREN..INDENT..getCreatureName(L["Je'neu Sancrea <The Earthen Ring>"], 74408)..HRDE..L_PAREN..FACTION_HORDE..R_PAREN },
+		{ GREN..INDENT..getCreatureName(L["Zeya"], 74409)..HRDE..L_PAREN..FACTION_HORDE..R_PAREN },
+		{ INDENT..INDENT..WHIT..QUESTS_COLON..getQuestTitlebyID("The Rise of Aku'mai", 34673)},
+		{ GREN..INDENT..getCreatureName(L["Ashelan Northwood"], 75607)..ALAN..L_PAREN..FACTION_ALLIANCE..R_PAREN },
+		{ GREN..INDENT..getCreatureName(L["Sentinel Aluwyn"], 75606)..ALAN..L_PAREN..FACTION_ALLIANCE..R_PAREN },
+		{ INDENT..INDENT..WHIT..QUESTS_COLON..getQuestTitlebyID("The Rise of Aku'mai", 34672)},
+		{ BLUE.." C) "..CONNECTION, 10003 },
 		{ WHIT.." 1) "..getBossName("Ghamoo-ra", 368), 368 },
 		{ WHIT.." 2) "..getBossName("Domina", 436), 436 },
 		{ GREN..INDENT..L["Altar of Blood"] },
 		{ WHIT.." 3) "..getBossName("Subjugator Kor'ul", 426), 426 },
 		{ GREN..INDENT..L["Altar of Blood"] },
+		{ "" },
+		{ LBLU..ACHIEVEMENTS..COLON },
+		{ "Blackfathom Deeps", "ac=632"}
+	},
+	BlackfathomDeepsB = {
+		ZoneName = { BZ["Blackfathom Deeps"]..ALC["MapB"] },
+		Location = { BZ["Ashenvale"] },
+		DungeonID = 10,
+		Acronym = L["BFD"],
+		WorldMapID = 222,
+		JournalInstanceID = 227,
+		Module = "Atlas_ClassicWoW",
+		PrevMap = "BlackfathomDeepsA",
+		NextMap = "BlackfathomDeepsC",
+		{ BLUE.." C) "..CONNECTION, 10003 },
 		{ WHIT.." 4) "..getBossName("Thruk", 1145), 1145 },
-		{ WHIT.." 5) "..getBossName("Guardian of the Deep", 447), 447 },
-		{ WHIT.." 6) "..getBossName("Executioner Gore", 1144), 1144 },
-		{ WHIT.." 7) "..getBossName("Twilight Lord Bathiel", 437), 437 },
+		{ WHIT.." 5) "..getBossName("Executioner Gore", 1144), 1144 },
+		{ WHIT.." 6) "..getBossName("Twilight Lord Bathiel", 437), 437 },
 		{ GREN..INDENT..L["Fire of Aku'mai"] },
-		{ WHIT.." 8) "..getBossName("Aku'mai", 444), 444 },
+		{ WHIT.." 7) "..getBossName("Aku'mai", 444), 444 },
 		{ GREN..INDENT..L["Spoils of Blackfathom"] },
-		{ GREN..INDENT..L["Sentinel Aluwyn"]..L_PAREN..FACTION_ALLIANCE..R_PAREN },
-		{ GREN..INDENT..L["Zeya"]..L_PAREN..FACTION_HORDE..R_PAREN },
+		{ GREN..INDENT..getCreatureName(L["Sentinel Aluwyn"], 75606)..ALAN..L_PAREN..FACTION_ALLIANCE..R_PAREN },
+		{ GREN..INDENT..getCreatureName(L["Zeya"], 74409)..HRDE..L_PAREN..FACTION_HORDE..R_PAREN },
+		{ "" },
+		{ LBLU..ACHIEVEMENTS..COLON },
+		{ "Blackfathom Deeps", "ac=632"}
+	},
+	BlackfathomDeepsC = {
+		ZoneName = { BZ["Blackfathom Deeps"]..ALC["MapC"] },
+		Location = { BZ["Ashenvale"] },
+		DungeonID = 10,
+		Acronym = L["BFD"],
+		WorldMapID = 223,
+		JournalInstanceID = 227,
+		Module = "Atlas_ClassicWoW",
+		PrevMap = "BlackfathomDeepsB",
+		{ BLUE.." B) "..CONNECTION, 10002 },
+		{ WHIT.." 8) "..getBossName("Guardian of the Deep", 447), 447 },
 		{ "" },
 		{ LBLU..ACHIEVEMENTS..COLON },
 		{ "Blackfathom Deeps", "ac=632"}
@@ -1481,22 +1516,26 @@ db.AtlasMaps_NPC_DB = {
 --************************************************
 -- Kalimdor Instances (Classic)
 --************************************************
-	BlackfathomDeeps = {
-		{ 1, 368, 190, 183 }, -- Ghamoo-ra
-		{ 2, 436, 76, 111 }, -- Domina
-		{ 3, 426, 305, 171 }, -- Subjugator Kor'ul
-		{ 4, 1145, 311, 366 }, -- Thruk
-		{ 5, 447, 417, 360 }, -- Guardian of the Deep
-		{ 6, 1144, 355, 375 }, -- Executioner Gore
-		{ 7, 437, 245, 449 }, -- Twilight Lord Bathiel
-		{ 8, 444, 458, 465 }, -- Aku'mai
-		{ "A", 10001, 256, 12},
-		{ "B", 10002, 377, 413 },
-		{ "B", 10002, 211, 454 },
-	},
     BlackfathomDeepsEnt = {
         { "A", 10001, 218, 391 }, -- blue
-        { "B", 10002, 364, 185 }, -- blue
+        { "B", 10002, 380.78, 161.03 }, -- blue
+    },
+    BlackfathomDeepsA = {
+        { "B", 10002, 307, 55 }, -- blue
+        { "c", 10003, 428, 381 }, -- blue
+        { "1", 368, 215, 305 }, -- white
+        { "2", 436, 42, 196 }, -- white
+        { "3", 426, 370, 286 }, -- white
+    },
+    BlackfathomDeepsB = {
+        { "C", 10003, 125, 157 }, -- blue
+        { "4", 1145, 79, 318 }, -- white
+        { "5", 1144, 138, 339 }, -- white
+        { "6", 437, 220, 383 }, -- white
+        { "7", 444, 467, 407 }, -- white
+    },
+    BlackfathomDeepsC = {
+        { "8", 447, 380, 310 }, -- white
     },
 	DireMaulEnt = {
 		{ "A", 10001, 131, 495 }, -- Entrance
@@ -1793,6 +1832,21 @@ db.SubZoneData = {
 			BZ["Stormwind Stockade"],
 		},
 	},
+	-- Blackfathom Deeps
+	[BZ["Blackfathom Deeps"]] = {
+		["BlackfathomDeepsA"] = {
+			BZ["Blackfathom Deeps"],
+			BZ["The Drowned Sacellum"],
+			BZ["The Pool of Ask'ar"],
+		},
+		["BlackfathomDeepsB"] = {
+			BZ["Moonshrine Ruins"],
+			BZ["Aku'mai's Lair"],
+		},
+		["BlackfathomDeepsC"] = {
+			BZ["The Forgotten Pool"],
+		},
+	},
 	-- Wailing Caverns
 	[BZ["Wailing Caverns"]] = {
 		-- Wailing Caverns, Entrance
@@ -1849,7 +1903,7 @@ db.OutdoorZoneToAtlas = {
 -- Yes, the following two tables are redundant, but they're both here in case there's ever more than one entrance map for an instance
 -- Entrance maps to instance maps
 db.EntToInstMatches = {
-	["BlackfathomDeepsEnt"] =	{"BlackfathomDeeps"},
+	["BlackfathomDeepsEnt"] =	{"BlackfathomDeepsA", "BlackfathomDeepsB", "BlackfathomDeepsC"},
 	["BlackrockMountainEnt"] =	{"BlackrockDepths","BlackwingLair","LowerBlackrockSpire","MoltenCore"},
 	["DireMaulEnt"] =			{"DireMaulEast","DireMaulNorth","DireMaulWest"},
 	["GnomereganEnt"] =			{"Gnomeregan"},
@@ -1863,7 +1917,9 @@ db.EntToInstMatches = {
 
 -- Instance maps to entrance maps
 db.InstToEntMatches = {
-	["BlackfathomDeeps"] =		{"BlackfathomDeepsEnt"},
+	["BlackfathomDeepsA"] =		{"BlackfathomDeepsEnt"},
+	["BlackfathomDeepsB"] =		{"BlackfathomDeepsEnt"},
+	["BlackfathomDeepsC"] =		{"BlackfathomDeepsEnt"},
 	["BlackrockDepths"] =		{"BlackrockMountainEnt"},
 	["BlackwingLair"] =			{"BlackrockMountainEnt"},
 	["LowerBlackrockSpire"] =	{"BlackrockMountainEnt"},
@@ -1891,6 +1947,10 @@ db.SubZoneAssoc = {
 	["StratholmeGauntlet"] =	BZ["Stratholme"],
 	["TheDeadminesA"] = 		BZ["The Deadmines"],
 	["TheDeadminesB"] = 		BZ["The Deadmines"],
+	["BlackfathomDeepsA"] =		BZ["Blackfathom Deeps"],
+	["BlackfathomDeepsB"] =		BZ["Blackfathom Deeps"],
+	["BlackfathomDeepsC"] =		BZ["Blackfathom Deeps"],
+	["BlackfathomDeepsEnt"] =		BZ["Blackfathom Deeps"],
 }
 
 db.DropDownLayouts_Order = {
@@ -1933,7 +1993,9 @@ db.DropDownLayouts = {
 			"ScarletMonastery",		-- Mop, Classic WoW
 		},
 		[ATLAS_DDL_CONTINENT_KALIMDOR] = {
-			"BlackfathomDeeps",		-- Classic WoW
+			"BlackfathomDeepsA",		-- Classic WoW
+			"BlackfathomDeepsB",		-- Classic WoW
+			"BlackfathomDeepsC",		-- Classic WoW
 			"BlackfathomDeepsEnt",		-- Classic WoW
 			"DireMaulEast",			-- Classic WoW
 			"DireMaulEnt",			-- Classic WoW
@@ -1953,7 +2015,9 @@ db.DropDownLayouts = {
 	},
 	[ATLAS_DDL_EXPANSION] = {
 		[ATLAS_DDL_EXPANSION_OLD] = {
-			"BlackfathomDeeps",
+			"BlackfathomDeepsA",
+			"BlackfathomDeepsB",
+			"BlackfathomDeepsC",
 			"BlackfathomDeepsEnt",
 			"BlackrockMountainEnt",
 			"BlackrockDepths",
@@ -1995,7 +2059,9 @@ db.DropDownLayouts = {
 	},
 	[ATLAS_DDL_LEVEL] = {
 		[ATLAS_DDL_LEVEL_10TO30] = {
-			"BlackfathomDeeps",		-- Classic WoW
+			"BlackfathomDeepsA",		-- Classic WoW
+			"BlackfathomDeepsB",		-- Classic WoW
+			"BlackfathomDeepsC",		-- Classic WoW
 			"BlackfathomDeepsEnt",		-- Classic WoW
 			"Gnomeregan",			-- Classic WoW
 			"GnomereganEnt",		-- Classic WoW
@@ -2039,7 +2105,9 @@ db.DropDownLayouts = {
 	[ATLAS_DDL_PARTYSIZE] = {
 		[ATLAS_DDL_PARTYSIZE_5] = {
 			"BlackrockMountainEnt",		-- Classic WoW
-			"BlackfathomDeeps",		-- Classic WoW
+			"BlackfathomDeepsA",		-- Classic WoW
+			"BlackfathomDeepsB",		-- Classic WoW
+			"BlackfathomDeepsC",		-- Classic WoW
 			"BlackfathomDeepsEnt",		-- Classic WoW
 			"BlackrockDepths",		-- Classic WoW
 			"LowerBlackrockSpire",		-- Classic WoW
@@ -2085,7 +2153,9 @@ db.DropDownLayouts = {
 	},
 	[ATLAS_DDL_TYPE] = {
 		[ATLAS_DDL_TYPE_INSTANCE] = {
-			"BlackfathomDeeps",		-- Classic WoW
+			"BlackfathomDeepsA",		-- Classic WoW
+			"BlackfathomDeepsB",		-- Classic WoW
+			"BlackfathomDeepsC",		-- Classic WoW
 			"BlackrockDepths",		-- Classic WoW
 			"BlackwingLair",		-- Classic WoW
 			"LowerBlackrockSpire",		-- Classic WoW

@@ -7,7 +7,7 @@ Copyright 2011 ~ 2026 - Arith Hsu, Atlas Team
 
 ## v1.54.02 (Oct. xx, 2026)
 
-- Blackfathom Deeps entrance map revamped
+- Blackfathom Deeps entrance and instance maps revamped
 
 ## v1.54.01 (Oct. 16, 2026)
 

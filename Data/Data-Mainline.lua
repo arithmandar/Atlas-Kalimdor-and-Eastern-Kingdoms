@@ -1494,10 +1494,10 @@ db.AtlasMaps_NPC_DB = {
 		{ "B", 10002, 377, 413 },
 		{ "B", 10002, 211, 454 },
 	},
-	BlackfathomDeepsEnt = {
-		{ "A", 10001, 176, 395 }, -- Entrance
-		{ "B", 10002, 358, 227 }, -- Blackfathom Deeps
-	},
+    BlackfathomDeepsEnt = {
+        { "A", 10001, 218, 391 }, -- blue
+        { "B", 10002, 364, 185 }, -- blue
+    },
 	DireMaulEnt = {
 		{ "A", 10001, 131, 495 }, -- Entrance
 		{ "B", 10002, 348, 360 }, -- Dire Maul, East

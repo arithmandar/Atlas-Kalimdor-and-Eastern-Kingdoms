@@ -94,6 +94,7 @@ local UPPER = ALC["Upper"]
 local CONNECTION = ALC["Connection"]
 local RARE = ALC["Rare"]
 local RANDOM = ALC["Random"]
+local VARIES = ALC["Varies"]
 
 db.AtlasMaps = {
 --************************************************
@@ -385,7 +386,7 @@ db.AtlasMaps = {
 		{ GREN.." 2') "..getItemTitlebyID(L["Treaty of Understanding"], 281030), 281030, "Treaty of Understanding" }, -- itemID: 281030
 		{ INDENT..WHIT..QUESTS_COLON..getQuestTitlebyID(L["The Treaty of Understanding"], 98423) },
 	},
-	CL_MoltenCore = {
+	CF_MoltenCore = {
 		ZoneName = { BZ["Blackrock Mountain"]..COLON..BZ["The Molten Core"] },
 		Location = { BZ["Searing Gorge"]..SLASH..BZ["Burning Steppes"] },
 		DungeonID = 47,
@@ -582,7 +583,7 @@ db.AtlasMaps = {
 		{ WHIT..INDENT..L["Stratholme Courier"], 10002 },
 		{ WHIT..INDENT..L["Fras Siabi"] },
 		{ WHIT.." 2) "..getBossName("Atiesh")..L_PAREN..ALC["Summon"]..R_PAREN },
-		{ WHIT.." 3) "..getBossName("Hearthsinger Forresten", 443)..L_PAREN..ALC["Varies"]..R_PAREN, 10003 , 443 }, -- 473
+		{ WHIT.." 3) "..getBossName("Hearthsinger Forresten", 443)..L_PAREN..VARIES..R_PAREN, 10003 , 443 }, -- 473
 		{ WHIT.." 4) "..getBossName("The Unforgiven", 450), 450 }, -- 472
 		{ WHIT.." 5) "..L["Elder Farwhisper"]..L_PAREN..ALC["Lunar Festival"]..R_PAREN, 10007 },
 		{ WHIT.." 6) "..getBossName("Timmy the Cruel", 445), 445 }, -- 474
@@ -596,7 +597,7 @@ db.AtlasMaps = {
 		{ WHIT..INDENT..getBossName("Balnazzar", 449), 449 }, -- 478
 		{ WHIT..INDENT..getBossName("Sothos")..L_PAREN..ALC["Summon"]..R_PAREN },
 		{ WHIT..INDENT..getBossName("Jarien")..L_PAREN..ALC["Summon"]..R_PAREN },
-		{ WHIT.."12) "..getBossName("Magistrate Barthilas", 454)..L_PAREN..ALC["Varies"]..R_PAREN, 454 }, -- 482
+		{ WHIT.."12) "..getBossName("Magistrate Barthilas", 454)..L_PAREN..VARIES..R_PAREN, 454 }, -- 482
 		{ WHIT.."13) "..getBossName("Aurius", 10917) },
 		{ WHIT.."14) "..getBossName("Stonespine")..L_PAREN..RARE..R_PAREN }, -- 2800
 		{ WHIT.."15) "..getBossName("Baroness Anastari", 451), 451 }, -- 479
@@ -628,7 +629,7 @@ db.AtlasMaps = {
 		NextMap = "CL_TheDeadmines",
 		{ BLUE.."A) "..ENTRANCE },
 		{ BLUE.."B) "..BZ["The Deadmines"] },
-		{ WHIT.."1) "..getBossName("Marisa du'Paige")..L_PAREN..ALC["Varies"]..R_PAREN },
+		{ WHIT.."1) "..getBossName("Marisa du'Paige")..L_PAREN..VARIES..R_PAREN },
 		{ WHIT.."2) "..getBossName("Brainwashed Noble")..L_PAREN..RARE..R_PAREN },
 		{ WHIT.."3) "..getBossName("Foreman Thistlenettle") },
 	},
@@ -654,7 +655,7 @@ db.AtlasMaps = {
 		{ WHIT..INDENT..getBossName("Cookie") }, -- 2746
 		{ WHIT..INDENT..getBossName("Edwin VanCleef") }, --2747
 	},
-	CL_TheStockade = {
+	CF_TheStockade = {
 		ZoneName = { BZ["Stormwind Stockades"] },
 		Location = { BZ["Stormwind City"] },
 		DungeonID = 11,
@@ -664,12 +665,12 @@ db.AtlasMaps = {
 		WorldMapID = 225,
 		Module = "Atlas_ClassicWoW",
 		{ BLUE.." A) "..ENTRANCE, 10001 },
-		{ WHIT.." 1) "..getBossName("Targorr the Dread")..L_PAREN..ALC["Varies"]..R_PAREN }, -- 2756
-		{ WHIT.." 2) "..getBossName("Kam Deepfury") }, -- 2757
-		{ WHIT.." 3) "..getBossName("Hamhock") }, -- 2758
-		{ WHIT.." 4) "..getBossName("Bazil Thredd") }, -- 2760
-		{ WHIT.." 5) "..getBossName("Dextren Ward") }, -- 2759
-		{ WHIT.." 6) "..getBossName("Bruegal Ironknuckle")..L_PAREN..RARE..R_PAREN },
+		{ WHIT.." 1) "..getBossName("Targorr the Dread")..L_PAREN..VARIES..R_PAREN, 10002 }, -- 2756
+		{ WHIT.." 2) "..getBossName("Kam Deepfury"), 10003 }, -- 2757
+		{ WHIT.." 3) "..getBossName("Hamhock"), 10004 }, -- 2758
+		{ WHIT.." 4) "..getBossName("Bazil Thredd"), 10005 }, -- 2760
+		{ WHIT.." 5) "..getBossName("Dextren Ward"), 10006 }, -- 2759
+		{ WHIT.." 6) "..getBossName("Bruegal Ironknuckle")..L_PAREN..RARE..R_PAREN, 10007 },
 	},
 	CL_TheSunkenTempleEnt = {
 		ZoneName = { BZ["Sunken Temple"]..L_PAREN..ENTRANCE..R_PAREN },
@@ -729,7 +730,7 @@ db.AtlasMaps = {
 		Acronym = L["Ulda"],
 		WorldMapID = 70,
 		Module = "Atlas_ClassicWoW",
-		NextMap = "CL_Uldaman",
+		NextMap = "CF_Uldaman",
 		{ BLUE.." A) "..ENTRANCE, 10001 },
 		{ BLUE.." B) "..BZ["Uldaman"], 10002 },
 		{ WHIT.." 1) "..getBossName("Hammertoe Grez", 2909), 10003 },
@@ -739,7 +740,7 @@ db.AtlasMaps = {
 		{ WHIT.." 5) "..L["Garrett Family Chest"], 10007 },
 		{ GREN.." 1') "..getBossName("Digmaster Shovelphlange", 7057)..L_PAREN..RARE..R_PAREN, 10008 },
 	},
-	CL_Uldaman = {
+	CF_Uldaman = {
 		ZoneName = { BZ["Uldaman"] },
 		Location = { BZ["Badlands"] },
 		DungeonID = 21,
@@ -886,7 +887,7 @@ db.AtlasMaps = {
 		{ WHIT.." 3) "..getBossName("Lady Sarevess"), 10004 }, -- 2762
 		{ WHIT.." 4) "..L["Argent Guard Thaelrid"], 10005 },
 		{ WHIT.." 5) "..getBossName("Gelihast"), 10006 }, -- 2763
-		{ WHIT.." 6) "..getBossName("Lorgus Jett")..L_PAREN..ALC["Varies"]..R_PAREN, 10007 }, -- 2764
+		{ WHIT.." 6) "..getBossName("Lorgus Jett")..L_PAREN..VARIES..R_PAREN, 10007 }, -- 2764
 	},
 	CL_BlackfathomDeepsB = {
 		ZoneName = { BZ["Blackfathom Deeps"]..ALC["MapB"] },
@@ -899,7 +900,7 @@ db.AtlasMaps = {
 		Module = "Atlas_ClassicWoW",
 		PrevMap = "CL_BlackfathomDeepsA",
 		NextMap = "CL_BlackfathomDeepsC",
-		{ WHIT.." 6) "..getBossName("Lorgus Jett")..L_PAREN..ALC["Varies"]..R_PAREN, 10007 }, -- 2764
+		{ WHIT.." 6) "..getBossName("Lorgus Jett")..L_PAREN..VARIES..R_PAREN, 10007 }, -- 2764
 		{ WHIT.." 7) "..getBossName("Baron Aquanis")..L_PAREN..ALC["Summon"]..R_PAREN },
 		{ WHIT..INDENT..L["Fathom Core"] },
 		{ WHIT.." 8) "..getBossName("Twilight Lord Kelris"), 10009 }, -- 2766
@@ -1040,7 +1041,7 @@ db.AtlasMaps = {
 		Acronym = L["Mara"],
 		WorldMapID = 280,
 		Module = "Atlas_ClassicWoW",
-		NextMap = "CL_Maraudon",
+		NextMap = "CF_MaraudonA",
 		{ BLUE.." A) "..ENTRANCE, 10001 },
 		{ WHIT..INDENT..L["The Nameless Prophet"]..L_PAREN..ALC["Lower"]..R_PAREN },
 		{ BLUE.." B) "..BZ["Maraudon"]..L_PAREN..ALC["Purple"]..R_PAREN, 10002 },
@@ -1051,8 +1052,8 @@ db.AtlasMaps = {
 		{ WHIT.."3) "..getBossName("Magra <The Third Kahn>") };
 		{ WHIT.."4) "..getBossName("Cavindra"), 10008 };
 	},
-	CL_Maraudon = {
-		ZoneName = { BZ["Maraudon"] },
+	CF_MaraudonA = {
+		ZoneName = { BZ["Maraudon"]..ALC["MapA"] },
 		Location = { BZ["Desolace"] },
 		DungeonID = 25,
 		LevelRange = "42-52",
@@ -1061,21 +1062,33 @@ db.AtlasMaps = {
 		WorldMapID = 349,
 		Module = "Atlas_ClassicWoW",
 		PrevMap = "CL_MaraudonEnt",
+		NextMap = "CF_MaraudonB",
 		{ BLUE.." A) "..ENTRANCE..L_PAREN..ALC["Orange"]..R_PAREN, 10001 },
 		{ BLUE.." B) "..ENTRANCE..L_PAREN..ALC["Purple"]..R_PAREN, 10002 },
-		{ BLUE.." C) "..ENTRANCE..L_PAREN..ALC["Portal"]..R_PAREN, 10003 },
-		{ WHIT.." 1) "..L["Veng (The Fifth Khan)"], 10004 },
-		{ WHIT.." 2) "..getBossName("Noxxion", 423), 10005 }, -- 422
-		{ WHIT.." 3) "..getBossName("Razorlash", 424), 10006 }, -- 423
-		{ WHIT.." 4) "..L["Maraudos (The Fourth Khan)"], 10007 },
-		{ WHIT.." 5) "..getBossName("Lord Vyletongue", 427), 10008 }, -- 424
-		{ WHIT.." 6) "..getBossName("Meshlok the Harvester")..L_PAREN..RARE..COMMA..WANDERS..R_PAREN, 10009 },
-		{ WHIT.." 7) "..getBossName("Celebras the Cursed", 428), 10010 }, -- 425
-		{ WHIT.." 8) "..getBossName("Landslide", 429), 10011 }, -- 426
-		{ WHIT.." 9) "..getBossName("Tinkerer Gizlock", 425), 10012 }, -- 427
-		{ WHIT.."10) "..getBossName("Rotgrip", 430), 10013 }, -- 428
-		{ WHIT.."11) "..getBossName("Princess Theradras", 431), 10014 }, -- 429
-		{ WHIT.."12) "..L["Elder Splitrock"]..L_PAREN..ALC["Lunar Festival"]..R_PAREN, 10015 },
+		{ WHIT.." 1) "..L["Veng (The Fifth Khan)"], 10003 },
+		{ WHIT.." 2) "..getBossName("Noxxion", 423), 10004 }, -- 422
+		{ WHIT.." 3) "..getBossName("Razorlash", 424), 10005 }, -- 423
+		{ WHIT.." 4) "..L["Maraudos (The Fourth Khan)"], 10006 },
+		{ WHIT.." 5) "..getBossName("Lord Vyletongue", 427), 10007 }, -- 424
+		{ WHIT.." 6) "..getBossName("Meshlok the Harvester")..L_PAREN..RARE..COMMA..WANDERS..R_PAREN, 10008 },
+		{ WHIT.." 7) "..getBossName("Celebras the Cursed", 428), 10009 }, -- 425
+	},
+	CF_MaraudonB = {
+		ZoneName = { BZ["Maraudon"]..ALC["MapB"] },
+		Location = { BZ["Desolace"] },
+		DungeonID = 25,
+		LevelRange = "42-52",
+		PlayerLimit = { 5 },
+		Acronym = L["Mara"],
+		WorldMapID = 349,
+		Module = "Atlas_ClassicWoW",
+		PrevMap = "CF_MaraudonA",
+		{ BLUE.." C) "..ENTRANCE..L_PAREN..ALC["Portal"]..R_PAREN, 10001 },
+		{ WHIT.." 8) "..getBossName("Landslide", 429), 10002 }, -- 426
+		{ WHIT.." 9) "..getBossName("Tinkerer Gizlock", 425), 10003 }, -- 427
+		{ WHIT.."10) "..getBossName("Rotgrip", 430), 10004 }, -- 428
+		{ WHIT.."11) "..getBossName("Princess Theradras", 431), 10005 }, -- 429
+		{ WHIT.."12) "..L["Elder Splitrock"]..L_PAREN..ALC["Lunar Festival"]..R_PAREN, 10006 },
 	},
 	CL_OnyxiasLair = {
 		ZoneName = { BZ["Onyxia's Lair"] },
@@ -1191,7 +1204,7 @@ db.AtlasMaps = {
 		{ WHIT..INDENT..L["Belnistrasz"] },
 		{ WHIT.." 3) "..getBossName("Mordresh Fire Eye") }, -- 2782
 		{ WHIT.." 4) "..getBossName("Glutton") }, -- 2784
-		{ WHIT.." 5) "..getBossName("Ragglesnout")..L_PAREN..RARE..COMMA..ALC["Varies"]..R_PAREN }, -- 2783
+		{ WHIT.." 5) "..getBossName("Ragglesnout")..L_PAREN..RARE..COMMA..VARIES..R_PAREN }, -- 2783
 		{ WHIT.." 6) "..getBossName("Amnennar the Coldbringer") }, -- 2785
 		{ WHIT.." 7) "..getBossName("Plaguemaw the Rotting") }, -- 2781
 	},
@@ -1216,7 +1229,7 @@ db.AtlasMaps = {
 		{ WHIT..INDENT..L["Heralath Fallowbrook"] },
 		{ WHIT.." 9) "..getBossName("Earthcaller Halmgar")..L_PAREN..RARE..R_PAREN },
 	},
-	CL_WailingCavernsEnt = {
+	CF_WailingCavernsEnt = {
 		ZoneName = { BZ["Wailing Caverns"]..L_PAREN..ENTRANCE..R_PAREN },
 		Location = { BZ["The Barrens"] },
 		DungeonID = 1,
@@ -1225,14 +1238,14 @@ db.AtlasMaps = {
 		Acronym = L["WC"],
 		WorldMapID = 43,
 		Module = "Atlas_ClassicWoW",
-		NextMap = "CL_WailingCaverns",
+		NextMap = "CF_WailingCaverns",
 		{ BLUE.." A) "..ENTRANCE, 10001 },
 		{ BLUE.." B) "..BZ["Wailing Caverns"], 10002 },
-		{ WHIT.." 1) "..getBossName("Mad Magglish")..L_PAREN..ALC["Varies"]..R_PAREN, 10003 },
+		{ WHIT.." 1) "..getBossName("Mad Magglish")..L_PAREN..VARIES..R_PAREN, 10003 },
 		{ WHIT.." 2) "..getBossName("Trigore the Lasher")..L_PAREN..RARE..R_PAREN, 10004 },
 		{ WHIT.." 3) "..getBossName("Boahn")..L_PAREN..RARE..R_PAREN, 10005 },
 	},
-	CL_WailingCaverns = {
+	CF_WailingCaverns = {
 		ZoneName = { BZ["Wailing Caverns"] },
 		Location = { BZ["The Barrens"] },
 		DungeonID = 1,
@@ -1241,19 +1254,19 @@ db.AtlasMaps = {
 		Acronym = L["WC"],
 		WorldMapID = 43,
 		Module = "Atlas_ClassicWoW",
-		PrevMap = "CL_WailingCavernsEnt",
+		PrevMap = "CF_WailingCavernsEnt",
 		{ BLUE.." A) "..ENTRANCE, 10001 },
 		{ WHIT.." 1) "..L["Disciple of Naralex"], 10002 },
 		{ WHIT.." 2) "..getBossName("Lord Cobrahn", 475), 10003 }, -- 586
 		{ WHIT.." 3) "..getBossName("Lady Anacondra", 474), 10004 }, -- 585
-		{ WHIT.." 4) "..getBossName("Kresh", 477)..L_PAREN..ALC["Varies"]..R_PAREN, 10005 }, -- 587
-		{ WHIT.." 5) "..getBossName("Lord Pythas", 476), 10006 }, -- 588
-		{ WHIT.." 6) "..getBossName("Skum", 478), 10007 }, -- 589
-		{ WHIT.." 7) "..getBossName("Lord Serpentis", 479)..L_PAREN..UPPER..R_PAREN, 10008 }, -- 590
-		{ WHIT.." 8) "..getBossName("Verdan the Everliving", 480)..L_PAREN..UPPER..R_PAREN, 10009 }, -- 591
-		{ WHIT.." 9) "..getBossName("Mutanus the Devourer", 481), 10010 }, -- 592
+		{ WHIT.." 4) "..getBossName("Mutanus the Devourer", 481), 10005 }, -- 592
+		{ WHIT.." 5) "..getBossName("Kresh", 477)..L_PAREN..VARIES..R_PAREN, 10006 }, -- 587
+		{ WHIT.." 6) "..getBossName("Lord Pythas", 476), 10007 }, -- 588
+		{ WHIT.." 7) "..getBossName("Skum", 478), 10008 }, -- 589
+		{ WHIT.." 8) "..getBossName("Lord Serpentis", 479)..L_PAREN..UPPER..R_PAREN, 10009 }, -- 590
+		{ WHIT.." 9) "..getBossName("Verdan the Everliving", 480)..L_PAREN..UPPER..R_PAREN, 10010 }, -- 591
 		{ WHIT..INDENT..L["Naralex"] },
-		{ WHIT.."10) "..getBossName("Deviate Faerie Dragon")..L_PAREN..RARE..COMMA..ALC["Varies"]..R_PAREN, 10011 },
+		{ WHIT.."10) "..getBossName("Deviate Faerie Dragon")..L_PAREN..RARE..COMMA..VARIES..R_PAREN, 10011 },
 	},
 	CL_ZulFarrak = {
 		ZoneName = { BZ["Zul'Farrak"] },
@@ -1271,7 +1284,7 @@ db.AtlasMaps = {
 		{ WHIT..INDENT..L["Zul'Farrak Dead Hero"] },
 		{ WHIT.." 4) "..getBossName("Nekrum Gutchewer") }, -- 598
 		{ WHIT..INDENT..getBossName("Shadowpriest Sezz'ziz") }, -- 599
-		{ WHIT..INDENT..getBossName("Dustwraith")..L_PAREN..RARE..COMMA..ALC["Varies"]..R_PAREN, 10003 },
+		{ WHIT..INDENT..getBossName("Dustwraith")..L_PAREN..RARE..COMMA..VARIES..R_PAREN, 10003 },
 		{ WHIT.." 5) "..getBossName("Sergeant Bly") },
 		{ WHIT..INDENT..L["Weegli Blastfuse"] },
 		{ WHIT..INDENT..getBossName("Murta Grimgut") },
@@ -1345,20 +1358,20 @@ db.AtlasMaps_NPC_DB = {
         { "1'", 10008, 292, 307 },
         { "1'", 10008, 101, 301 },
     },
-    CL_Uldaman = {
-        { "A", 10001, 423, 372 },
-        { "B", 10002, 127, 359 },
-        { "1", 10003, 357, 467 },
-        { "2", 10004, 308, 323 },
-        { "3", 10005, 311, 372 },
-        { "4", 10006, 179, 378 },
-        { "5", 10007, 113, 314 },
-        { "6", 10008, 270, 310 },
-        { "7", 10009, 264, 218 },
-        { "8", 10010, 93, 159 },
-        { "9", 10011, 67, 94 },
-        { "10", 10012, 213, 68 },
-        { "11", 10013, 193, 25 },
+    CF_Uldaman = {
+        { "A", 10001, 392, 372 }, -- blue
+        { "B", 10002, 102, 359 }, -- blue
+        { "1", 10003, 318, 464 }, -- white
+        { "2", 10004, 272, 323 }, -- white
+        { "3", 10005, 274, 371 }, -- white
+        { "4", 10006, 150, 377 }, -- white
+        { "5", 10007, 87, 322 }, -- white
+        { "6", 10008, 234, 315 }, -- white
+        { "7", 10009, 231, 223 }, -- white
+        { "8", 10010, 66, 175 }, -- white
+        { "9", 10011, 41, 109 }, -- white
+        { "10", 10012, 183, 88 }, -- white
+        { "11", 10013, 164, 46 }, -- white
     },
     CL_ZulGurub = {
         { "A", 10001, 82, 251 },
@@ -1401,6 +1414,19 @@ db.AtlasMaps_NPC_DB = {
 		{ "1'", 10002, 188, 378 },
 		{ "2'", 281030, 270, 182 },
 	},
+    CF_MoltenCore = {
+        { "A", 10001, 93, 142 }, -- blue
+        { "1", 1519, 353, 214 }, -- white
+        { "2", 1520, 384, 133 }, -- white
+        { "3", 1521, 135, 261 }, -- white
+        { "4", 1522, 120, 364 }, -- white
+        { "5", 1523, 272, 409 }, -- white
+        { "6", 1524, 301, 367 }, -- white
+        { "7", 1526, 369, 313 }, -- white
+        { "8", 1525, 457, 412 }, -- white
+        { "9", 1527, 456, 324 }, -- white
+        { "10", 1528, 281, 289 }, -- white
+    },
     CF_RuinsofLordaeron = {
         { "A", 10001, 324, 87 },
         { 1, 10002, 305, 330 },
@@ -1418,6 +1444,18 @@ db.AtlasMaps_NPC_DB = {
         { "2", 260325, 239, 271 },
         { "3", 260326, 77, 241 },
         { "4", 260808, 197, 340 },
+    },
+    CF_TheStockade = {
+        { "A", 10001, 251, 334 }, -- blue
+        { "1", 10002, 252, 145 }, -- white
+        { "1", 10002, 146, 205 }, -- white
+        { "1", 10002, 205, 231 }, -- white
+        { "1", 10002, 298, 269 }, -- white
+        { "2", 10003, 369, 161 }, -- white
+        { "3", 10004, 424, 233 }, -- white
+        { "4", 10005, 477, 259 }, -- white
+        { "5", 10006, 77, 154 }, -- white
+        { "6", 10017, 119, 223 }, -- white
     },
 --************************************************
 -- Kalimdor Instances (Classic)
@@ -1458,22 +1496,24 @@ db.AtlasMaps_NPC_DB = {
         { "3", 10007, 398, 232 },
         { "4", 10008, 248, 328 },
     },
-    CL_Maraudon = {
-        { "A", 10001, 341, 54 },
-        { "B", 10002, 406, 159 },
-        { "C", 10003, 161, 289 },
-        { "1", 10004, 278, 33 },
-        { "2", 10005, 248, 17 },
-        { "3", 10006, 169, 71 },
-        { "4", 10007, 305, 138 },
-        { "5", 10008, 257, 165 },
-        { "6", 10009, 203, 154 },
-        { "7", 10010, 145, 186 },
-        { "8", 10011, 249, 302 },
-        { "9", 10012, 299, 373 },
-        { "10", 10013, 210, 415 },
-        { "11", 10014, 153, 432 },
-        { "12", 10015, 309, 483 },
+    CF_MaraudonA = {
+        { "A", 10001, 318, 140 }, -- blue
+        { "B", 10002, 404, 279 }, -- blue
+        { "1", 10003, 234, 115 }, -- white
+        { "2", 10004, 188, 86 }, -- white
+        { "3", 10005, 85, 161 }, -- white
+        { "4", 10006, 264, 236 }, -- white
+        { "5", 10007, 199, 288 }, -- white
+        { "6", 10008, 127, 264 }, -- white
+        { "7", 10009, 47, 309 }, -- white
+    },
+    CF_MaraudonB = {
+        { "C", 10001, 184, 154 }, -- blue
+        { "8", 10002, 301, 197 }, -- white
+        { "9", 10003, 390, 305 }, -- white
+        { "10", 10004, 249, 370 }, -- white
+        { "11", 10005, 156, 387 }, -- white
+        { "12", 10006, 399, 476 }, -- white
     },
     CL_OnyxiasLair = {
         { "A", 10001, 91, 68 },
@@ -1494,27 +1534,27 @@ db.AtlasMaps_NPC_DB = {
         { "3", 10004, 130, 437 },
         { "4", 10005, 185, 463 },
     },
-    CL_WailingCavernsEnt = {
-        { "A", 10001, 54, 411 },
-        { "B", 10002, 267, 346 },
-        { "1", 10003, 122, 366 },
-        { "1", 10003, 168, 292 },
-        { "1", 10003, 37, 219 },
-        { "2", 10004, 307, 240 },
-        { "3", 10005, 290, 316 },
+    CF_WailingCavernsEnt = {
+        { "A", 10001, 47, 406 }, -- blue
+        { "B", 10002, 264, 340 }, -- blue
+        { "1", 10003, 113, 366 }, -- white
+        { "1", 10003, 155, 289 }, -- white
+        { "1", 10003, 26, 209 }, -- white
+        { "2", 10004, 290, 234 }, -- white
+        { "3", 10005, 274, 304 }, -- white
     },
-    CL_WailingCaverns = {
-        { "A", 10001, 224, 288 },
-        { "1", 10002, 234, 264 },
-        { "2", 10003, 84, 279 },
-        { "3", 10004, 200, 184 },
-        { "4", 10005, 230, 215 },
-        { "5", 10006, 427, 180 },
-        { "6", 10007, 462, 345 },
-        { "7", 10008, 311, 260 },
-        { "8", 10009, 285, 242 },
-        { "9", 10010, 164, 136 },
-        { "10", 10011, 314, 215 },
+    CF_WailingCaverns = {
+        { "A", 10001, 229, 286 }, -- blue
+        { "1", 10002, 227, 257 }, -- white
+        { "2", 10003, 69, 274 }, -- white
+        { "3", 10004, 194, 179 }, -- white
+        { "4", 10005, 161, 127 }, -- white
+        { "5", 10006, 232, 217 }, -- white
+        { "6", 10007, 429, 174 }, -- white
+        { "7", 10008, 466, 346 }, -- white
+        { "8", 10009, 310, 258 }, -- white
+        { "9", 10010, 282, 242 }, -- white
+        { "10", 10011, 317, 213 }, -- white
     },
 }
 
@@ -1537,7 +1577,7 @@ db.AssocDefaults = {
 	[BZ["Hall of Blackhand"]] =		"CL_BlackrockSpireLower",
 	[BZ["Dire Maul"]] =				"CL_DireMaulNorth",
 	[BZ["The Deadmines"]] = 		"CL_TheDeadmines",
-	[BZ["The Wailing Caverns"]] = 	"CL_WailingCavernsEnt",
+	[BZ["The Wailing Caverns"]] = 	"CF_WailingCavernsEnt",
 	[BZ["Sunken Temple"]] = 		"CL_TheSunkenTemple",
 	[BZ["Ironforge"]] = 			"CF_HallofThanes",
 }
@@ -1628,18 +1668,18 @@ db.SubZoneData = {
 	-- The Stockade
 	[BZ["The Stockade"]] = {
 		-- The Stockade
-		["CL_TheStockade"] = {
+		["CF_TheStockade"] = {
 			BZ["Stormwind Stockade"],
 		},
 	},
 	-- Wailing Caverns
 	[BZ["Wailing Caverns"]] = {
 		-- Wailing Caverns, Entrance
-		["CL_WailingCavernsEnt"] = {
+		["CF_WailingCavernsEnt"] = {
 			BZ["Cavern of Mists"],
 		},
 		-- Wailing Caverns
-		["CL_WailingCaverns"] = {
+		["CF_WailingCaverns"] = {
 			BZ["Screaming Gully"],
 			BZ["Dreamer's Rock"],
 			BZ["Pit of Fangs"],
@@ -1677,10 +1717,10 @@ db.OutdoorZoneToAtlas = {
 	[BZ["Western Plaguelands"]] = 	"CL_Scholomance",
 	[BZ["Eastern Plaguelands"]] = 	"CL_Stratholme",
 	[BZ["Westfall"]] = 				"CL_TheDeadminesEnt",
-	[BZ["Stormwind City"]] = 		"CL_TheStockade",
+	[BZ["Stormwind City"]] = 		"CF_TheStockade",
 	[BZ["Swamp of Sorrows"]] = 		"CL_TheSunkenTempleEnt",
 	[BZ["Badlands"]] = 				"CL_UldamanEnt",
-	[BZ["Northern Barrens"]] = 		"CL_WailingCavernsEnt",
+	[BZ["Northern Barrens"]] = 		"CF_WailingCavernsEnt",
 	[BZ["Tanaris"]] = 				"CL_ZulFarrak",
 	--[BZ["Ahn'Qiraj: The Fallen Kingdom"]] = "CL_TheTempleofAhnQiraj",
 	--[BZ["Silithus"]] = 			"CL_TheTempleofAhnQiraj",
@@ -1693,15 +1733,15 @@ db.OutdoorZoneToAtlas = {
 -- Entrance maps to instance maps
 db.EntToInstMatches = {
 	["CL_BlackfathomDeepsEnt"] =	{"CL_BlackfathomDeepsA","CL_BlackfathomDeepsB","CL_BlackfathomDeepsC"},
-	["CL_BlackrockMountainEnt"] =	{"CL_BlackrockDepths","CL_BlackwingLair","CL_BlackrockSpireLower","CL_BlackrockSpireUpper","CL_MoltenCore"},
+	["CL_BlackrockMountainEnt"] =	{"CL_BlackrockDepths","CL_BlackwingLair","CL_BlackrockSpireLower","CL_BlackrockSpireUpper","CF_MoltenCore"},
 	["CL_DireMaulEnt"] =			{"CL_DireMaulEast","CL_DireMaulNorth","CL_DireMaulWest"},
 	["CL_GnomereganEnt"] =			{"CF_Gnomeregan"},
-	["CL_MaraudonEnt"] =			{"CL_Maraudon"},
+	["CL_MaraudonEnt"] =			{"CF_MaraudonA","CF_MaraudonB"},
 	["CL_ScarletMonasteryEnt"] = 	{"CL_SMArmory", "CL_SMCathedral", "CL_SMGraveyard", "CL_SMLibrary"},
 	["CL_TheDeadminesEnt"] =		{"CL_TheDeadmines"},
 	["CL_TheSunkenTempleEnt"] =		{"CL_TheSunkenTemple"},
-	["CL_UldamanEnt"] =				{"CL_Uldaman"},
-	["CL_WailingCavernsEnt"] =		{"CL_WailingCaverns"},
+	["CL_UldamanEnt"] =				{"CF_Uldaman"},
+	["CF_WailingCavernsEnt"] =		{"CF_WailingCaverns"},
 }
 
 -- Instance maps to entrance maps
@@ -1713,19 +1753,21 @@ db.InstToEntMatches = {
 	["CL_BlackwingLair"] =			{"CL_BlackrockMountainEnt"},
 	["CL_BlackrockSpireLower"] =	{"CL_BlackrockMountainEnt"},
 	["CL_BlackrockSpireUpper"] =	{"CL_BlackrockMountainEnt"},
-	["CL_MoltenCore"] =				{"CL_BlackrockMountainEnt"},
+	["CF_MoltenCore"] =				{"CL_BlackrockMountainEnt"},
 	["CL_DireMaulEast"] =			{"CL_DireMaulEnt"},
 	["CL_DireMaulNorth"] =			{"CL_DireMaulEnt"},
 	["CL_DireMaulWest"] =			{"CL_DireMaulEnt"},
 	["CF_Gnomeregan"] =				{"CL_GnomereganEnt"},
+	["CF_MaraudonA"] =				{"CL_MaraudonEnt"},
+	["CF_MaraudonB"] =				{"CL_MaraudonEnt"},
 	["CL_SMArmory"] =				{"CL_ScarletMonasteryEnt"},
 	["CL_SMCathedral"] =			{"CL_ScarletMonasteryEnt"},
 	["CL_SMGraveyard"] =			{"CL_ScarletMonasteryEnt"},
 	["CL_SMLibrary"] =				{"CL_ScarletMonasteryEnt"},
 	["CL_TheDeadmines"] =			{"CL_TheDeadminesEnt"},
 	["CL_TheSunkenTemple"] =		{"CL_TheSunkenTempleEnt"},
-	["CL_Uldaman"] =				{"CL_UldamanEnt"},
-	["CL_WailingCaverns"] =			{"CL_WailingCavernsEnt"},
+	["CF_Uldaman"] =				{"CL_UldamanEnt"},
+	["CF_WailingCaverns"] =			{"CF_WailingCavernsEnt"},
 }
 
 db.MapSeries = {
@@ -1734,6 +1776,8 @@ db.MapSeries = {
 	["CL_BlackfathomDeepsC"] = 		{"CL_BlackfathomDeepsA","CL_BlackfathomDeepsB","CL_BlackfathomDeepsC"},
 	["CF_CityofDalaranA"] = 		{"CF_CityofDalaranA","CF_CityofDalaranB"},
 	["CF_CityofDalaranB"] = 		{"CF_CityofDalaranA","CF_CityofDalaranB"},
+	["CF_MaraudonA"] =				{"CF_MaraudonA","CF_MaraudonB"},
+	["CF_MaraudonB"] =				{"CF_MaraudonA","CF_MaraudonB"},
 }
 
 -- Links maps together that are part of the same instance
@@ -1775,13 +1819,13 @@ db.DropDownLayouts = {
 			"CL_GnomereganEnt",
 			"CL_BlackrockSpireLower",
 			"CL_BlackrockSpireUpper",
-			"CL_MoltenCore",
+			"CF_MoltenCore",
 			"CL_ShadowfangKeep",
 			"CL_Stratholme",
-			"CL_TheStockade",
+			"CF_TheStockade",
 			"CL_TheSunkenTemple",
 			"CL_TheSunkenTempleEnt",
-			"CL_Uldaman",
+			"CF_Uldaman",
 			"CL_UldamanEnt",
 			"CF_RuinsofLordaeron",
 			"CL_Scholomance",
@@ -1806,7 +1850,8 @@ db.DropDownLayouts = {
 			"CL_DireMaulEnt",	
 			"CL_DireMaulNorth",
 			"CL_DireMaulWest",	
-			"CL_Maraudon",	
+			"CF_MaraudonA",
+			"CF_MaraudonB",
 			"CL_MaraudonEnt",	
 			"CL_OnyxiasLair",
 			"CF_RagefireChasm",
@@ -1814,8 +1859,8 @@ db.DropDownLayouts = {
 			"CL_RazorfenKraul",
 			--"CL_TheTempleofAhnQiraj",
 			--"CL_TheRuinsofAhnQiraj",
-			"CL_WailingCaverns",
-			"CL_WailingCavernsEnt",
+			"CF_WailingCaverns",
+			"CF_WailingCavernsEnt",
 			"CL_ZulFarrak",	
 		},
 	},
@@ -1836,9 +1881,10 @@ db.DropDownLayouts = {
 			"CL_GnomereganEnt",
 			"CL_BlackrockSpireLower",
 			"CL_BlackrockSpireUpper",
-			"CL_Maraudon",
+			"CF_MaraudonA",
+			"CF_MaraudonB",
 			"CL_MaraudonEnt",
-			"CL_MoltenCore",
+			"CF_MoltenCore",
 			"CL_OnyxiasLair",
 			"CL_TheDeadmines",
 			"CL_TheDeadminesEnt",
@@ -1854,15 +1900,15 @@ db.DropDownLayouts = {
 			"CL_SMGraveyard",
 			"CL_SMLibrary",
 			"CL_Stratholme",
-			"CL_TheStockade",
+			"CF_TheStockade",
 			"CL_TheSunkenTemple",
 			"CL_TheSunkenTempleEnt",
 			--"CL_TheTempleofAhnQiraj",
 			--"CL_TheRuinsofAhnQiraj",
-			"CL_Uldaman",
+			"CF_Uldaman",
 			"CL_UldamanEnt",
-			"CL_WailingCaverns",
-			"CL_WailingCavernsEnt",
+			"CF_WailingCaverns",
+			"CF_WailingCavernsEnt",
 			"CL_ZulFarrak",
 			"CL_ZulGurub",
 			"CF_HallofThanes",
@@ -1877,8 +1923,8 @@ db.DropDownLayouts = {
 			"CF_RagefireChasm",
 			"CL_TheDeadmines",
 			"CL_TheDeadminesEnt",
-			"CL_WailingCaverns",
-			"CL_WailingCavernsEnt",
+			"CF_WailingCaverns",
+			"CF_WailingCavernsEnt",
 			"CF_HallofThanes",
 			"CF_RuinsofLordaeron",
 		},
@@ -1893,9 +1939,9 @@ db.DropDownLayouts = {
 			"CL_ShadowfangKeep",
 			"CL_TheDeadmines",
 			"CL_TheDeadminesEnt",
-			"CL_TheStockade",
-			"CL_WailingCaverns",
-			"CL_WailingCavernsEnt",
+			"CF_TheStockade",
+			"CF_WailingCaverns",
+			"CF_WailingCavernsEnt",
 			"CL_RazorfenDowns",
 			"CL_RazorfenKraul",
 			"CF_RuinsofLordaeron",
@@ -1924,19 +1970,20 @@ db.DropDownLayouts = {
 			"CL_DireMaulEnt",	
 			"CL_DireMaulNorth",
 			"CL_DireMaulWest",	
-			"CL_Maraudon",	
+			"CF_MaraudonA",	
+			"CF_MaraudonB",
 			"CL_MaraudonEnt",	
 			"CL_Scholomance",	
 			"CL_Stratholme",	
 			"CL_TheSunkenTemple",
 			"CL_TheSunkenTempleEnt",
-			"CL_Uldaman",	
+			"CF_Uldaman",	
 			"CL_UldamanEnt",	
 			"CL_ZulFarrak",	
 		},
 		[ATLAS_DDL_LEVEL_60TO70] = {
 			"CL_BlackwingLair",
-			"CL_MoltenCore",	
+			"CF_MoltenCore",	
 			"CL_OnyxiasLair",
 			--"CL_TheRuinsofAhnQiraj",
 			--"CL_TheTempleofAhnQiraj",
@@ -1962,7 +2009,8 @@ db.DropDownLayouts = {
 			"CL_DireMaulWest",
 			"CF_Gnomeregan",
 			"CL_GnomereganEnt",
-			"CL_Maraudon",
+			"CF_MaraudonA",
+			"CF_MaraudonB",
 			"CL_MaraudonEnt",
 			"CF_RagefireChasm",
 			"CL_RazorfenDowns",
@@ -1975,14 +2023,14 @@ db.DropDownLayouts = {
 			"CL_ScarletMonasteryEnt",
 			"CL_Scholomance",
 			"CL_ShadowfangKeep",
-			"CL_TheStockade",
+			"CF_TheStockade",
 			"CL_Stratholme",
 			"CL_TheSunkenTemple",
 			"CL_TheSunkenTempleEnt",
-			"CL_Uldaman",
+			"CF_Uldaman",
 			"CL_UldamanEnt",
-			"CL_WailingCaverns",
-			"CL_WailingCavernsEnt",
+			"CF_WailingCaverns",
+			"CF_WailingCavernsEnt",
 			"CL_ZulFarrak",
 			"CF_HallofThanes",
 			"CF_ExcavationSiteWetlands",
@@ -1992,7 +2040,7 @@ db.DropDownLayouts = {
 		[ATLAS_DDL_PARTYSIZE_20TO40] = {
 			"CL_BlackrockMountainEnt",
 			"CL_BlackwingLair",
-			"CL_MoltenCore",
+			"CF_MoltenCore",
 			"CL_OnyxiasLair",
 			--"CL_TheTempleofAhnQiraj",
 			--"CL_TheRuinsofAhnQiraj",
@@ -2014,9 +2062,10 @@ db.DropDownLayouts = {
 			"CL_DireMaulNorth",
 			"CL_DireMaulWest",
 			"CF_Gnomeregan",
-			"CL_Maraudon",
+			"CF_MaraudonA",
+			"CF_MaraudonB",
 			"CL_OnyxiasLair",
-			"CL_MoltenCore",
+			"CF_MoltenCore",
 			"CF_RagefireChasm",
 			"CL_RazorfenDowns",
 			"CL_RazorfenKraul",
@@ -2028,10 +2077,10 @@ db.DropDownLayouts = {
 			"CL_Scholomance",
 			"CL_ShadowfangKeep",
 			"CL_Stratholme",
-			"CL_TheStockade",
+			"CF_TheStockade",
 			"CL_TheSunkenTemple",
-			"CL_Uldaman",
-			"CL_WailingCaverns",
+			"CF_Uldaman",
+			"CF_WailingCaverns",
 			"CL_ZulFarrak",
 			"CL_ZulGurub",
 			"CF_HallofThanes",
@@ -2052,7 +2101,7 @@ db.DropDownLayouts = {
 			"CL_MaraudonEnt",
 			"CL_TheSunkenTempleEnt",
 			"CL_UldamanEnt",
-			"CL_WailingCavernsEnt",
+			"CF_WailingCavernsEnt",
 		},
 	},
 }

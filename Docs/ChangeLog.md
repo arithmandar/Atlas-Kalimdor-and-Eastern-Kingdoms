@@ -5,7 +5,7 @@ Copyright 2011 ~ 2026 - Arith Hsu, Atlas Team
 
 # Change Log
 
-## v1.54.02 (Oct. xx, 2026)
+## v1.54.02 (Oct. 22, 2026)
 
 - Forever:
   - Map revamped:
@@ -14,6 +14,8 @@ Copyright 2011 ~ 2026 - Arith Hsu, Atlas Team
     - Uldaman
     - Maraudon
     - Wailing Caverns
+    - Razorfen Downs
+    - Razorfen Kraul
 - Mainline:
   - Blackfathom Deeps entrance and instance maps revamped
 

@@ -1189,7 +1189,7 @@ db.AtlasMaps = {
 		{ WHIT.." 3) "..getCreatureName("Jergosh the Invoker", 11518), 10004 }, -- 2734
 		{ WHIT.." 4) "..getCreatureName("Bazzalan", 11519), 10005 }, -- 2735
 	},
-	CL_RazorfenDowns = {
+	CF_RazorfenDowns = {
 		ZoneName = { BZ["Razorfen Downs"] },
 		Location = { BZ["The Barrens"] },
 		DungeonID = 19,
@@ -1208,7 +1208,7 @@ db.AtlasMaps = {
 		{ WHIT.." 6) "..getBossName("Amnennar the Coldbringer") }, -- 2785
 		{ WHIT.." 7) "..getBossName("Plaguemaw the Rotting") }, -- 2781
 	},
-	CL_RazorfenKraul = {
+	CF_RazorfenKraul = {
 		ZoneName = { BZ["Razorfen Kraul"] },
 		Location = { BZ["The Barrens"] },
 		DungeonID = 15,
@@ -1218,16 +1218,16 @@ db.AtlasMaps = {
 		WorldMapID = 47,
 		Module = "Atlas_ClassicWoW",
 		{ BLUE.." A) "..ENTRANCE, 10001 },
-		{ WHIT.." 1) "..getBossName("Roogug") }, -- 2773
-		{ WHIT.." 2) "..getBossName("Aggem Thorncurse") }, -- 2774
-		{ WHIT.." 3) "..getBossName("Death Speaker Jargba") }, -- 2775
-		{ WHIT.." 4) "..getBossName("Overlord Ramtusk") }, -- 2776
-		{ WHIT.." 5) "..getBossName("Agathelos the Raging") }, -- 2777
-		{ WHIT.." 6) "..getBossName("Blind Hunter")..L_PAREN..RARE..R_PAREN },
-		{ WHIT.." 7) "..getBossName("Charlga Razorflank") }, -- 2778
-		{ WHIT.." 8) "..L["Willix the Importer"] },
+		{ WHIT.." 1) "..getBossName("Roogug"), 10002 }, -- 2773
+		{ WHIT.." 2) "..getBossName("Aggem Thorncurse"), 10003 }, -- 2774
+		{ WHIT.." 3) "..getBossName("Death Speaker Jargba"), 10004 }, -- 2775
+		{ WHIT.." 4) "..getBossName("Overlord Ramtusk"), 10005 }, -- 2776
+		{ WHIT.." 5) "..getBossName("Agathelos the Raging"), 10006 }, -- 2777
+		{ WHIT.." 6) "..getBossName("Blind Hunter")..L_PAREN..RARE..R_PAREN, 10007 },
+		{ WHIT.." 7) "..getBossName("Charlga Razorflank"), 10008 }, -- 2778
+		{ WHIT.." 8) "..L["Willix the Importer"], 10009 },
 		{ WHIT..INDENT..L["Heralath Fallowbrook"] },
-		{ WHIT.." 9) "..getBossName("Earthcaller Halmgar")..L_PAREN..RARE..R_PAREN },
+		{ WHIT.." 9) "..getBossName("Earthcaller Halmgar")..L_PAREN..RARE..R_PAREN, 10010 },
 	},
 	CF_WailingCavernsEnt = {
 		ZoneName = { BZ["Wailing Caverns"]..L_PAREN..ENTRANCE..R_PAREN },
@@ -1527,6 +1527,28 @@ db.AtlasMaps_NPC_DB = {
         { "2", 10003, 296, 281 },
         { "3", 10004, 359, 141 },
     },
+    CF_RazorfenDowns = {
+        { "A", 10001, 24, 148 }, -- blue
+        { "1", 10002, 265, 211 }, -- white
+        { "2", 10003, 390, 169 }, -- white
+        { "3", 10004, 443, 271 }, -- white
+        { "4", 10005, 104, 366 }, -- white
+        { "5", 10006, 113, 296 }, -- white
+        { "5", 10007, 205, 383 }, -- white
+        { "6", 10008, 163, 337 }, -- white
+    },
+    CF_RazorfenKraul = {
+        { "A", 10001, 358, 370 }, -- blue
+        { "1", 10002, 360, 234 }, -- white
+        { "2", 10003, 448, 265 }, -- white
+        { "3", 10004, 478, 218 }, -- white
+        { "4", 10005, 305, 163 }, -- white
+        { "5", 10006, 37, 323 }, -- white
+        { "6", 10007, 42, 164 }, -- white
+        { "7", 10008, 128, 171 }, -- white
+        { "8", 10009, 191, 169 }, -- white
+        { "9", 10010, 260, 230 }, -- white
+    },
     CF_RagefireChasm = {
         { "A", 10001, 337, 26 },
         { "1", 10002, 362, 272 },
@@ -1710,8 +1732,8 @@ db.OutdoorZoneToAtlas = {
 	[BZ["Desolace"]] = 				"CL_MaraudonEnt",
 	[BZ["Ironforge"]] = 			"CF_HallofThanes",
 	[BZ["Orgrimmar"]] = 			"CF_RagefireChasm",
-	[BZ["Thousand Needles"]] = 		"CL_RazorfenDowns",
-	[BZ["Southern Barrens"]] = 		"CL_RazorfenKraul",
+	[BZ["Thousand Needles"]] = 		"CF_RazorfenDowns",
+	[BZ["Southern Barrens"]] = 		"CF_RazorfenKraul",
 	[BZ["Silverpine Forest"]] = 	"CL_ShadowfangKeep",
 	[BZ["Tirisfal Glades"]] = 		"CF_RuinsofLordaeron",
 	[BZ["Western Plaguelands"]] = 	"CL_Scholomance",
@@ -1855,8 +1877,8 @@ db.DropDownLayouts = {
 			"CL_MaraudonEnt",	
 			"CL_OnyxiasLair",
 			"CF_RagefireChasm",
-			"CL_RazorfenDowns",
-			"CL_RazorfenKraul",
+			"CF_RazorfenDowns",
+			"CF_RazorfenKraul",
 			--"CL_TheTempleofAhnQiraj",
 			--"CL_TheRuinsofAhnQiraj",
 			"CF_WailingCaverns",
@@ -1889,8 +1911,8 @@ db.DropDownLayouts = {
 			"CL_TheDeadmines",
 			"CL_TheDeadminesEnt",
 			"CF_RagefireChasm",
-			"CL_RazorfenDowns",
-			"CL_RazorfenKraul",
+			"CF_RazorfenDowns",
+			"CF_RazorfenKraul",
 			"CF_RuinsofLordaeron",
 			"CL_Scholomance",
 			"CL_ShadowfangKeep",
@@ -1942,8 +1964,8 @@ db.DropDownLayouts = {
 			"CF_TheStockade",
 			"CF_WailingCaverns",
 			"CF_WailingCavernsEnt",
-			"CL_RazorfenDowns",
-			"CL_RazorfenKraul",
+			"CF_RazorfenDowns",
+			"CF_RazorfenKraul",
 			"CF_RuinsofLordaeron",
 			"CL_ScarletMonasteryEnt",
 			"CL_SMArmory",
@@ -1955,8 +1977,8 @@ db.DropDownLayouts = {
 			"CF_CityofDalaranB"
 		},
 		[ATLAS_DDL_LEVEL_40TO60] = {
-			"CL_RazorfenDowns",
-			"CL_RazorfenKraul",
+			"CF_RazorfenDowns",
+			"CF_RazorfenKraul",
 			"CL_ScarletMonasteryEnt",
 			"CL_SMArmory",	
 			"CL_SMCathedral",	
@@ -2013,8 +2035,8 @@ db.DropDownLayouts = {
 			"CF_MaraudonB",
 			"CL_MaraudonEnt",
 			"CF_RagefireChasm",
-			"CL_RazorfenDowns",
-			"CL_RazorfenKraul",
+			"CF_RazorfenDowns",
+			"CF_RazorfenKraul",
 			"CF_RuinsofLordaeron",
 			"CL_SMArmory",
 			"CL_SMCathedral",
@@ -2067,8 +2089,8 @@ db.DropDownLayouts = {
 			"CL_OnyxiasLair",
 			"CF_MoltenCore",
 			"CF_RagefireChasm",
-			"CL_RazorfenDowns",
-			"CL_RazorfenKraul",
+			"CF_RazorfenDowns",
+			"CF_RazorfenKraul",
 			"CF_RuinsofLordaeron",
 			"CL_SMArmory",
 			"CL_SMCathedral",

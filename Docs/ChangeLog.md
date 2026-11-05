@@ -1,9 +1,14 @@
-Atlas, a World of Warcraft instance map browser<br>
-Copyright 2005 ~ 2010 - Dan Gilbert<br>
-Copyright 2010 - Lothaer<br>
-Copyright 2011 ~ 2026 - Arith Hsu, Atlas Team 
+# Atlas, a World of Warcraft instance map browser
+
+- Copyright 2005 ~ 2010 - Dan Gilbert
+- Copyright 2010 - Lothaer
+- Copyright 2011 ~ 2026 - Arith Hsu, Atlas Team 
 
 # Change Log
+
+## v1.54.03 (Nov. 06, 2026)
+
+- Locale update
 
 ## v1.54.02 (Oct. 22, 2026)
 

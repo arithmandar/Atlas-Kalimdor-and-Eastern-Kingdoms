@@ -23,8 +23,8 @@
 
 --]]
 
-local AceLocale = LibStub:GetLibrary("AceLocale-3.0");
-local L = AceLocale:NewLocale("Atlas_ClassicWoW", "zhTW", false);
+local AceLocale = LibStub:GetLibrary("AceLocale-3.0")
+local L = AceLocale:NewLocale("Atlas_ClassicWoW", "zhTW", false)
 
 if L then
 --************************************************
@@ -32,9 +32,9 @@ if L then
 --************************************************
 	--Classic Acronyms
 	L["AQ"] = "安其拉" -- Ahn'Qiraj 安其拉
-	L["AQ10"] = "AQ10" -- Ruins of Ahn'Qiraj 安其拉廢墟
-	L["AQ20"] = "AQ20" -- Ruins of Ahn'Qiraj
-	L["AQ40"] = "AQ40" -- Temple of Ahn'Qiraj 安其拉神廟
+	L["AQ10"] = "安其拉（10人團隊)" -- Ruins of Ahn'Qiraj
+	L["AQ20"] = "安其拉（20人團隊)" -- Ruins of Ahn'Qiraj
+	L["AQ40"] = "安其拉（40人團隊）" -- Temple of Ahn'Qiraj
 	L["BFD"] = "BFD/黑淵" -- Blackfathom Deeps 黑暗深淵
 	L["BRD"] = "BRD/黑石淵" -- Blackrock Depths 黑石深淵
 	L["BRM"] = "BRM/黑石山" -- Blackrock Mountain 黑石山
@@ -65,7 +65,10 @@ if L then
 	L["Scarshield Quartermaster <Scarshield Legion>"] = "裂盾軍需官"
 	L["The Behemoth"] = "貝哈默斯"
 	L["Franclorn Forgewright"] = "弗蘭克羅恩·鑄鐵的雕像"
-		
+
+	-- Blackrock Depths
+	L["Abandoned Mole Machine"] = "棄置的鑽地機"
+	
 	--Dire Maul (Entrance)	
 	L["Dire Pool"] = "厄運之池"
 	L["Dire Maul Arena"] = "厄運競技場"
@@ -191,7 +194,7 @@ if L then
 	L["Lord Vyletongue"] = "維利塔恩領主"
 	L["Celebras the Cursed"] = "被詛咒的塞雷布拉斯"
 	L["Landslide"] = "蘭斯利德"
-	L["Tinkerer Gizlock"] = "技工吉茲洛克"
+	L["Tinkerer Gizlock"] = "工匠吉茲洛克"
 	L["Rotgrip"] = "洛特格里普"
 	L["Princess Theradras"] = "瑟萊德絲公主"	
 	L["Elder Splitrock"] = "劈石長者"
@@ -229,9 +232,9 @@ if L then
 		
 	--Razorfen Kraul	
 	L["Roogug"] = "魯古格"
-	L["Aggem Thorncurse"] = "阿葛金‧棘咒"
+	L["Aggem Thorncurse"] = "阿格姆"
 	L["Death Speaker Jargba"] = "亡語者賈格巴"
-	L["Overlord Ramtusk"] = "拉姆塔斯主宰"
+	L["Overlord Ramtusk"] = "主宰拉姆塔斯"
 	L["Agathelos the Raging"] = "暴怒的阿迦賽羅斯"
 	L["Charlga Razorflank"] = "卡爾加·刺肋"
 	L["Auld Stonespire"] = "奧爾德·石塔"
@@ -277,7 +280,7 @@ if L then
 	--Temple of Ahn'Qiraj	
 	L["The Prophet Skeram"] = "預言者斯克拉姆"
 	L["Battleguard Sartura"] = "沙爾圖拉"
-	L["Fankriss the Unyielding"] = "不屈的范克里斯"
+	L["Fankriss the Unyielding"] = "頑強的范克里斯"
 	L["Princess Huhuran"] = "哈霍蘭公主"
 	L["Vek'lor"] = "維克洛爾大帝"
 	L["Vek'nilash"] = "維克尼拉斯大帝"
@@ -296,7 +299,7 @@ if L then
 	L["The Bug Family"] = "蟲族"
 	L["Lord Kri"] = "克里勳爵"
 	L["Princess Yauj"] = "亞爾基公主"
---	L["The Twin Emperors"] = "The Twin Emperors"
+	L["The Twin Emperors"] = "雙子帝王"
 	L["Emperor Vek'lor"] = "維克洛爾大帝"
 	L["Emperor Vek'nilash"] = "維克尼拉斯"
 		
@@ -369,7 +372,7 @@ if L then
 	L["Plague Wing"] = "瘟疫區"
 	L["Noth the Plaguebringer"] = "『瘟疫使者』諾斯"
 	L["Heigan the Unclean"] = "『骯髒者』海根"
-	L["Loatheb"] = "憎恨者"
+	L["Loatheb"] = "洛斯伯"
 	L["Frostwyrm Lair"] = "冰霜巨龍的巢穴"
 	L["Sapphiron"] = "薩菲隆"
 	L["Kel'Thuzad"] = "科爾蘇加德"
@@ -432,13 +435,13 @@ if L then
 	L["High Justice Grimstone"] = "裁決者格里斯通"
 	L["Monument of Franclorn Forgewright"] = "弗蘭克羅恩·鑄鐵的雕像"
 	L["Pyromancer Loregrain"] = "控火師羅格雷恩"
-	L["Warder Stilgiss"] = "守衛斯迪爾基斯"
+	L["Warder Stilgiss"] = "典獄官斯迪爾基斯"
 	L["Verek"] = "維雷克"
 	L["Fineous Darkvire"] = "弗諾斯·達克維爾"
 	L["Lord Incendius"] = "伊森迪奧斯領主"
 	L["Bael'Gar"] = "貝爾加"
 	L["General Angerforge"] = "安格弗將軍"
-	L["Golem Lord Argelmach"] = "魔像領主阿格曼奇"
+	L["Golem Lord Argelmach"] = "傀儡統帥阿格曼奇"
 	L["The Grim Guzzler"] = "黑鐵酒吧"
 	L["Hurley Blackbreath"] = "霍爾雷·黑鬚"
 	L["Lokhtos Darkbargainer"] = "羅克圖斯·暗契"
@@ -528,7 +531,7 @@ if L then
 	L["Mr. Smite"] = "重拳先生"
 	L["Captain Greenskin"] = "綠皮隊長"
 	L["Edwin VanCleef"] = "艾德溫·范克里夫"
-	L["Cookie"] = "廚師"
+	L["Cookie"] = "曲奇"
 	L["Defias Gunpowder"] = "迪菲亞火藥"
 	
 	--Gnomeregan	
@@ -655,14 +658,14 @@ if L then
 	L["Ironspine"] = "鐵脊死靈"
 	L["Houndmaster Loksey"] = "馴犬者洛克希"
 	L["Arcanist Doan"] = "秘法師杜安"
-	L["Armory"] = "軍械室"
+	L["Armory"] = "軍械庫"
 	L["Herod"] = "赫洛德"
 	L["Scarlet Commander Mograine"] = "血色十字軍指揮官莫格萊尼"
 	L["High Inquisitor Whitemane"] = "高等審判官懷特邁恩"
 	L["High Inquisitor Fairbanks"] = "高等審判官法爾班克斯"
 		
 	L["Cathedral"] = "大教堂"
-	L["Armory"] = "軍械室"
+	L["Armory"] = "軍械庫"
 	L["Library"] = "圖書館"
 		
 	--Uldaman	
@@ -704,7 +707,7 @@ if L then
 	L["High Priestess Jeklik"] = "高階祭司耶克里克"
 	L["High Priest Venoxis"] = "高階祭司溫諾希斯"
 	L["Zanza the Restless"] = "無眠者贊札"
---	L["High Priestess Mar'li"] = "High Priestess Mar'li"
+	L["High Priestess Mar'li"] = "高階祭司瑪俐"
 	L["Bloodlord Mandokir"] = "血領主曼多基爾"
 	L["Ohgan"] = "奧根"
 	L["Edge of Madness"] = "瘋狂之緣"
@@ -713,10 +716,10 @@ if L then
 	L["Renataki"] = "雷納塔基"
 	L["Wushoolay"] = "烏蘇雷"
 	L["Gahz'ranka"] = "加茲蘭卡"
---	L["High Priest Thekal"] = "High Priest Thekal"
+	L["High Priest Thekal"] = "高階祭司塞卡爾"
 	L["Zealot Zath"] = "狂熱者札斯"
 	L["Zealot Lor'Khan"] = "狂熱者洛卡恩"
-	L["High Priestess Arlokk"] = "哈卡萊先知"
+	L["High Priestess Arlokk"] = "高階祭司阿洛克"
 	L["Jin'do the Hexxer"] = "妖術師金度"
 	L["Hakkar"] = "哈卡"
 	L["Muddy Churning Waters"] = "混濁的水"

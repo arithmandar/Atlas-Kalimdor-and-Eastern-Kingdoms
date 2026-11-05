@@ -7,7 +7,7 @@
 
 	This file is part of Atlas.
 
-	Atlas is free software you can redistribute it and/or modify
+	Atlas is free software; you can redistribute it and/or modify
 	it under the terms of the GNU General Public License as published by
 	the Free Software Foundation; either version 2 of the License, or
 	(at your option) any later version.
@@ -23,8 +23,8 @@
 
 --]]
 
-local AceLocale = LibStub:GetLibrary("AceLocale-3.0");
-local L = AceLocale:NewLocale("Atlas_ClassicWoW", "enUS", true, true);
+local AceLocale = LibStub:GetLibrary("AceLocale-3.0")
+local L = AceLocale:NewLocale("Atlas_ClassicWoW", "enUS", true, true)
 
 if L then
 --************************************************

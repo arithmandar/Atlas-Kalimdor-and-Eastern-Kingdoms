@@ -6,6 +6,15 @@
 
 # Change Log
 
+## v1.54.04 (Nov. 10, 2026)
+
+- Forever:
+  - Added auto-select for Hall of Thanes
+  - Remove redundant of "Pit of Fangs" from Wailing Caverns subzone data
+  - Added new dungeon maps:
+    - The Drowned City
+    - Krol'dok Stronghold
+
 ## v1.54.03 (Nov. 06, 2026)
 
 - Locale update

@@ -314,6 +314,22 @@ db.AtlasMaps = {
 		{ WHIT.." 8) "..getCreatureName("Shade of the Archmage", 246020), 246020 },
 		
 	},
+	CF_DrownedCity = {
+		ZoneName = { BZ["The Drowned City"] },
+		Location = { BZ["Stranglethorn Vale"] },
+		LevelRange = "35-40",
+		PlayerLimit = { 5 },
+		DungeonID = 3270,
+		Acronym = L["DC"],
+		WorldMapID = 2970,
+		Module = "Atlas_ClassicWoW",
+		{ BLUE.." A) "..ENTRANCE, 10001 },
+		{ WHIT.." 1) "..getCreatureName("Zul'Alai", 3474), 3474 },
+		{ WHIT.." 2) "..getCreatureName("Var'Taka", 3475), 3475 },
+		{ WHIT.." 3) "..getCreatureName("Captain Dreadrise", 3476), 3476 },
+		{ WHIT.." 4) "..getCreatureName("Deathless Guardians", 3478), 3478 },
+		{ WHIT.." 5) "..getCreatureName("Min'loth the Serpent", 3479), 3479 },
+	},
 	CL_GnomereganEnt = {
 		ZoneName = { BZ["Gnomeregan"]..L_PAREN..ENTRANCE..R_PAREN },
 		Location = { BZ["Dun Morogh"] },
@@ -385,6 +401,22 @@ db.AtlasMaps = {
 		{ INDENT..WHIT..QUESTS_COLON..getQuestTitlebyID(L["An Ancient Grudge"], 96395 ) },
 		{ GREN.." 2') "..getItemTitlebyID(L["Treaty of Understanding"], 281030), 281030, "Treaty of Understanding" }, -- itemID: 281030
 		{ INDENT..WHIT..QUESTS_COLON..getQuestTitlebyID(L["The Treaty of Understanding"], 98423) },
+	},
+	CF_KroldokStronghold = {
+		ZoneName = { BZ["Krol'dok Stronghold"] },
+		Location = { BZ["Riverglades"] },
+		LevelRange = "40-45",
+		PlayerLimit = { 5 },
+		DungeonID = 3275,
+		WorldMapID = 3039,
+		Acronym = L["KS"],
+		Module = "Atlas_ClassicWoW",
+		{ BLUE.." A) "..ENTRANCE, 10001 },
+		{ WHIT.." 1) "..getCreatureName("Nar'gurk", 3449), 3449 },
+		{ WHIT.." 2) "..getCreatureName("Slavecrusher Grox", 3450), 3450 },
+		{ WHIT.." 3) "..getCreatureName("Overseer Mugg", 3451), 3451 },
+		{ WHIT.." 4) "..getCreatureName("Twilight Commander Zarmok", 3452), 3452 },
+		{ WHIT.." 5) "..getCreatureName("Handler Ashka", 3453), 3453 },
 	},
 	CF_MoltenCore = {
 		ZoneName = { BZ["Blackrock Mountain"]..COLON..BZ["The Molten Core"] },
@@ -1335,6 +1367,9 @@ db.AtlasMaps_NPC_DB = {
         { "24", 10011, 103, 443 },
         { "25", 10012, 99, 288 },
     },
+    CF_DrownedCity = {
+        { "A", 10001, 435, 242 }, -- blue
+    },
     CF_Gnomeregan = {
         { "A", 10001, 354, 52 },
         { "B", 10002, 439, 302 },
@@ -1486,6 +1521,9 @@ db.AtlasMaps_NPC_DB = {
     CL_BlackfathomDeepsC = {
         { "9", 10011, 440, 241 },
     },
+    CF_KroldokStronghold = {
+        { "A", 10001, 68, 380 }, -- blue
+    },
     CL_MaraudonEnt = {
         { "A", 10001, 91, 280 },
         { "B", 10002, 205, 61 },
@@ -1602,6 +1640,9 @@ db.AssocDefaults = {
 	[BZ["The Wailing Caverns"]] = 	"CF_WailingCavernsEnt",
 	[BZ["Sunken Temple"]] = 		"CL_TheSunkenTemple",
 	[BZ["Ironforge"]] = 			"CF_HallofThanes",
+	[BZ["Hall of Thanes"]] = 		"CF_HallofThanes",
+	[BZ["The Drowned City"]] = 		"CF_DrownedCity",
+	[BZ["Krol'dok Stronghold"]] = 	"CF_KroldokStronghold",
 }
 
 --[[
@@ -1704,11 +1745,11 @@ db.SubZoneData = {
 		["CF_WailingCaverns"] = {
 			BZ["Screaming Gully"],
 			BZ["Dreamer's Rock"],
-			BZ["Pit of Fangs"],
 			BZ["Crag of the Everliving"],
 			BZ["Pit of Fangs"],
 		},
 	},
+	-- Hall of Thanes
 }
 
 --[[
@@ -1749,6 +1790,7 @@ db.OutdoorZoneToAtlas = {
 	[BZ["Dustwallow Marsh"]] = 		"CL_OnyxiasLair",
 	[BZ["Alterac Mountains"]] = 	"CF_CityofDalaranA",
 	[BZ["Wetlands"]] = 				"CF_ExcavationSiteWetlands",
+	[BZ["Riverglades"]] = 			"CF_KroldokStronghold",
 }
 
 -- Yes, the following two tables are redundant, but they're both here in case there's ever more than one entrance map for an instance
@@ -1835,32 +1877,34 @@ db.DropDownLayouts = {
 			"CL_BlackrockMountainEnt",
 			"CL_BlackrockDepths",
 			"CL_BlackwingLair",
-			"CL_TheDeadmines",
-			"CL_TheDeadminesEnt",
-			"CF_Gnomeregan",
-			"CL_GnomereganEnt",
 			"CL_BlackrockSpireLower",
 			"CL_BlackrockSpireUpper",
+			"CF_CityofDalaranA",
+			"CF_CityofDalaranB",
+			"CL_TheDeadmines",
+			"CL_TheDeadminesEnt",
+			"CF_DrownedCity",
+			"CF_ExcavationSiteWetlands",
+			"CF_Gnomeregan",
+			"CL_GnomereganEnt",
+			"CF_HallofThanes",
+			"CF_KroldokStronghold",
 			"CF_MoltenCore",
+			"CF_RuinsofLordaeron",
+			"CL_Scholomance",
+			"CL_ScarletMonasteryEnt",
 			"CL_ShadowfangKeep",
+			"CL_SMArmory",
+			"CL_SMCathedral",
+			"CL_SMGraveyard",
+			"CL_SMLibrary",
 			"CL_Stratholme",
 			"CF_TheStockade",
 			"CL_TheSunkenTemple",
 			"CL_TheSunkenTempleEnt",
 			"CF_Uldaman",
 			"CL_UldamanEnt",
-			"CF_RuinsofLordaeron",
-			"CL_Scholomance",
-			"CL_ScarletMonasteryEnt",
-			"CL_SMArmory",
-			"CL_SMCathedral",
-			"CL_SMGraveyard",
-			"CL_SMLibrary",
 			"CL_ZulGurub",
-			"CF_HallofThanes",
-			"CF_ExcavationSiteWetlands",
-			"CF_CityofDalaranA",
-			"CF_CityofDalaranB",
 			--"CL_Naxxramas",
 		},
 		[ATLAS_DDL_CONTINENT_KALIMDOR] = {
@@ -1899,6 +1943,8 @@ db.DropDownLayouts = {
 			"CL_DireMaulEnt",
 			"CL_DireMaulNorth",
 			"CL_DireMaulWest",
+			"CF_DrownedCity",
+			"CF_KroldokStronghold",
 			"CF_Gnomeregan",
 			"CL_GnomereganEnt",
 			"CL_BlackrockSpireLower",
@@ -1955,6 +2001,7 @@ db.DropDownLayouts = {
 			"CL_BlackfathomDeepsB",
 			"CL_BlackfathomDeepsC",
 			"CL_BlackfathomDeepsEnt",
+			"CF_DrownedCity",
 			"CF_Gnomeregan",
 			"CL_GnomereganEnt",
 			"CF_RagefireChasm",
@@ -1977,6 +2024,8 @@ db.DropDownLayouts = {
 			"CF_CityofDalaranB"
 		},
 		[ATLAS_DDL_LEVEL_40TO60] = {
+			"CF_DrownedCity",
+			"CF_KroldokStronghold",
 			"CF_RazorfenDowns",
 			"CF_RazorfenKraul",
 			"CL_ScarletMonasteryEnt",
@@ -2029,8 +2078,10 @@ db.DropDownLayouts = {
 			"CL_DireMaulEnt",
 			"CL_DireMaulNorth",
 			"CL_DireMaulWest",
+			"CF_DrownedCity",
 			"CF_Gnomeregan",
 			"CL_GnomereganEnt",
+			"CF_KroldokStronghold",
 			"CF_MaraudonA",
 			"CF_MaraudonB",
 			"CL_MaraudonEnt",
@@ -2083,7 +2134,9 @@ db.DropDownLayouts = {
 			"CL_DireMaulEast",
 			"CL_DireMaulNorth",
 			"CL_DireMaulWest",
+			"CF_DrownedCity",
 			"CF_Gnomeregan",
+			"CF_KroldokStronghold",
 			"CF_MaraudonA",
 			"CF_MaraudonB",
 			"CL_OnyxiasLair",

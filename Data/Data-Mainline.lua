@@ -41,7 +41,6 @@ if not Client.isRetail then
 end
 
 local BZ = Atlas_GetLocaleLibBabble("LibBabble-SubZone-3.0")
-local BF = Atlas_GetLocaleLibBabble("LibBabble-Faction-3.0")
 local L = LibStub("AceLocale-3.0"):GetLocale(private.addon_name)
 local ALC = LibStub("AceLocale-3.0"):GetLocale("Atlas")
 
@@ -84,6 +83,10 @@ local function getItemTitlebyID(title, id)
 	return Atlas:GetItemTitlebyID(title, id)
 end
 
+local function getFactionName(factionName, factionID)
+	return Atlas:GetFactionName(factionName, factionID)
+end
+
 -- local constants for easier access
 local SLASH = ALC["Slash"]
 local COLON = ALC["Colon"]
@@ -96,6 +99,7 @@ local UPPER = ALC["Upper"]
 local CONNECTION = ALC["Connection"]
 local RARE = ALC["Rare"]
 local RANDOM = ALC["Random"]
+local HYPHEN = ALC["Hyphen"]
 
 db.AtlasMaps = {
 --************************************************
@@ -108,22 +112,23 @@ db.AtlasMaps = {
 		PlayerLimit = { 5, 10, 25, 40},
 		Acronym = L["BRM"],
 		Module = "Atlas_ClassicWoW",
-		{ BLUE.." A) "..BZ["Searing Gorge"], 10001 },
-		{ BLUE.." B) "..BZ["Burning Steppes"], 10002 },
+		{ BLUE.." A) "..ENTRANCE..HYPHEN..BZ["Searing Gorge"], 10001 },
+		{ BLUE.." B) "..ENTRANCE..HYPHEN..BZ["Burning Steppes"], 10002 },
 		{ BLUE.." C) "..BZ["Blackrock Depths"], 10003 },
-		{ BLUE.." D) "..BZ["Lower Blackrock Spire"], 10004 },
-		{ BLUE..INDENT..BZ["Upper Blackrock Spire"] },
-		{ GREN..INDENT..L["Bodley"]..L_PAREN..ALC["Ghost"]..R_PAREN },
-		{ BLUE.." E) "..BZ["The Molten Core"], 10005 },
-		{ GREN..INDENT..L["Lothos Riftwaker"] },
-		{ BLUE.." F) "..BZ["Blackwing Lair"], 10006 },
+		{ BLUE.." D) "..BZ["Upper Blackrock Spire"], 10004 },
+		{ BLUE.." E) "..BZ["Lower Blackrock Spire"], 10005 },
+		--{ GREN..INDENT..L["Bodley"]..L_PAREN..ALC["Ghost"]..R_PAREN },
+		{ BLUE.." F) "..BZ["Blackrock Caverns"], 10006 },
+		{ BLUE.." G) "..BZ["The Molten Core"], 10007 },
+		{ BLUE.." H) "..BZ["Blackwing Lair"], 10008 },
 		{ GREN..INDENT..L["Orb of Command"] },
-		{ BLUE.." G) "..BZ["Blackrock Caverns"], 10007 },
-		{ ORNG.." 1) "..L["Scarshield Quartermaster <Scarshield Legion>"]..L_PAREN..UPPER..R_PAREN, 10008 },
-		{ ORNG.." 2) "..L["The Behemoth"]..L_PAREN..RARE..COMMA..WANDERS..R_PAREN, 10009 },
-		{ ORNG.." 3) "..getBossName("Overmaster Pyron")..L_PAREN..WANDERS..R_PAREN, 10010 },
-		{ GREN.." 1') "..ALC["Meeting Stone"]..L_PAREN..BZ["Blackrock Depths"]..R_PAREN, 10011 },
-		{ GREN.." 2') "..ALC["Meeting Stone"]..L_PAREN..BZ["Lower Blackrock Spire"]..COMMA..BZ["Upper Blackrock Spire"]..R_PAREN, 10012 },
+		--{ ORNG.." 1) "..getCreatureName("Scarshield Quartermaster <Scarshield Legion>", 9046)..L_PAREN..UPPER..R_PAREN, 10008 },
+		{ ORNG.." 1) "..getCreatureName("The Behemoth", 8924)..L_PAREN..RARE..COMMA..WANDERS..R_PAREN, 10009 },
+		{ ORNG.." 2) "..getCreatureName("Overmaster Pyron", 9026)..L_PAREN..WANDERS..R_PAREN, 10010 },
+		{ GREN.." 1') "..getCreatureName("Lothos Riftwaker", 14387), 10011 },
+		{ GREN.." 2') "..getCreatureName("Burt Macklyn", 161782), 10012 },
+		{ GREN.." 3') "..ALC["Meeting Stone"]..L_PAREN..BZ["Blackrock Depths"]..R_PAREN, 10013 },
+		{ GREN.." 4') "..ALC["Meeting Stone"]..L_PAREN..BZ["Lower Blackrock Spire"]..COMMA..BZ["Upper Blackrock Spire"]..R_PAREN, 10014 },
 	},
 	BlackrockDepths = {
 		ZoneName = { BZ["Blackrock Mountain"]..COLON..BZ["Blackrock Depths"] },
@@ -332,7 +337,7 @@ db.AtlasMaps = {
 		JournalInstanceID = 741,
 		Module = "Atlas_ClassicWoW",
 		{ ORNG..ALC["Attunement Required"] },
-		{ ORNG..REPUTATION..COLON..BF["Hydraxian Waterlords"] },
+		{ ORNG..REPUTATION..COLON..getFactionName("Hydraxian Waterlords", 749) },
 		{ BLUE.." A) "..ENTRANCE, 10001 },
 		{ WHIT.." 1) "..getBossName("Lucifron", 1519), 1519 },
 		{ WHIT.." 2) "..getBossName("Magmadar", 1520), 1520 },
@@ -628,7 +633,7 @@ db.AtlasMaps = {
 		{ "Heroic: Deadmines Guild Run", "ac=5141" },
 	},
 	TheStockade = {
-		ZoneName = { BZ["The Stockade"] },
+		ZoneName = { BZ["Stormwind Stockade"] },
 		Location = { BZ["Stormwind City"] },
 		DungeonID = 12,
 		Acronym = L["Stocks"],
@@ -1055,7 +1060,7 @@ db.AtlasMaps = {
 		WorldMapID = 247,
 		JournalInstanceID = 743,
 		Module = "Atlas_ClassicWoW",
-		{ ORNG..REPUTATION..COLON..BF["Cenarion Circle"] },
+		{ ORNG..REPUTATION..COLON..getFactionName("Cenarion Circle", 609) },
 		{ BLUE.." A) "..ENTRANCE, 10001 },
 		{ WHIT.." 1) "..getBossName("Kurinnaxx", 1537), 1537 },
 		{ GREN..INDENT..getBossName("Lieutenant General Andorov") },
@@ -1086,7 +1091,7 @@ db.AtlasMaps = {
 		WorldMapID = 319,
 		JournalInstanceID = 744,
 		Module = "Atlas_ClassicWoW",
-		{ ORNG..REPUTATION..COLON..BF["Brood of Nozdormu"] },
+		{ ORNG..REPUTATION..COLON..getFactionName("Brood of Nozdormu", 910) },
 		{ BLUE.." A) "..ENTRANCE, 10001 },
 		{ BLUE.." B-D) "..CONNECTION, 10002 },
 		{ WHIT.." 1) "..getBossName("The Prophet Skeram", 1543)..L_PAREN..ALC["Outside"]..R_PAREN, 1543 },
@@ -1203,20 +1208,22 @@ db.AtlasMaps_NPC_DB = {
 --************************************************
 -- Eastern Kingdoms Instances (Classic)
 --************************************************
-	BlackrockMountainEnt = {
-		{ "A", 10001, 271, 182 },
-		{ "B", 10002, 255, 498},
-		{ "C", 10003, 158, 12},
-		{ "D", 10004, 362, 308},
-		{ "E", 10005, 220, 286},
-		{ "F", 10006, 334, 419},
-		{ "G", 10007, 432, 357},
-		{ "1", 10008, 405, 356},
-		{ "2", 10009, 136, 191},
-		{ "3", 10010, 130, 33},
-		{ "1'", 10011, 281, 350},
-		{ "2'", 10012, 341, 391},
-	},
+    BlackrockMountainEnt = {
+        { "A", 10001, 263, 217 }, -- blue
+        { "B", 10002, 248, 481 }, -- blue
+        { "C", 10003, 188, 44 }, -- blue
+        { "D", 10004, 408, 298 }, -- blue
+        { "E", 10005, 419, 335 }, -- blue
+        { "F", 10006, 404, 368 }, -- blue
+        { "G", 10007, 213, 289 }, -- blue
+        { "H", 10008, 319, 425 }, -- blue
+        { "1", 10009, 152, 220 }, -- orange
+        { "2", 10010, 131, 112 }, -- orange
+        { "1'", 10011, 214, 307 }, -- green
+        { "2'", 10012, 113, 57 }, -- green
+        { "3'", 10013, 262, 358 }, -- green
+        { "4'", 10014, 333, 387 }, -- green
+    },
 	BlackrockDepths = {
 		{ 1, 369, 360, 407 }, -- High Interrogator Gerstahn
 		{ 2, 370, 411, 263 }, -- Lord Roccor
@@ -1336,19 +1343,19 @@ db.AtlasMaps_NPC_DB = {
 		{ "2'", 10012, 345, 45 },
 		{ "3'", 10013, 396, 152 },
 	},
-	MoltenCore = {
-		{ "A", 10001, 14, 91 },
-		{ 1, 1519, 320, 178 },
-		{ 2, 1520, 356, 88 },
-		{ 3, 1521, 67, 231 },
-		{ 4, 1522, 40, 357 },
-		{ 5, 1523, 237, 420 },
-		{ 6, 1524, 218, 386 },
-		{ 7, 1526, 347, 292 },
-		{ 8, 1525, 456, 412 },
-		{ 9, 1527, 462, 314 },
-		{ 10, 1528, 239, 268 },
-	},
+    MoltenCore = {
+        { "A", 10001, 92, 137 }, -- blue
+        { "1", 1519, 352, 216 }, -- white
+        { "2", 1520, 382, 140 }, -- white
+        { "3", 1521, 140, 260 }, -- white
+        { "4", 1522, 118, 360 }, -- white
+        { "5", 1523, 287, 417 }, -- white
+        { "6", 1524, 261, 383 }, -- white
+        { "7", 1526, 368, 311 }, -- white
+        { "8", 1525, 453, 412 }, -- white
+        { "9", 1527, 464, 328 }, -- white
+        { "10", 1528, 281, 284 }, -- white
+    },
 	ScarletHalls = {
 		{ 1, 10002, 230, 384 }, -- Commander Lindon
 		{ 2, 660, 260, 308 }, -- Houndmaster Braun
@@ -1458,23 +1465,23 @@ db.AtlasMaps_NPC_DB = {
 		{ "C", 10003, 400, 193 },
 		{ "1'", 10004, 286, 225 }, -- Goblin Teleporter
 	},
-	TheDeadminesEnt = {
-		{ "A", 10001, 334, 20 }, -- Entrance
-		{ "B", 10002, 79, 249 }, -- The Deadmines
-		{ "1", 10003, 439, 204 }, -- Marisa du'Paige
-		{ "1", 10003, 319, 324 }, -- Marisa du'Paige
-		{ "2", 10004, 361, 363 }, -- Brainwashed Noble
-		{ "3", 10005, 319, 449 }, -- Foreman Thistlenettle
-	},
-	TheStockade = {
-		{ 1, 466, 257, 182 }, -- Randolph Moloch
-		{ 2, 464, 58, 198 }, -- Hogger
-		{ 3, 465, 443, 298 }, -- Lord Overheat
-		{ "A", 10001, 252, 366 },
-		{ "1'", 10002, 250, 350 },
-		{ "2'", 10003, 211, 323 },
-		{ "3'", 10004, 294, 323 },
-	},
+    TheDeadminesEnt = {
+        { "A", 10001, 371, 20 }, -- blue
+        { "B", 10002, 81, 239 }, -- blue
+        { "1", 10003, 313, 317 }, -- orange
+        { "1", 10003, 441, 195 }, -- orange
+        { "2", 10004, 356, 361 }, -- orange
+        { "3", 10005, 318, 447 }, -- orange
+    },
+    TheStockade = {
+        { "A", 10001, 251, 376 }, -- blue
+        { "1'", 10002, 248, 286 }, -- green
+        { "2'", 10003, 201, 266 }, -- green
+        { "3'", 10004, 282, 264 }, -- green
+        { "1", 466, 252, 145 }, -- white
+        { "2", 464, 78, 156 }, -- white
+        { "3", 465, 427, 234 }, -- white
+    },
 	TheSunkenTemple = {
 		{ 1, 457, 52, 220 }, -- Avatar of Hakkar
 		{ 2, 458, 448, 176 }, -- Jammal'an the Prophet
@@ -1735,6 +1742,8 @@ db.AssocDefaults = {
 	[BZ["The Deadmines"]] = 		"TheDeadminesA",
 	[BZ["The Wailing Caverns"]] = 	"WailingCavernsEnt",
 	[BZ["Sunken Temple"]] = 		"TheSunkenTemple",
+	[BZ["Stormwind Stockade"]] =	"TheStockade",
+	[BZ["The Deadmines"]] =			"TheDeadminesA",
 }
 
 --[[
@@ -1860,6 +1869,16 @@ db.SubZoneData = {
 			BZ["Pit of Fangs"],
 			BZ["Crag of the Everliving"],
 			BZ["Pit of Fangs"],
+		},
+	},
+	[BZ["The Deadmines"]] = {
+		["TheDeadminesA"] = {
+			BZ["The Deadmines"],
+			BZ["Mast Room"],
+			BZ["Goblin Foundry"],
+		},
+		["TheDeadminesB"] = {
+			BZ["Ironclad Cove"],
 		},
 	},
 }

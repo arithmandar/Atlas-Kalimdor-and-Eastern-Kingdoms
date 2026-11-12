@@ -42,7 +42,6 @@ if not Client.isProgressionClassic then
 end
 
 local BZ = Atlas_GetLocaleLibBabble("LibBabble-SubZone-3.0")
-local BF = Atlas_GetLocaleLibBabble("LibBabble-Faction-3.0")
 local L = LibStub("AceLocale-3.0"):GetLocale(private.addon_name)
 local ALC = LibStub("AceLocale-3.0"):GetLocale("Atlas")
 
@@ -81,6 +80,10 @@ end
 
 local function getItemTitlebyID(title, id)
 	return Atlas:GetItemTitlebyID(title, id)
+end
+
+local function getFactionName(factionName, factionID)
+	return Atlas:GetFactionName(factionName, factionID)
 end
 
 -- local constants for easier access
@@ -359,7 +362,7 @@ db.AtlasMaps = {
 		JournalInstanceID = 741,
 		Module = "Atlas_ClassicWoW",
 		{ ORNG..ALC["Attunement Required"] },
-		{ ORNG..REPUTATION..COLON..BF["Hydraxian Waterlords"] },
+		{ ORNG..REPUTATION..COLON..getFactionName("Hydraxian Waterlords", 749) },
 		{ BLUE.." A) "..ENTRANCE, 10001 },
 		{ WHIT.." 1) "..getBossName("Lucifron", 1519), 1519 },
 		{ WHIT.." 2) "..getBossName("Magmadar", 1520), 1520 },
@@ -1013,7 +1016,7 @@ db.AtlasMaps = {
 		WorldMapID = 247,
 		JournalInstanceID = 743,
 		Module = "Atlas_ClassicWoW",
-		{ ORNG..REPUTATION..COLON..BF["Cenarion Circle"] },
+		{ ORNG..REPUTATION..COLON..getFactionName("Cenarion Circle", 609) },
 		{ BLUE.." A) "..ENTRANCE, 10001 },
 		{ WHIT.." 1) "..getBossName("Kurinnaxx", 1537), 1537 },
 		{ GREN..INDENT..getBossName("Lieutenant General Andorov") },
@@ -1042,7 +1045,7 @@ db.AtlasMaps = {
 		WorldMapID = 319,
 		JournalInstanceID = 744,
 		Module = "Atlas_ClassicWoW",
-		{ ORNG..REPUTATION..COLON..BF["Brood of Nozdormu"] },
+		{ ORNG..REPUTATION..COLON..getFactionName("Brood of Nozdormu", 910) },
 		{ BLUE.." A) "..ENTRANCE, 10001 },
 		{ BLUE.." B-D) "..CONNECTION, 10002 },
 		{ WHIT.." 1) "..getBossName("The Prophet Skeram", 1543)..L_PAREN..ALC["Outside"]..R_PAREN, 1543 },

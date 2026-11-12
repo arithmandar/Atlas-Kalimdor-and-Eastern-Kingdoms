@@ -6,6 +6,18 @@
 
 # Change Log
 
+## v1.54.05 (Nov. 12, 2026)
+
+- Retired LibBabble-Faction-3.0 and use WoW API call to get the faction info
+- Mainline:
+  - Stormwind Stockade map updated to reflect the new naming convention
+  - Fixed auto-select issue for Stormwind Stockade and the Deadmines
+  - Maps revamped:
+    - Deadmines entrance
+    - Stormwind Stockade
+    - Blackrock Mountain
+    - The Molten Core
+
 ## v1.54.04 (Nov. 10, 2026)
 
 - Forever:

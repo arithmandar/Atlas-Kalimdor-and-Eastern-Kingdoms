@@ -330,7 +330,7 @@ db.AtlasMaps = {
 		{ WHIT.." 1) "..getCreatureName("Zul'Alai", 258905), 258905 },
 		{ WHIT.." 2) "..getCreatureName("Var'Taka", 258924), 258924 },
 		{ WHIT.." 3) "..getCreatureName("Captain Dreadrise", 260042), 260042 },
-		{ WHIT.." 4) "..getCreatureName("Deathless Marrow", 269586), 269586 },
+		{ WHIT.." 4) "..getCreatureName("Deathless Marrow", 260202), 260202 },
 		{ WHIT.." 5) "..getCreatureName("Min'loth the Serpent", 260243), 260243 },
 		{ WHIT.." 6) "..getCreatureName("Primeval Elemental", 263886), 263886 },
 	},
@@ -1069,23 +1069,6 @@ db.AtlasMaps = {
 		{ WHIT.." 6) "..getBossName("King Gordok", 417), 417 }, -- 368
 		{ WHIT..INDENT..getBossName("Cho'Rush the Observer", 416), 416 }, -- 367
 	},
-	CF_TheDrownedCity = {
-		ZoneName = { BZ["The Drowned City"] },
-		Location = { BZ["Stranglethorn Vale"] },
-		--DungeonID = 0,
-		LevelRange = "35-40",
-		PlayerLimit = { 5 },
-		Acronym = L["TDC"],
-		--WorldMapID = 500,
-		Module = "Atlas_ClassicWoW",
-		{ BLUE.." A) "..ENTRANCE, 10001 },
-		{ WHIT.." 1) "..getCreatureName("Zul'Alai", 270882), 10006 },
-		{ WHIT.." 2) "..getCreatureName("Var'Taka", 270883), 10007 },
-		{ WHIT.." 3) "..getCreatureName("Captain Dreadrise", 270884), 10008 },
-		{ WHIT.." 4) "..getCreatureName("Deathless Marrow", 270885), 10009 },
-		{ WHIT.." 5) "..getCreatureName("Gill", 270888), 10010 },
-		{ WHIT.." 6) "..getCreatureName("Min'loth the Serpent", 270886), 10011 },
-	},
 	CL_MaraudonEnt = {
 		ZoneName = { BZ["Maraudon"]..L_PAREN..ENTRANCE..R_PAREN },
 		Location = { BZ["Desolace"] },
@@ -1395,7 +1378,7 @@ db.AtlasMaps_NPC_DB = {
 		{ "1", 258905, 344, 265 }, -- white
 		{ "2", 258924, 240, 313 }, -- white
 		{ "3", 260042, 267, 187 }, -- white
-		{ "4", 269586, 145, 252 }, -- white
+		{ "4", 260202, 145, 252 }, -- white
 		{ "5", 260243, 57, 253 }, -- white
 	},
 	CF_Gnomeregan = {

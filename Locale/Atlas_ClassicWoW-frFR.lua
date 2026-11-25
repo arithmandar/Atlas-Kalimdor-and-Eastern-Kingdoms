@@ -87,9 +87,9 @@ if L then
 	L["Cursed Centaur"] = "Centaure Maudit"
 	L["Kherrah"] = "Kherrah"
 
-	-- L["Kolk <The First Kahn>"] = "Kolk <The First Kahn>"
-	-- L["Gelk <The Second Kahn>"] = "Gelk <The Second Kahn>"
-	-- L["Magra <The Third Kahn>"] = "Magra <The Third Kahn>"
+	L["Kolk <The First Kahn>"] = "Kolk <Le premier Kahn>"
+	L["Gelk <The Second Kahn>"] = "Gelk <Le deuxième Kahn>"
+	L["Magra <The Third Kahn>"] = "Magra <Le troisième Kahn>"
 	L["Cavindra"] = "Cavindra"
 
 	--Sunken Temple (Entrance)
@@ -198,8 +198,8 @@ if L then
 	L["Princess Theradras"] = "Princesse Theradras"
 	L["Elder Splitrock"] = "Ancien Pierre-fendue"
 	L["Celebras the Redeemed"] = "Celebras le Racheté"
-	-- L["Veng (The Fifth Khan)"] = "Veng (The Fifth Khan)"
-	-- L["Maraudos (The Fourth Khan)"] = "Maraudos (The Fourth Khan)"
+	L["Veng (The Fifth Khan)"] = "Veng <Le cinquième Kahn>"
+	L["Maraudos (The Fourth Khan)"] = "Maraudos <Le quatrième Kahn>"
 	L["Meshlok the Harvester"] = "Meshlok le Moissonneur"
 
 	--OnyxiasLair
@@ -396,7 +396,7 @@ if L then
 	L["Maxwort Uberglint"] = "Maxwort Uberbrille"
 	L["Tinkee Steamboil"] = "Brikolette Toutevapeur"
 	L["Yuka Screwspigot <Engineering Supplies>"] = "Yuka Fermevanne <Fournitures d'ingénieur>"
-	-- L["Abandonded Mole Machine"] = "Abandonded Mole Machine"
+	L["Abandonded Mole Machine"] = "Taupe mécanique abandonnée"
 	L["Kevin Dawson <Morgan's Militia>"] = "Kevin Dawson <Milice de Morgan>"
 	L["Lexlort <Kargath Expeditionary Force>"] = "Lexlort <Corps expéditionnaire de Kargath>"
 	L["Prospector Seymour <Morgan's Militia>"] = "Prospecteur Seymour <Milice de Morgan>"
@@ -581,7 +581,7 @@ if L then
 	L["Kormok"] = "Kormok"
 
 	--Stratholme - Crusader's Square
-	-- L["Fras Siabi"] = "Fras Siabi"
+	L["Fras Siabi"] = "Ezra Grimm"
 	L["Skul"] = "Krân"
 	L["Hearthsinger Forresten"] = "Hearthsinger Forresten"
 	L["The Unforgiven"] = "Le Condamné"
@@ -604,7 +604,7 @@ if L then
 	L["Master Craftsman Wilhelm <Brotherhood of the Light>"] = "Maître-artisan Wilhelm <Confrérie de la Lumière>"
 	L["Packmaster Stonebruiser <Brotherhood of the Light>"] = "Maître-fourrier Navrepierre <Confrérie de la Lumière>"
 	L["Stratholme Courier"] = "Messager de Stratholme"
-	-- L["Fras Siabi's Postbox"] = "Fras Siabi's Postbox"
+	L["Fras Siabi's Postbox"] = "Boîte à lettres d'Ezra Grimm"
 	L["King's Square Postbox"] = "Boîte à lettres de la place du Roi"
 	L["Festival Lane Postbox"] = "Boîte à lettres de l'allée du Festival"
 	L["Elder Farwhisper"] = "Ancien Murmeloin"
@@ -724,7 +724,7 @@ if L then
 	L["Muddy Churning Waters"] = "Eaux troubles et agitées"
 
 	-- Classic
-	-- L["Lothos Riftwaker"] = "Lothos Riftwaker"
+	L["Lothos Riftwaker"] = "Lothos Riftwaker"
 	L["Summoner's Tomb"] = "Tombe des Invocateurs"
 	L["Gnome"] = "Gnome"
 	L["Kernobee"] = "Kernobee"
@@ -755,9 +755,9 @@ if L then
 	L["Argent Guard Thaelrid"] = "Garde d’argent Thaelrid"
 	L["Fathom Core"] = "Noyau de la Brasse"
 	L["J'eevee's Jar"] = "Bocal de J'eevee"
-	-- L["Skeletal Remains of Kariel Winthalus"] = "Skeletal Remains of Kariel Winthalus"
-	-- L["Veng (The Fifth Khan)"] = "Veng (The Fifth Khan)"
-	-- L["Maraudos (The Fourth Khan)"] = "Maraudos (The Fourth Khan)"
+	L["Skeletal Remains of Kariel Winthalus"] = "Squelette de Telmius Cherche-Rêve"
+	L["Veng (The Fifth Khan)"] = "Veng <Le cinquième Kahn>"
+	L["Maraudos (The Fourth Khan)"] = "Maraudos <Le quatrième Kahn>"
 	L["Belnistrasz"] = "Belnistrasz"
 	L["Willix the Importer"] = "Willix l’Importateur"
 	L["Heralath Fallowbrook"] = "Heralath Fallowbrook"

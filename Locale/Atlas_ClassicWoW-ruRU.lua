@@ -71,7 +71,7 @@ if L then
 	
 	--Dire Maul (Entrance)
 	L["Dire Pool"] = "Зловещий Пруд"
-	L["Dire Maul Arena"] = "Арена забытого города"
+	L["Dire Maul Arena"] = "Ристалище"
 	L["Elder Mistwalker"] = "Старейшина Странник Туманов "
 
 	--Gnomeregan (Entrance)
@@ -87,9 +87,9 @@ if L then
 	L["Cursed Centaur"] = "Проклятый кентавр"
 	L["Kherrah"] = "Керра"
 
-	-- L["Kolk <The First Kahn>"] = "Kolk <The First Kahn>"
-	-- L["Gelk <The Second Kahn>"] = "Gelk <The Second Kahn>"
-	-- L["Magra <The Third Kahn>"] = "Magra <The Third Kahn>"
+	L["Kolk <The First Kahn>"] = "Колк <Первый хан>"
+	L["Gelk <The Second Kahn>"] = "Гелк <Второй хан>"
+	L["Magra <The Third Kahn>"] = "Магра <Третий хан>"
 	L["Cavindra"] = "Кавиндра"
 
 	--Sunken Temple (Entrance)
@@ -198,8 +198,8 @@ if L then
 	L["Princess Theradras"] = "Принцесса Терадрас"
 	L["Elder Splitrock"] = "Старейшина Камнепад"
 	L["Celebras the Redeemed"] = "Келебрас Освобожденный"
-	-- L["Veng (The Fifth Khan)"] = "Veng (The Fifth Khan)"
-	-- L["Maraudos (The Fourth Khan)"] = "Maraudos (The Fourth Khan)"
+	L["Veng (The Fifth Khan)"] = "Венг <Пятый хан>"
+	L["Maraudos (The Fourth Khan)"] = "Мародос <Четвертый хан>"
 	L["Meshlok the Harvester"] = "Мешлок Жнец"
 
 	--OnyxiasLair
@@ -396,7 +396,7 @@ if L then
 	L["Maxwort Uberglint"] = "Максворт Суперблеск"
 	L["Tinkee Steamboil"] = "Тинки Кипеллер"
 	L["Yuka Screwspigot <Engineering Supplies>"] = "Юка Крутипроб"
-	-- L["Abandonded Mole Machine"] = "Abandonded Mole Machine"
+	L["Abandonded Mole Machine"] = "Брошенная буровая установка"
 	L["Kevin Dawson <Morgan's Militia>"] = "Кевин Доусон <Отряд Морганы>"
 	L["Lexlort <Kargath Expeditionary Force>"] = "Лекслорт <Каргатский экспедиционный корпус>"
 	L["Prospector Seymour <Morgan's Militia>"] = "Геолог Сеймур <Отряд Морганы>"
@@ -581,7 +581,7 @@ if L then
 	L["Kormok"] = "Кормок"
 
 	--Stratholme - Crusader's Square
-	-- L["Fras Siabi"] = "Fras Siabi"
+	L["Fras Siabi"] = "Эзра Гримм"
 	L["Skul"] = "Череп"
 	L["Hearthsinger Forresten"] = "Певчий Форрестен"
 	L["The Unforgiven"] = "Непрощенный"
@@ -604,7 +604,7 @@ if L then
 	L["Master Craftsman Wilhelm <Brotherhood of the Light>"] = "Мастер-ремесленник Вильгельм <Братство Света>"
 	L["Packmaster Stonebruiser <Brotherhood of the Light>"] = "Караванщик Камнетес <Братство Света>"
 	L["Stratholme Courier"] = "Стратхольмский курьер"
-	-- L["Fras Siabi's Postbox"] = "Fras Siabi's Postbox"
+	L["Fras Siabi's Postbox"] = "Ключ от почтового ящика Эзра Гримм"
 	L["King's Square Postbox"] = "Ключ от почтового ящика на Королевской площали"
 	L["Festival Lane Postbox"] = "Ключ от почтового ящика на Праздничной улице"
 	L["Elder Farwhisper"] = "Старейшина Тихий Шепот"
@@ -755,9 +755,9 @@ if L then
 	L["Argent Guard Thaelrid"] = "Страж Талрид из ордена Серебряного Рассвета"
 	L["Fathom Core"] = "Глубинный сердечник"
 	L["J'eevee's Jar"] = "Флакон Д'жииви"
-	-- L["Skeletal Remains of Kariel Winthalus"] = "Skeletal Remains of Kariel Winthalus"
-	-- L["Veng (The Fifth Khan)"] = "Veng (The Fifth Khan)"
-	-- L["Maraudos (The Fourth Khan)"] = "Maraudos (The Fourth Khan)"
+	L["Skeletal Remains of Kariel Winthalus"] = "Останки Тельмия Сновидца"
+	L["Veng (The Fifth Khan)"] = "Венг <Пятый хан>"
+	L["Maraudos (The Fourth Khan)"] = "Мародос <Четвертый хан>"
 	L["Belnistrasz"] = "Белнистраз"
 	L["Willix the Importer"] = "Импортер Вилликс"
 	L["Heralath Fallowbrook"] = "Гералат Бурый Ручей"

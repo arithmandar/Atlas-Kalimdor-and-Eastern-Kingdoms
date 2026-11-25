@@ -71,7 +71,7 @@ if L then
 	
 	--Dire Maul (Entrance)
 	L["Dire Pool"] = "Düsterteich"
-	L["Dire Maul Arena"] = "Düsterbruch Arena"
+	L["Dire Maul Arena"] = "Die Schlägergrube"
 	L["Elder Mistwalker"] = "Urahnin Nebelgänger"
 
 	--Gnomeregan (Entrance)
@@ -87,9 +87,9 @@ if L then
 	L["Cursed Centaur"] = "Verfluchter Zentaur"
 	L["Kherrah"] = "Kherrah"
 
-	-- L["Kolk <The First Kahn>"] = "Kolk <The First Kahn>"
-	-- L["Gelk <The Second Kahn>"] = "Gelk <The Second Kahn>"
-	-- L["Magra <The Third Kahn>"] = "Magra <The Third Kahn>"
+	L["Kolk <The First Kahn>"] = "Kolk <Der erste Kahn>"
+	L["Gelk <The Second Kahn>"] = "Gelk <Der zweite Kahn>"
+	L["Magra <The Third Kahn>"] = "Magra <Der dritte Kahn>"
 	L["Cavindra"] = "Cavindra"
 
 	--Sunken Temple (Entrance)
@@ -198,8 +198,8 @@ if L then
 	L["Princess Theradras"] = "Prinzessin Theradras"
 	L["Elder Splitrock"] = "Urahne Splitterfels"
 	L["Celebras the Redeemed"] = "Celebras der Erlöste"
-	-- L["Veng (The Fifth Khan)"] = "Veng (The Fifth Khan)"
-	-- L["Maraudos (The Fourth Khan)"] = "Maraudos (The Fourth Khan)"
+	L["Veng (The Fifth Khan)"] = "Veng (Der fünfte Khan)"
+	L["Maraudos (The Fourth Khan)"] = "Maraudos (Der vierte Khan)"
 	L["Meshlok the Harvester"] = "Meshlok der Ernter"
 
 	--OnyxiasLair
@@ -396,7 +396,7 @@ if L then
 	L["Maxwort Uberglint"] = "Maxwort Funkelglanz"
 	L["Tinkee Steamboil"] = "Tinkee Kesseldampf"
 	L["Yuka Screwspigot <Engineering Supplies>"] = "Yuka Schraubstutz <Ingenieursbedarf>"
-	-- L["Abandonded Mole Machine"] = "Abandonded Mole Machine"
+	L["Abandonded Mole Machine"] = "Verlassene Maulwurfmaschine"
 	L["Kevin Dawson <Morgan's Militia>"] = "Kevin Dawson <Morgans Miliz>"
 	L["Lexlort <Kargath Expeditionary Force>"] = "Lexlort <Expeditionskorps von Kargath>"
 	L["Prospector Seymour <Morgan's Militia>"] = "Ausgrabungsleiter Seymour <Morgans Miliz>"
@@ -581,7 +581,7 @@ if L then
 	L["Kormok"] = "Kormok"
 
 	--Stratholme - Crusader's Square
-	-- L["Fras Siabi"] = "Fras Siabi"
+	L["Fras Siabi"] = "Ezra Grimm"
 	L["Skul"] = "Skul"
 	L["Hearthsinger Forresten"] = "Herdsinger Forresten"
 	L["The Unforgiven"] = "Der Unverziehene"
@@ -604,7 +604,7 @@ if L then
 	L["Master Craftsman Wilhelm <Brotherhood of the Light>"] = "Meisterhandwerker Wilhelm <Bruderschaft des Lichts>"
 	L["Packmaster Stonebruiser <Brotherhood of the Light>"] = "Rottenkommandant Steinberster <Bruderschaft des Lichts>"
 	L["Stratholme Courier"] = "Kurier von Stratholme"
-	-- L["Fras Siabi's Postbox"] = "Fras Siabi's Postbox"
+	L["Fras Siabi's Postbox"] = "Ezra Grimms Briefkasten"
 	L["King's Square Postbox"] = "Briefkasten am Königsplatz"
 	L["Festival Lane Postbox"] = "Briefkasten in der Feststraße"
 	L["Elder Farwhisper"] = "Urahne Fernwisper"
@@ -724,7 +724,7 @@ if L then
 	L["Muddy Churning Waters"] = "Schlammiges aufgewühltes Gewässer"
 
 	-- Classic
-	-- L["Lothos Riftwaker"] = "Lothos Riftwaker"
+	L["Lothos Riftwaker"] = "Lothos Riftwaker"
 	L["Summoner's Tomb"] = "Gruft der Beschwörer"
 	L["Gnome"] = "Gnome"
 	L["Kernobee"] = "Kernobee"
@@ -747,7 +747,7 @@ if L then
 	L["Medallion of Faith"] = "Medaillon des Glaubens"
 	L["Ysida Harmon"] = "Ysida Harmon"
 	L["Crusaders' Square Postbox"] = "Kreuzzüglerplatz Briefkasten"
-	L["3rd Box Opened: Postmaster Malown"] = "3. Box geöffnet: Postmeister Malown"
+	L["3rd Box Opened: Postmaster Malown"] = "3.Box geöffnet: Postmeister Malown"
 	L["Troll Minibosses"] = "Troll-Mini-Bosse"
 	L["Essence Font"] = "Essenz-Born"
 	L["Statue Activation Order"] = "Statue Aktivierungsauftrag"
@@ -755,9 +755,9 @@ if L then
 	L["Argent Guard Thaelrid"] = "Argentumwache Thaelrid"
 	L["Fathom Core"] = "Fathomkern"
 	L["J'eevee's Jar"] = "J'eevees Glas"
-	-- L["Skeletal Remains of Kariel Winthalus"] = "Skeletal Remains of Kariel Winthalus"
-	-- L["Veng (The Fifth Khan)"] = "Veng (The Fifth Khan)"
-	-- L["Maraudos (The Fourth Khan)"] = "Maraudos (The Fourth Khan)"
+	L["Skeletal Remains of Kariel Winthalus"] = "Die sterblichen Überreste von Telmius Dreamseeker"
+	L["Veng (The Fifth Khan)"] = "Veng (Der fünfte Khan)"
+	L["Maraudos (The Fourth Khan)"] = "Maraudos (Der vierte Khan)"
 	L["Belnistrasz"] = "Belnistrasz"
 	L["Willix the Importer"] = "Willix der Importeur"
 	L["Heralath Fallowbrook"] = "Heralath Fallowbrook"

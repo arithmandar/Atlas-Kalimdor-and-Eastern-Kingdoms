@@ -6,6 +6,9 @@
 
 # Change Log
 
+## v1.54.06 (Nov. 25, 2026)
+- Locale updates: sync with the translation from CurseForge localization database
+
 ## v1.54.05 (Nov. 12, 2026)
 
 - Retired LibBabble-Faction-3.0 and use WoW API call to get the faction info

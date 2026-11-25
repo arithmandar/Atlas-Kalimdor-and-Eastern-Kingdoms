@@ -71,7 +71,7 @@ if L then
 	
 	--Dire Maul (Entrance)
 	L["Dire Pool"] = "Estanque Funesto"
-	L["Dire Maul Arena"] = "La Marra"
+	L["Dire Maul Arena"] = "La Masacre"
 	L["Elder Mistwalker"] = "Ancestro Caminalba"
 
 	--Gnomeregan (Entrance)
@@ -87,9 +87,9 @@ if L then
 	L["Cursed Centaur"] = "Centauro maldito"
 	L["Kherrah"] = "Kherrah"
 
-	-- L["Kolk <The First Kahn>"] = "Kolk <The First Kahn>"
-	-- L["Gelk <The Second Kahn>"] = "Gelk <The Second Kahn>"
-	-- L["Magra <The Third Kahn>"] = "Magra <The Third Kahn>"
+	L["Kolk <The First Kahn>"] = "Kolk <El primer kahn>"
+	L["Gelk <The Second Kahn>"] = "Gelk <El segundo kahn>"
+	L["Magra <The Third Kahn>"] = "Magra <El tercer kahn>"
 	L["Cavindra"] = "Cavindra"
 
 	--Sunken Temple (Entrance)
@@ -198,8 +198,8 @@ if L then
 	L["Princess Theradras"] = "Princesa Theradras"
 	L["Elder Splitrock"] = "Ancestro Parterroca"
 	L["Celebras the Redeemed"] = "Celebras el Redimido"
-	-- L["Veng (The Fifth Khan)"] = "Veng (The Fifth Khan)"
-	-- L["Maraudos (The Fourth Khan)"] = "Maraudos (The Fourth Khan)"
+	L["Veng (The Fifth Khan)"] = "Veng <El quinto kahn>"
+	L["Maraudos (The Fourth Khan)"] = "Maraudos <El cuarto kahn>"
 	L["Meshlok the Harvester"] = "Meshlok el Cosechador"
 
 	--OnyxiasLair
@@ -396,7 +396,7 @@ if L then
 	L["Maxwort Uberglint"] = "Maxwort Suprandor"
 	L["Tinkee Steamboil"] = "Tinkee Vaporio"
 	L["Yuka Screwspigot <Engineering Supplies>"] = "Yuka Llavenrosca <Suministros de ingeniería>"
-	-- L["Abandonded Mole Machine"] = "Abandonded Mole Machine"
+	L["Abandonded Mole Machine"] = "Máquina topo abandonada"
 	L["Kevin Dawson <Morgan's Militia>"] = "Kevin Dawson <Milicia de Morgan>"
 	L["Lexlort <Kargath Expeditionary Force>"] = "Lexlort <Fuerza Expedicionaria de Kargath>"
 	L["Prospector Seymour <Morgan's Militia>"] = "Prospector Seymour <Milicia de Morgan>"
@@ -581,7 +581,7 @@ if L then
 	L["Kormok"] = "Kormok"
 
 	--Stratholme - Crusader's Square
-	-- L["Fras Siabi"] = "Fras Siabi"
+	L["Fras Siabi"] = "Ezra Grimm"
 	L["Skul"] = "Skul"
 	L["Hearthsinger Forresten"] = "Escupezones Foreste"
 	L["The Unforgiven"] = "El imperdonable"
@@ -604,7 +604,7 @@ if L then
 	L["Master Craftsman Wilhelm <Brotherhood of the Light>"] = "Maestro artesano Wilhelm <Hermandad de la Luz>"
 	L["Packmaster Stonebruiser <Brotherhood of the Light>"] = "Maestro de manada Mazadura <Hermandad de la Luz>"
 	L["Stratholme Courier"] = "Mensajero de Stratholme"
-	-- L["Fras Siabi's Postbox"] = "Fras Siabi's Postbox"
+	L["Fras Siabi's Postbox"] = "Buzón de Ezra Grimm"
 	L["King's Square Postbox"] = "Buzón de Plaza del Rey"
 	L["Festival Lane Postbox"] = "Buzón de la Calle del Festival"
 	L["Elder Farwhisper"] = "Ancestro Levesusurro"
@@ -755,9 +755,9 @@ if L then
 	L["Argent Guard Thaelrid"] = "Guardia Argenta Thaelrid"
 	L["Fathom Core"] = "Núcleo de las profundidades"
 	L["J'eevee's Jar"] = "Jarra de J'eevee"
-	-- L["Skeletal Remains of Kariel Winthalus"] = "Skeletal Remains of Kariel Winthalus"
-	-- L["Veng (The Fifth Khan)"] = "Veng (The Fifth Khan)"
-	-- L["Maraudos (The Fourth Khan)"] = "Maraudos (The Fourth Khan)"
+	L["Skeletal Remains of Kariel Winthalus"] = "Restos de Telmius Buscasueños"
+	L["Veng (The Fifth Khan)"] = "Veng <El quinto kahn>"
+	L["Maraudos (The Fourth Khan)"] = "Maraudos <El cuarto kahn>"
 	L["Belnistrasz"] = "Belnistrasz"
 	L["Willix the Importer"] = "Willix el Importador"
 	L["Heralath Fallowbrook"] = "Heralath Arroyobarbecho"

@@ -71,7 +71,7 @@ if L then
 	
 	--Dire Maul (Entrance)
 	L["Dire Pool"] = "혈투의 웅덩이"
-	L["Dire Maul Arena"] = "혈투의 전장 투기장"
+	L["Dire Maul Arena"] = "검투장"
 	L["Elder Mistwalker"] = "장로 미스트워커"
 
 	--Gnomeregan (Entrance)
@@ -87,9 +87,9 @@ if L then
 	L["Cursed Centaur"] = "저주받은 켄타우로스"
 	L["Kherrah"] = "케라"
 
-	-- L["Kolk <The First Kahn>"] = "Kolk <The First Kahn>"
-	-- L["Gelk <The Second Kahn>"] = "Gelk <The Second Kahn>"
-	-- L["Magra <The Third Kahn>"] = "Magra <The Third Kahn>"
+	L["Kolk <The First Kahn>"] = "콜크 <제1대 칸>"
+	L["Gelk <The Second Kahn>"] = "겔크 <제2대 칸>"
+	L["Magra <The Third Kahn>"] = "마그라 <제3대 칸>"
 	L["Cavindra"] = "카빈드라"
 
 	--Sunken Temple (Entrance)
@@ -198,8 +198,8 @@ if L then
 	L["Princess Theradras"] = "공주 테라드라스"
 	L["Elder Splitrock"] = "장로 스플릿락"
 	L["Celebras the Redeemed"] = "회복된 셀레브라스"
-	-- L["Veng (The Fifth Khan)"] = "Veng (The Fifth Khan)"
-	-- L["Maraudos (The Fourth Khan)"] = "Maraudos (The Fourth Khan)"
+	L["Veng (The Fifth Khan)"] = "벵 <제5대 칸>"
+	L["Maraudos (The Fourth Khan)"] = "마라우도스 <제4대 칸>"
 	L["Meshlok the Harvester"] = "정원사 메슬로크"
 
 	--OnyxiasLair
@@ -396,7 +396,7 @@ if L then
 	L["Maxwort Uberglint"] = "맥스워트 우버글린트"
 	L["Tinkee Steamboil"] = "팅키 스팀보일"
 	L["Yuka Screwspigot <Engineering Supplies>"] = "유카 스크류스피곳 <기술용품 상인>"
-	-- L["Abandonded Mole Machine"] = "Abandonded Mole Machine"
+	L["Abandonded Mole Machine"] = "버려진 굴착기"
 	L["Kevin Dawson <Morgan's Militia>"] = "케빈 도슨 <모건의 민병대>"
 	L["Lexlort <Kargath Expeditionary Force>"] = "렉스로트 <카르가스 원정대>"
 	L["Prospector Seymour <Morgan's Militia>"] = "발굴조사단장 시머 <모건의 민병대>"
@@ -581,7 +581,7 @@ if L then
 	L["Kormok"] = "코르모크"
 
 	--Stratholme - Crusader's Square
-	-- L["Fras Siabi"] = "Fras Siabi"
+	L["Fras Siabi"] = "에즈라 그림"
 	L["Skul"] = "스컬"
 	L["Hearthsinger Forresten"] = "하스싱어 포레스턴"
 	L["The Unforgiven"] = "용서받지 못한 자"
@@ -604,7 +604,7 @@ if L then
 	L["Master Craftsman Wilhelm <Brotherhood of the Light>"] = "수석 기능공 빌헬름 <빛의 결사단>"
 	L["Packmaster Stonebruiser <Brotherhood of the Light>"] = "짐노새 주인 스톤브루저 <빛의 결사단>"
 	L["Stratholme Courier"] = "스트라솔름 급사"
-	-- L["Fras Siabi's Postbox"] = "Fras Siabi's Postbox"
+	L["Fras Siabi's Postbox"] = "에즈라 그림의 우체통"
 	L["King's Square Postbox"] = "왕의 광장 우체통"
 	L["Festival Lane Postbox"] = "축제의 거리 우체통"
 	L["Elder Farwhisper"] = "장로 파위스퍼"
@@ -755,9 +755,9 @@ if L then
 	L["Argent Guard Thaelrid"] = "은빛경비병 타엘리드"
 	L["Fathom Core"] = "심연의 핵"
 	L["J'eevee's Jar"] = "지비의 단지"
-	-- L["Skeletal Remains of Kariel Winthalus"] = "Skeletal Remains of Kariel Winthalus"
-	-- L["Veng (The Fifth Khan)"] = "Veng (The Fifth Khan)"
-	-- L["Maraudos (The Fourth Khan)"] = "Maraudos (The Fourth Khan)"
+	L["Skeletal Remains of Kariel Winthalus"] = "텔미우스 드림시커의 유해"
+	L["Veng (The Fifth Khan)"] = "벵 <제5대 칸>"
+	L["Maraudos (The Fourth Khan)"] = "마라우도스 <제4대 칸>"
 	L["Belnistrasz"] = "벨리스트라즈"
 	L["Willix the Importer"] = "수입업자 윌릭스"
 	L["Heralath Fallowbrook"] = "헤랄라스 팰로우브룩"

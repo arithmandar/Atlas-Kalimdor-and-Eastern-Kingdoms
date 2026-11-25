@@ -397,7 +397,7 @@ if L then
 	L["Maxwort Uberglint"] = "麥克斯沃特·尤柏格林"
 	L["Tinkee Steamboil"] = "丁奇·斯迪波爾"
 	L["Yuka Screwspigot <Engineering Supplies>"] = "尤卡·斯庫比格特 <工程學供應商>"
---	L["Abandonded Mole Machine"] = "Abandonded Mole Machine"
+	L["Abandonded Mole Machine"] = "棄置的鑽地機"
 	L["Kevin Dawson <Morgan's Militia>"] = "凱文·多森 <摩根的民兵>"
 	L["Lexlort <Kargath Expeditionary Force>"] = "雷克斯洛特 <卡加斯遠征軍>"
 	L["Prospector Seymour <Morgan's Militia>"] = "勘查員希摩爾 <摩根的民兵>"

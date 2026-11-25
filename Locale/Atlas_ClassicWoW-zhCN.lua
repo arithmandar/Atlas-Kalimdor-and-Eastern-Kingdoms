@@ -74,7 +74,7 @@ if L then
 	
 	--Dire Maul (Entrance)
 	L["Dire Pool"] = "厄运之池"
-	L["Dire Maul Arena"] = "厄运之槌竞技场"
+	L["Dire Maul Arena"] = "巨槌竞技场"
 	L["Elder Mistwalker"] = "迷雾长者"
 
 	--Gnomeregan (Entrance)
@@ -90,9 +90,9 @@ if L then
 	L["Cursed Centaur"] = "被诅咒的半人马"
 	L["Kherrah"] = "柯尔拉"
 
-	-- L["Kolk <The First Kahn>"] = "Kolk <The First Kahn>"
-	-- L["Gelk <The Second Kahn>"] = "Gelk <The Second Kahn>"
-	-- L["Magra <The Third Kahn>"] = "Magra <The Third Kahn>"
+	L["Kolk <The First Kahn>"] = "考尔克 <第一可汗>"
+	L["Gelk <The Second Kahn>"] = "吉尔克 <第二可汗>"
+	L["Magra <The Third Kahn>"] = "玛格拉 <第三可汗>"
 	L["Cavindra"] = "凯雯德拉"
 
 	--Sunken Temple (Entrance)
@@ -201,8 +201,8 @@ if L then
 	L["Princess Theradras"] = "瑟莱德丝公主"
 	L["Elder Splitrock"] = "碎石长者"
 	L["Celebras the Redeemed"] = "赎罪的塞雷布拉斯"
-	-- L["Veng (The Fifth Khan)"] = "Veng (The Fifth Khan)"
-	-- L["Maraudos (The Fourth Khan)"] = "Maraudos (The Fourth Khan)"
+	L["Veng (The Fifth Khan)"] = "温格 <第五可汗>"
+	L["Maraudos (The Fourth Khan)"] = "玛拉多斯 <第四可汗>"
 	L["Meshlok the Harvester"] = "收割者麦什洛克"
 
 	--OnyxiasLair
@@ -399,7 +399,7 @@ if L then
 	L["Maxwort Uberglint"] = "麦克斯沃特·尤博格林"
 	L["Tinkee Steamboil"] = "丁奇·斯迪波尔"
 	L["Yuka Screwspigot <Engineering Supplies>"] = "尤卡·斯库比格特 <工程学供应商>"
-	-- L["Abandonded Mole Machine"] = "Abandonded Mole Machine"
+	L["Abandonded Mole Machine"] = "被弃用的挖掘机"
 	L["Kevin Dawson <Morgan's Militia>"] = "凯文·达森 <摩根民兵团>"
 	L["Lexlort <Kargath Expeditionary Force>"] = "雷克斯洛特 <卡加斯远征军>"
 	L["Prospector Seymour <Morgan's Militia>"] = "勘测员塞莫尔 <摩根民兵团>"
@@ -584,7 +584,7 @@ if L then
 	L["Kormok"] = "库尔莫克"
 
 	--Stratholme - Crusader's Square
-	-- L["Fras Siabi"] = "Fras Siabi"
+	L["Fras Siabi"] = "艾兹拉·格里姆"
 	L["Skul"] = "斯库尔"
 	L["Hearthsinger Forresten"] = "弗雷斯特恩"
 	L["The Unforgiven"] = "不可宽恕者"
@@ -607,7 +607,7 @@ if L then
 	L["Master Craftsman Wilhelm <Brotherhood of the Light>"] = "工匠大师威尔海姆 <圣光兄弟会>"
 	L["Packmaster Stonebruiser <Brotherhood of the Light>"] = "马队管理者布鲁斯·石锤 <圣光兄弟会>"
 	L["Stratholme Courier"] = "斯坦索姆信使"
-	-- L["Fras Siabi's Postbox"] = "Fras Siabi's Postbox"
+	L["Fras Siabi's Postbox"] = "艾兹拉·格里姆的邮箱"
 	L["King's Square Postbox"] = "国王广场邮箱"
 	L["Festival Lane Postbox"] = "节日小道邮箱"
 	L["Elder Farwhisper"] = "远风长者"
@@ -758,9 +758,9 @@ if L then
 	L["Argent Guard Thaelrid"] = "银月守卫塞尔瑞德 <银色黎明>"
 	L["Fathom Core"] = "深渊之核"
 	L["J'eevee's Jar"] = "耶维尔的瓶子"
-	-- L["Skeletal Remains of Kariel Winthalus"] = "Skeletal Remains of Kariel Winthalus"
-	-- L["Veng (The Fifth Khan)"] = "Veng (The Fifth Khan)"
-	-- L["Maraudos (The Fourth Khan)"] = "Maraudos (The Fourth Khan)"
+	L["Skeletal Remains of Kariel Winthalus"] = "泰尔米乌斯·探梦者的骸骨"
+	L["Veng (The Fifth Khan)"] = "温格 <第五可汗>"
+	L["Maraudos (The Fourth Khan)"] = "玛拉多斯 <第四可汗>"
 	L["Belnistrasz"] = "奔尼斯特拉兹"
 	L["Willix the Importer"] = "进口商威利克斯"
 	L["Heralath Fallowbrook"] = "赫尔拉斯·静水"

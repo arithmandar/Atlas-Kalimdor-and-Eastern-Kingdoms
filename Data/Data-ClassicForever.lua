@@ -327,11 +327,13 @@ db.AtlasMaps = {
 		WorldMapID = 2970,
 		Module = "Atlas_ClassicWoW",
 		{ BLUE.." A) "..ENTRANCE, 10001 },
-		{ WHIT.." 1) "..getCreatureName("Zul'Alai", 3474), 3474 },
-		{ WHIT.." 2) "..getCreatureName("Var'Taka", 3475), 3475 },
-		{ WHIT.." 3) "..getCreatureName("Captain Dreadrise", 3476), 3476 },
-		{ WHIT.." 4) "..getCreatureName("Deathless Guardians", 3478), 3478 },
-		{ WHIT.." 5) "..getCreatureName("Min'loth the Serpent", 3479), 3479 },
+		{ BLUE.." B) "..CONNECTION, 10002 },
+		{ WHIT.." 1) "..getCreatureName("Zul'Alai", 258905), 258905 },
+		{ WHIT.." 2) "..getCreatureName("Var'Taka", 258924), 258924 },
+		{ WHIT.." 3) "..getCreatureName("Captain Dreadrise", 260042), 260042 },
+		{ WHIT.." 4) "..getCreatureName("Deathless Marrow", 269586), 269586 },
+		{ WHIT.." 5) "..getCreatureName("Min'loth the Serpent", 260243), 260243 },
+		{ WHIT.." 6) "..getCreatureName("Primeval Elemental", 263886), 263886 },
 	},
 	CL_GnomereganEnt = {
 		ZoneName = { BZ["Gnomeregan"]..L_PAREN..ENTRANCE..R_PAREN },
@@ -415,11 +417,14 @@ db.AtlasMaps = {
 		Acronym = L["KS"],
 		Module = "Atlas_ClassicWoW",
 		{ BLUE.." A) "..ENTRANCE, 10001 },
-		{ WHIT.." 1) "..getCreatureName("Nar'gurk", 3449), 3449 },
-		{ WHIT.." 2) "..getCreatureName("Slavecrusher Grox", 3450), 3450 },
-		{ WHIT.." 3) "..getCreatureName("Overseer Mugg", 3451), 3451 },
-		{ WHIT.." 4) "..getCreatureName("Twilight Commander Zarmok", 3452), 3452 },
-		{ WHIT.." 5) "..getCreatureName("Handler Ashka", 3453), 3453 },
+		{ WHIT.." 1) "..getCreatureName("Slavecrusher Grox", 258966), 258966 },
+		{ WHIT.." 2) "..getCreatureName("Twilight Commander Zarmok", 258972), 258972 },
+		{ WHIT.." 3) "..getCreatureName("War Handler Ashka", 259281), 259281 },
+		{ WHIT.." 4) "..getCreatureName("Nar'gurk", 258964), 258964 },
+		{ WHIT.." 5) "..getCreatureName("Overlord Mugg", 258968), 258968 },
+		{ ORNG.." 1) "..getCreatureName("Zalfan Moonshadow", 268423), 268423 },
+		{ ORNG.." 2) "..getCreatureName("Bossman Toof", 264773), 264773 },
+		{ ORNG.." 3) "..getCreatureName("Tunk ", 259256), 259256 },
 	},
 	CF_MoltenCore = {
 		ZoneName = { BZ["Blackrock Mountain"]..COLON..BZ["The Molten Core"] },
@@ -892,6 +897,21 @@ db.AtlasMaps = {
 --************************************************
 -- Kalimdor Instances (Classic)
 --************************************************
+	CF_AlcazPrison = {
+		ZoneName = { BZ["Alcaz Prison"] },
+		Location = { BZ["Alcaz Island"]..COMMA..BZ["Dustwallow Marsh"] },
+		DungeonID = 3269,
+		MapID = 2994,
+		LevelRange = "48-53",
+		PlayerLimit = { 5 },
+		Module = "Atlas_ClassicWoW",
+		{ BLUE.." A) "..ENTRANCE, 10001 },
+		{ WHIT.." 1) "..getCreatureName("Overseer Wrex", 255391), 255391 },
+		{ WHIT.." 2) "..getCreatureName("The Questioner", 256236), 256236 },
+		{ WHIT.." 3) "..getCreatureName("Tidemistress Ca'zass", 255997), 255997 },
+		{ WHIT.." 4) "..getCreatureName("Katerina the Cleaner", 257016), 257016 },
+		{ WHIT.." 5) "..getCreatureName("Blazeroar", 255702), 255702 },
+	},
 	CL_BlackfathomDeepsEnt = {
 		ZoneName = { BZ["Blackfathom Deeps"]..L_PAREN..ENTRANCE..R_PAREN },
 		Location = { BZ["Ashenvale"] },
@@ -1372,6 +1392,12 @@ db.AtlasMaps_NPC_DB = {
     },
     CF_DrownedCity = {
         { "A", 10001, 435, 242 }, -- blue
+        { "B", 10002, 291, 368 }, -- blue
+        { "1", 258905, 344, 265 }, -- white
+        { "2", 258924, 240, 313 }, -- white
+        { "3", 260042, 267, 187 }, -- white
+        { "4", 269586, 145, 252 }, -- white
+        { "5", 260243, 57, 253 }, -- white
     },
     CF_Gnomeregan = {
         { "A", 10001, 354, 52 },
@@ -1452,6 +1478,17 @@ db.AtlasMaps_NPC_DB = {
 		{ "1'", 10002, 188, 378 },
 		{ "2'", 281030, 270, 182 },
 	},
+    CF_KroldokStronghold = {
+        { "A", 10001, 68, 380 }, -- blue
+        { "1", 258966, 161, 331 }, -- white
+        { "2", 258972, 205, 347 }, -- white
+        { "3", 259281, 379, 240 }, -- white
+        { "4", 258964, 194, 240 }, -- white
+        { "5", 258968, 424, 87 }, -- white
+        { "1", 268423, 251, 215 }, -- orange
+        { "2", 264773, 372, 197 }, -- orange
+        { "3", 259256, 428, 227 }, -- orange
+    },
     CF_MoltenCore = {
         { "A", 10001, 93, 142 }, -- blue
         { "1", 1519, 353, 214 }, -- white
@@ -1498,6 +1535,14 @@ db.AtlasMaps_NPC_DB = {
 --************************************************
 -- Kalimdor Instances (Classic)
 --************************************************
+    CF_AlcazPrison = {
+        { "A", 10001, 208, 128 }, -- blue
+        { "1", 255391, 364, 230 }, -- white
+        { "2", 256236, 146, 169 }, -- white
+        { "3", 255997, 206, 369 }, -- white
+        { "4", 257016, 227, 368 }, -- white
+        { "5", 255702, 375, 370 }, -- white
+    },
     CL_BlackfathomDeepsEnt = {
         { "A", 10001, 183, 382 },
         { "B", 10002, 356, 209 },
@@ -1523,9 +1568,6 @@ db.AtlasMaps_NPC_DB = {
     },
     CL_BlackfathomDeepsC = {
         { "9", 10011, 440, 241 },
-    },
-    CF_KroldokStronghold = {
-        { "A", 10001, 68, 380 }, -- blue
     },
     CL_MaraudonEnt = {
         { "A", 10001, 91, 280 },
@@ -1646,6 +1688,7 @@ db.AssocDefaults = {
 	[BZ["Hall of Thanes"]] = 		"CF_HallofThanes",
 	[BZ["The Drowned City"]] = 		"CF_DrownedCity",
 	[BZ["Krol'dok Stronghold"]] = 	"CF_KroldokStronghold",
+	[BZ["Alcaz Prison"]] = 			"CF_AlcazPrison",
 }
 
 --[[
@@ -1794,6 +1837,7 @@ db.OutdoorZoneToAtlas = {
 	[BZ["Alterac Mountains"]] = 	"CF_CityofDalaranA",
 	[BZ["Wetlands"]] = 				"CF_ExcavationSiteWetlands",
 	[BZ["Riverglades"]] = 			"CF_KroldokStronghold",
+	[BZ["Alcaz Island"]] = 			"CF_AlcazPrison",
 }
 
 -- Yes, the following two tables are redundant, but they're both here in case there's ever more than one entrance map for an instance
@@ -1911,6 +1955,7 @@ db.DropDownLayouts = {
 			--"CL_Naxxramas",
 		},
 		[ATLAS_DDL_CONTINENT_KALIMDOR] = {
+			"CF_AlcazPrison",
 			"CL_BlackfathomDeepsA",
 			"CL_BlackfathomDeepsB",
 			"CL_BlackfathomDeepsC",
@@ -1935,6 +1980,7 @@ db.DropDownLayouts = {
 	},
 	[ATLAS_DDL_EXPANSION] = {
 		[ATLAS_DDL_EXPANSION_OLD] = {
+			"CF_AlcazPrison",
 			"CL_BlackfathomDeepsA",
 			"CL_BlackfathomDeepsB",
 			"CL_BlackfathomDeepsC",
@@ -2027,6 +2073,7 @@ db.DropDownLayouts = {
 			"CF_CityofDalaranB"
 		},
 		[ATLAS_DDL_LEVEL_40TO60] = {
+			"CF_AlcazPrison",
 			"CF_DrownedCity",
 			"CF_KroldokStronghold",
 			"CF_RazorfenDowns",
@@ -2067,6 +2114,7 @@ db.DropDownLayouts = {
 	},
 	[ATLAS_DDL_PARTYSIZE] = {
 		[ATLAS_DDL_PARTYSIZE_5] = {
+			"CF_AlcazPrison",
 			"CL_BlackrockMountainEnt",
 			"CL_BlackfathomDeepsA",
 			"CL_BlackfathomDeepsB",
@@ -2126,6 +2174,7 @@ db.DropDownLayouts = {
 	},
 	[ATLAS_DDL_TYPE] = {
 		[ATLAS_DDL_TYPE_INSTANCE] = {
+			"CF_AlcazPrison",
 			"CL_BlackfathomDeepsA",
 			"CL_BlackfathomDeepsB",
 			"CL_BlackfathomDeepsC",

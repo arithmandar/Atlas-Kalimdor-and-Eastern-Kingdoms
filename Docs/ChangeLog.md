@@ -8,6 +8,10 @@
 
 ## v1.54.06 (Nov. 25, 2026)
 - Locale updates: sync with the translation from CurseForge localization database
+- Forever:
+  - Updated creature IDs for The Drowned City and Krol'dok Stronghold maps
+  - Updated The Drowned City and Krol'dok Stronghold maps
+  - Added Alcaz Prison map
 
 ## v1.54.05 (Nov. 12, 2026)
 
